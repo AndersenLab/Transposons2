@@ -1,6 +1,6 @@
 #!/bin/bash
 # this script changes the names of the telocate and temp absence caller in the "final_results" folder for each strain
-# USE: renmae_final_results.sh
+# USE: rename_final_results.sh <sample_list file>
 
 
 

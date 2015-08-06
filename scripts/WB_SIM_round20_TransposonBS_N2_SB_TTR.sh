@@ -63,15 +63,15 @@ bash ${TTR}/TEMP/scripts/TEMP_Insertion.sh -i ${run_ID}_${bam_name}.sorted.bam -
 echo "TEMP finished...altering output..."
 sed '1d' "${run_ID}_${bam_name}.insertion.refined.bp.summary" | awk '{if ($4 == "sense" || $4 == "antisense"); else print $0}' | awk '{ printf $1"\t"$9"\t"$11"\t"$7"\t"$4"_non-reference_"sample"_temp_\t0\t"; if ( $5 == "sense" ) printf "+"; else printf "-"; print "\t"$6"\t"$10"\t"$12"\t"$8}' > "${run_ID}_${bam_name}_temp_presort_raw.txt"
 bedtools sort -i "${run_ID}_${bam_name}_temp_presort_raw.txt" > "${run_ID}_${bam_name}_temp_sorted_raw.txt"
-awk '{ printf $1"\t"$2"\t"$3"\t"$4"\t"$5; if ($9 > 0 && $10 > 0) printf "sr_"; else printf "rp_"; print NR"\t"$6"\t"$7"\t"$8"\t"$9"\t"$10}' "${run_ID}_${bam_name}_temp_sorted_raw.txt" > "${run_ID}_${bam_name}_temp_sorted_precut_raw.txt"
-awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' "${run_ID}_${bam_name}_temp_sorted_precut_raw.txt" >> "${run_ID}_${bam_name}_temp_raw.bed"
+awk '{ printf $1"\t"$2"\t"$3"\t"$4"\t"$5; if ($9 > 0 && $10 > 0) printf "sr_"; else printf "rp_"; print NR"\t"$6"\t"$7"\t"$8"\t"$9"\t"$10"\t"$11}' "${run_ID}_${bam_name}_temp_sorted_raw.txt" > "${run_ID}_${bam_name}_temp_sorted_precut_raw.txt"
+awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t"$11}' "${run_ID}_${bam_name}_temp_sorted_precut_raw.txt" >> "${run_ID}_${bam_name}_temp_raw.bed"
 mv ${run_ID}_${bam_name}_temp_raw.bed ${run_ID}_${bam_name}_non_filter_results/
 echo "Filtering TEMP output......"
 # Filter for insertions with support for both ends
 awk '{if ($8 == "1p1") print $0}' "${run_ID}_${bam_name}_temp_sorted_precut_raw.txt" > "${run_ID}_${bam_name}_temp_sorted_redundant.txt"
 cut -f1-3,5-7 "${run_ID}_${bam_name}_temp_sorted_redundant.txt" >> "${run_ID}_${bam_name}_temp_redundant.bed"
 # Filter out redundant insertions
-sort -k1,3 -k4rn "${run_ID}_${bam_name}_temp_sorted_redundant.txt" | sort -u -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' > "${run_ID}_${bam_name}_tmp"
+sort -k1,3 -k4rn "${run_ID}_${bam_name}_temp_sorted_redundant.txt" | sort -u -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t"$11}' > "${run_ID}_${bam_name}_tmp"
 bedtools sort -i "${run_ID}_${bam_name}_tmp">> "${run_ID}_${bam_name}_temp_nonredundant.bed"
 mv ${run_ID}_${bam_name}_temp_nonredundant.bed ${run_ID}_${bam_name}_filter_results/
 cd ${run_ID}_${bam_name}_non_filter_results
@@ -104,14 +104,14 @@ awk '$1!~/#/{print $0}' "${run_ID}_${bam_name}_align.calling.PE.vcf" > "Retro/tm
 awk -F'[=,\t:]' '{print $1"\t"$11"\t"$12"\t"$22"\t"$10"_non-reference_retroseq_rp_\t0\t.\t"$21}' "Retro/tmp" > "${run_ID}_${bam_name}_align_retroseq_presort.txt"
 bedtools sort -i "${run_ID}_${bam_name}_align_retroseq_presort.txt" > "${run_ID}_${bam_name}_align_retroseq_sorted_raw.txt"
 awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5NR"\t"$6"\t"$7"\t"$8}' "${run_ID}_${bam_name}_align_retroseq_sorted_raw.txt" > "${run_ID}_${bam_name}_align_retroseq_sorted_counted_raw.txt"
-awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' "${run_ID}_${bam_name}_align_retroseq_sorted_counted_raw.txt" >> "${run_ID}_${bam_name}_align_retroseq_raw.bed"
+awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t999"}' "${run_ID}_${bam_name}_align_retroseq_sorted_counted_raw.txt" >> "${run_ID}_${bam_name}_align_retroseq_raw.bed"
 mv ${run_ID}_${bam_name}_align_retroseq_raw.bed ${run_ID}_${bam_name}_non_filter_results/
 ## Filter results
 echo "Filtering RETROSEQ output......"
 awk '{if ($8 >= 6) print $0}' "${run_ID}_${bam_name}_align_retroseq_sorted_counted_raw.txt" > "${run_ID}_${bam_name}_align_retroseq_redundant.txt"
 awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' "${run_ID}_${bam_name}_align_retroseq_redundant.txt" >> "${run_ID}_${bam_name}_align_retroseq_redundant.bed"
 ## Filter for redundant predictions
-sort -k1,3 -k4rn "${run_ID}_${bam_name}_align_retroseq_redundant.txt" | sort -u -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' > Retro/temp
+sort -k1,3 -k4rn "${run_ID}_${bam_name}_align_retroseq_redundant.txt" | sort -u -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t999"}' > Retro/temp
 bedtools sort -i Retro/temp >> "${run_ID}_${bam_name}_align_retroseq_nonredundant.bed"
 mv ${run_ID}_${bam_name}_align_retroseq_nonredundant.bed ${run_ID}_${bam_name}_filter_results/
 
@@ -148,7 +148,7 @@ sed -e '1,2d' "${dir1}/${run_ID}_${bam_name}/TELOCATE/TEL_${minimal_Distance_to_
 awk -F'[\t/]' '{printf $1"\t"; if($17=="old") printf $2-1"\t"$2"\t"$8"\t"$5"_reference_telocate_rp_\t0"; else if($17=="new") printf $2-1"\t"$2"\t"$8"\t"$5"_non-reference_telocate_rp_\t0"; if($14=="parallel") print "\t+"; else if($14 =="uncertain") print "\t."; else print "\t-";}' "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile" > "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_presort.txt"
 bedtools sort -i "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_presort.txt" > "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_sorted_redundant.txt"
 awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5NR"\t"$6"\t"$7}' "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_sorted_redundant.txt" > "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_counted_redundant.txt"
-awk '{print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_counted_redundant.txt" >> "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed"
+awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t999"}' "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_counted_redundant.txt" >> "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed"
 cat ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed | awk '$4~/_non-reference/ {print $0}' > tmp && mv tmp ${run_ID}_tmpfile_telocate_redundant.bed 
 mv ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed ${run_ID}_${bam_name}_non_filter_results/
 echo "STEP1"
@@ -167,7 +167,7 @@ cat ${run_ID}_${bam_name}_telocate_nonredundant.bed| awk '$4 ~/_non-reference/ &
 cd ..
 
 echo "Filtering TELOCATE output......"
-sort -k1,3 -k4rn "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_counted_redundant.txt"| sort -u -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' > "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfileNR"
+sort -k1,3 -k4rn "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_counted_redundant.txt"| sort -u -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t999"}' > "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfileNR"
 bedtools sort -i "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfileNR" >> "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_telocate_nonredundant.bed"
 cat ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_telocate_nonredundant.bed| awk '$4~/_non-reference/ {print $0}' > tmp && mv tmp ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_telocate_nonredundant.bed
 mv ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_telocate_nonredundant.bed ${run_ID}_${bam_name}_filter_results/
@@ -205,7 +205,7 @@ mkdir final_results
 
 cd ${run_ID}_${bam_name}_non_filter_results/
 mkdir BEDCOMPARE_files
-${python_version} ${bam_surgeon}/bed_compare9_redo_EDIT.py 20 ${dir}/${run_ID}_${bam_name}_non_filter_results/ $fake_lengths ${run_ID}_${bam_name}_final_positions.bed ${run_ID}_${bam_name} $consensus_renamed >& ${run_ID}_${bam_name}_bedcompare.log
+${python_version} ${bam_surgeon}/bed_compare9_redo_EDIT_round19.py 20 ${dir}/${run_ID}_${bam_name}_non_filter_results/ $fake_lengths ${run_ID}_${bam_name}_final_positions.bed ${run_ID}_${bam_name} $consensus_renamed >& ${run_ID}_${bam_name}_bedcompare.log
 cd intermediates/
 cat FAMILY_TFPN* > FAMILY_TFPNs_NF
 mv FAMILY_TFPNs_NF ../../final_results
@@ -217,7 +217,7 @@ cd ../..
 
 cd ${run_ID}_${bam_name}_filter_results/
 mkdir BEDCOMPARE_files
-${python_version} ${bam_surgeon}/bed_compare9_redo_EDIT.py 20 ${dir}/${run_ID}_${bam_name}_filter_results/ $fake_lengths ${run_ID}_${bam_name}_final_positions.bed ${run_ID}_${bam_name} $consensus_renamed >& ${run_ID}_${bam_name}_bedcompare.log
+${python_version} ${bam_surgeon}/bed_compare9_redo_EDIT_round19.py 20 ${dir}/${run_ID}_${bam_name}_filter_results/ $fake_lengths ${run_ID}_${bam_name}_final_positions.bed ${run_ID}_${bam_name} $consensus_renamed >& ${run_ID}_${bam_name}_bedcompare.log
 cd intermediates/
 cat FAMILY_TFPN* > FAMILY_TFPNs_F
 mv FAMILY_TFPNs_F ../../final_results

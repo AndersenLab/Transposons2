@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # this script splits the files contain all positions of called TEs among the strains into separate files depending on the TE family and method caller
 # USE: kin.py <all_nonredundant.txt>
-# ex: kin.py /lscr2/andersenlab/kml436/git_repos2/Transposons/data/all_nonredundant.txt
+# ex: kin_mean.py /lscr2/andersenlab/kml436/git_repos2/Transposons2/data/all_nonredundant.txt
 
 import sys
 import re
@@ -148,7 +148,7 @@ for i in output_files.keys():
 		TE = collapsed_transposons[ID]
 		items=re.split("[\t]", TE)
 		chromosome=items[0]
-		info='\t'.join(items[3:6]) # don't include end position in here because it should be the same as the start position
+		info='\t'.join(items[3:8]) # don't include end position in here because it should be the same as the start position
 
 		
 		TE_positions[ID] = map(float, TE_positions[ID]) #convert strings in list to integers

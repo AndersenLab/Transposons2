@@ -27,5 +27,13 @@ for line in TE_INPUT:
 	#exec """{trait}[{strain}]={result}""".format(**locals())
 TE_INPUT.close()
 
+RESULTS_FILE.write("trait\t")
 for TE in sorted(te_dict.keys()):
 	RESULTS_FILE.write("{TE}\t".format(**locals()))
+
+
+#remove trailing tab
+#os.system("sed  's/\t$/\n/' column_names.txt> tmp && mv tmp column_names.txt")
+#RESULTS_FILE.write("{TE}\n".format(**locals()))
+
+#os.system("cat column_names.txt |tr '\t\n' '\n' >tmp && mv tmp column_names.txt")

@@ -37,8 +37,8 @@ for line in COVERAGE_FILE:
 		coverage[bam]=stat_value
 SAMPLE_TES_AND_COVERAGE.write("sample\tabsence\tinsertion\treference\tcoverage\n")
 #remove the 2 unnecessary QX strains
-del totals['QX2265']
-del totals['QX2266']
+#del totals['QX2265']
+#del totals['QX2266']
 for i in totals.keys():
 	SAMPLE_TES_AND_COVERAGE.write(i)
 	for value in totals[i]:

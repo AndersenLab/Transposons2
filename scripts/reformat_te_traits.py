@@ -1,6 +1,6 @@
 #!/usr/bin/env python 
 # this script takes the base transposon traits for each strain and outputput additional measures of transposon counts and activity
-# USE: reformat_te_traits.py <FINAL_RESULTS_LF>
+# USE: reformat_te_traits.py <FINAL_RESULTS_LF>  # NEED TO EDIT DESCRIPTION OF THIS SCRIPT
 
 import sys
 import re

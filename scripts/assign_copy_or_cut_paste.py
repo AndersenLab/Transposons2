@@ -1,12 +1,14 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
+# this scripts adds  "dnatransposon, retrotransposon, or unknown" information to the transposon calls
+# USE: assign_cut_or_copy_paste.py <repbase_fasta> <consensus_fasta> <all_nonredundant file>
 
 import sys
 import re
 import os
 
-repbase_fasta="/lscr2/andersenlab/kml436/repbase.fasta"
-consensus_fasta="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta" 
-all_nonredundant="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/all_nonredundant.txt"
+repbase_fasta=sys.argv[1] #"/lscr2/andersenlab/kml436/repbase.fasta"
+consensus_fasta=sys.argv[2] #"/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta" 
+all_nonredundant=sys.argv[3] #"/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/all_nonredundant.txt"
 
 repbase_family={}
 

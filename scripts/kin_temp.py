@@ -10,7 +10,7 @@ from subprocess import Popen, PIPE
 file_name=sys.argv[1] #insertions_bedt.txt
 file_pos=sys.argv[2] #cleaned_positions_new.gff
 sample_file="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt"
-result, err = Popen(["""cat {file_pos} | awk '{{print $1"_"$2"_"$3"_"$4}}'""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate() ###too out$7 to $6
+result, err = Popen(["""cat {file_pos} | awk '{{print $1"_"$2"_"$3"_"$4"_"$5"_"$6"_"$7"_"$8}}'""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate() ###too out$7 to $6
 
 insertion_tes={}
 result=result.split()
@@ -42,7 +42,7 @@ for sample in samples.keys():
 		items=re.split("[\t]", line)
 		strain=items[0]
 		given_fam_info=items[5]
-		found_fam_info=items[11] #changed here
+		found_fam_info=items[13] #changed here
 		if sample==strain:
 			#print "YES"
 			#print line
@@ -59,7 +59,7 @@ for sample in samples.keys():
 			if given_fam==found_fam:
 
 
-				full_info="_".join(items[2:6])
+				full_info="_".join(items[2:10])
 
 				#full_info=full_info + "_" + items[8]
 				#print full_info

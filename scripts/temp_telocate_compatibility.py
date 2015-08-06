@@ -4,14 +4,14 @@
 # outputs:
 # 1) files containing all contradictory calls for the strains (bed info)
 # 2) summary files in order of: strain, total number of contradictory calls, total reference calls, and total absence calls
-# USE: temp_telocate_compatibility.py 
+# USE: temp_telocate_compatibility.py <data directory> <sample_list file>
 
 import sys
 import re
 from subprocess import Popen, PIPE
 
-data_dir="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data"
-sample_list="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt"
+data_dir= sys.argv[1]#"/lscr2/andersenlab/kml436/git_repos2/Transposons2/data"
+sample_list= sys.argv[2]#"/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt"
 
 CONTRADICTORY_CALLS=open("contradictory_calls.txt", "w")
 CONTRADICTORY_CALLS_SUMMARY=open("contradictory_calls_summary.txt", "w")

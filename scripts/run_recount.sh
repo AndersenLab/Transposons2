@@ -1,11 +1,11 @@
 #!/bin/bash
 # this script recount the transposon totals after running the script to resolve contradictory calls between the telocate reference caller and temp absence caller
-# USE: run_recount.sh 
+# USE: run_recount.sh <sample_list file> <name of results file> <consensus file> <data directory>
 
-input_file=/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt
-results_file=/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/FINAL_RESULTS.txt
-consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta 
-data_dir=/lscr2/andersenlab/kml436/git_repos2/Transposons2/data
+input_file=${1} #/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt
+results_file=${2} #/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/FINAL_RESULTS.txt
+consensus_renamed=${3} #/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta 
+data_dir=${4} #/lscr2/andersenlab/kml436/git_repos2/Transposons2/data
 
 ### avoid blank lines and comments
 sed -e '/^#/d' -e '/^$/d' $input_file > tmp && mv tmp $input_file

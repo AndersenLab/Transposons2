@@ -7,7 +7,7 @@ import statistics
 
 out ="BEDCOMPARE_MEANS.txt"
 OUT = open(out, "w")
-OUT.write ("M1\tM2\tDistanceCutoff\tfam\tTPR\tFDR\n")
+OUT.write ("M1\tM2\tDistanceCutoff\tfam\tTPR\tFDR\tFNR\n")
 
 
 
@@ -26,8 +26,10 @@ def calculate_mean(TE_program,raw_or_filter,fam):
     print result
     average_TPR={}
     average_FDR={}
+    average_FNR={}
     average_TPR = defaultdict(list)
     average_FDR = defaultdict(list)
+    average_FNR = defaultdict(list)
 
     unique_distances = {}
     result=result.split('\n')
@@ -42,6 +44,7 @@ def calculate_mean(TE_program,raw_or_filter,fam):
     for sim_file in files_to_test:
         sim_TPR = {}
         sim_FDR = {}
+        sim_FNR = {}
         OPEN_SIM_FILE = open(sim_file, "r")
         for line in OPEN_SIM_FILE:
             if re.search(TE_program,line):
@@ -56,8 +59,10 @@ def calculate_mean(TE_program,raw_or_filter,fam):
                         dist = items[2]
                         TPR = items[4]
                         FDR = items[5]
+                        FNR = items[6]
                         sim_TPR[dist]=TPR
                         sim_FDR[dist]=FDR
+                        sim_FNR[dist]=FNR
 
 
         if "0" in sim_TPR.keys():
@@ -65,17 +70,21 @@ def calculate_mean(TE_program,raw_or_filter,fam):
         else:
             TPR_value=0
             FDR_value=0
+            FNR_value=0
         for uk in sorted(unique_distances.keys(),key=int): #CHANGE TO KEY=INT
             if uk in sim_TPR.keys():
                 print "THE KEY IS {uk}".format(**locals())
                 TPR_value=sim_TPR[uk]
                 FDR_value=sim_FDR[uk]
+                FNR_value=sim_FNR[uk]
                 average_TPR[uk].append(TPR_value)
                 average_FDR[uk].append(FDR_value)
+                average_FNR[uk].append(FNR_value)
 
             else:
                 average_TPR[uk].append(TPR_value)
                 average_FDR[uk].append(FDR_value)
+                average_FNR[uk].append(FNR_value)
                 #print "{uk} is not in the keys".format(**locals())
 
                 ##get rid of the zero later
@@ -84,14 +93,17 @@ def calculate_mean(TE_program,raw_or_filter,fam):
         print average_TPR[key]
         average_TPR[key] = map(float, average_TPR[key]) #convert strings in list to integers
         average_FDR[key] = map(float, average_FDR[key]) 
+        average_FNR[key] = map(float, average_FNR[key])
         mean_TPR = statistics.mean(average_TPR[key])
         standard_deviation_TPR = statistics.pstdev(average_TPR[key])
         mean_FDR = statistics.mean(average_FDR[key])
         standard_deviation_FDR = statistics.pstdev(average_FDR[key])
+        mean_FNR = statistics.mean(average_FNR[key])
+        standard_deviation_FNR = statistics.pstdev(average_FNR[key])
         print "The mean_TPR is {mean_TPR}".format(**locals())
         print "The standard deviation TPR is {standard_deviation_TPR}".format(**locals())
-        OUT.write ("{M1}\t{M2}\t{key}\t{fam}\t{mean_TPR}\t{mean_FDR}\n".format(**locals()))
-        OUT.write ("{M1}\t{M2}_error\t{key}\t{fam}\t{standard_deviation_TPR}\t{standard_deviation_FDR}\n".format(**locals()))
+        OUT.write ("{M1}\t{M2}\t{key}\t{fam}\t{mean_TPR}\t{mean_FDR}\t{mean_FNR}\n".format(**locals()))
+        OUT.write ("{M1}\t{M2}_error\t{key}\t{fam}\t{standard_deviation_TPR}\t{standard_deviation_FDR}\t{standard_deviation_FNR}\n".format(**locals()))
 
 #calculate_mean("temp")
 #calculate_mean("temp","_NF","overall")

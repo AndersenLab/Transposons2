@@ -1,10 +1,13 @@
 #!/usr/bin/env python 
+# this script remove contradictory calls from with the telcoate(reference) or temp(absence) output 
+# USE: resolve_contradictory_calls.py <data directory> <sample_list file>
 
 import re
+import sys
 
 ####CHANGE BELOW LATeR
-data_dir="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data"
-sample_file="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt"
+data_dir=sys.argv[1] #"/lscr2/andersenlab/kml436/git_repos2/Transposons2/data"
+sample_file=sys.argv[2] #"/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt"
 SAMPLE_FILE=open(sample_file, "r")
 for line in SAMPLE_FILE:
 	strain =line.rstrip('\n')
