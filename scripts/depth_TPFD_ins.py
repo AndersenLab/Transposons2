@@ -6,7 +6,7 @@
 import os
 import re
 from subprocess import Popen, PIPE
-my_dir="/lscr2/andersenlab/kml436/round17_May12"
+my_dir="/lscr2/andersenlab/kml436/round23_Aug19/round19_Aug13"
 ###CHANGE TO 1 through 8
 run_list=[1,2,3,4,5,6,7,8]
 for i in run_list:
@@ -60,6 +60,10 @@ for i in run_list:
 		te_info2="_".join(items[0:4])
 		result, err = Popen(["""samtools depth {bam_file} -r {chromosome}:{left_interval}-{right_interval}| datamash mean 3""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 		 # result is the mean coverage over the interval
+		if result=="": # if samtools depth returns no coverage, set result equal to zero
+			result=0
+
+
 		if te_info2 in true_positives.keys():
 			TPFD="TP"
 		else:
