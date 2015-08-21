@@ -48,12 +48,19 @@ find . -name "*final_results*" -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
 mkdir ${run_ID}_${bam_name}_non_filter_results/
 mkdir ${run_ID}_${bam_name}_filter_results/
 
+mv ${run_ID}_${bam_name}.sorted.bam copy_${run_ID}_${bam_name}.sorted.bam
+mv ${run_ID}_${bam_name}.sorted.bam.bai copy_${run_ID}_${bam_name}.sorted.bam.bai
+# half of the reads
+java -jar /opt/picard-tools/DownsampleSam.jar P=.5 I=copy_${run_ID}_${bam_name}.sorted.bam O=testing.bam
+/opt/samtools/x64/samtools/samtools sort -o -@ 8 testing.bam out > ${run_ID}_${bam_name}.sorted.bam
+/opt/samtools/x64/samtools/samtools index ${run_ID}_${bam_name}.sorted.bam
 
-#samtools view -s 0.1 -b ${run_ID}_${bam_name}.sorted.bam > ${run_ID}_${bam_name}.bam out
-#/opt/samtools/x64/samtools/samtools sort -o -@ 8 ${run_ID}_${bam_name}.bam out > ${run_ID}_${bam_name}.sorted.bam
+
+
+
+#java -jar /opt/picard-tools/DownsampleSam.jar P=.5 I=copy_${run_ID}_${bam_name}.sorted.bam O=testing.bam
+#/opt/samtools/x64/samtools/samtools sort -o -@ 8 testing.bam out > ${run_ID}_${bam_name}.sorted.bam
 #/opt/samtools/x64/samtools/samtools index ${run_ID}_${bam_name}.sorted.bam
-
-
 
 ##############################################################
 echo "Running TEMP..."

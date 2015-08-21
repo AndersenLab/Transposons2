@@ -25,6 +25,13 @@ do
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/WB_SIM_round18_TransposonBS_N2_SB_TTR.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/ROUND18_ReadSupport_Loop.sh $i
-	sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round19_TransposonBS_N2_SB_TTR.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round19_TransposonBS_N2_SB_TTR.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round20_TransposonBS_N2_SB_TTR.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_VariantSupport_Loop_round20.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round21_TransposonBS_N2_SB_TTR.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round22_TransposonBS_N2_SB_TTR.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round23_TransposonBS_N2_SB_TTR.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop_round20.sh $i
 
 done

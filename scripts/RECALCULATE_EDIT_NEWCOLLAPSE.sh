@@ -17,7 +17,7 @@ TE_lengths=${2}
 distance=${3}
 #TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/CORRECTIONS/lengths.txt
 #TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/CORRECTIONS/lengths.txt
-
+find . -name "*RECALCULATED*" -type d -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
 
 for i in {1..8}
 do

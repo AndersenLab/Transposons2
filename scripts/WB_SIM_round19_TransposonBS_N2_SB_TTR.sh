@@ -9,7 +9,7 @@ python_version=/exports/people/andersenlab/kml436/python2/bin/python
 bam_surgeon=/lscr2/andersenlab/kml436/git_repos2/bamsurgeon
 reference=/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.fa
 run_ID=run_${1}
-bam=/lscr2/andersenlab/dec211/RUN/v2_snpset/bam/JU1395.bam
+bam=/lscr2/andersenlab/dec211/RUN/v2_snpset/bam/N2.bam
 TE_consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
 processors=18
 TTR=/lscr2/andersenlab/kml436/git_repos2/mcclintock/
@@ -27,7 +27,7 @@ existing_transposons=/lscr2/andersenlab/kml436/ID_transposable_element.bed
 family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt 
 all_WB_seqs=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/Wb-TC8.fasta
 ref_tes=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_family_names.gff
-consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/AB-PR/consensus_wTC8.fasta 
+consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta 
 bam_name=$(basename "$bam" .bam)
 echo "bam name is ${bam_name}"
 mkdir ${run_ID}_${bam_name}
@@ -40,7 +40,7 @@ dir=`pwd`
 
 
 echo "Generating random intervals to attempt spike ins......"
-$python_version ${bam_surgeon}/etc/randomsites.py -g ${reference} -n 10 --minvaf 1 --maxvaf 1 sv > ${run_ID}_BS_random_intervals.txt
+$python_version ${bam_surgeon}/etc/randomsites.py -g ${reference} -n 1000 --minvaf 1 --maxvaf 1 sv > ${run_ID}_BS_random_intervals.txt
 bedtools intersect -v -a ${run_ID}_BS_random_intervals.txt -b $high_coverage_regions > interval_tmp && mv interval_tmp ${run_ID}_BS_random_intervals.txt
 # avoid spiking in to already existing transposons
 bedtools intersect -v -a ${run_ID}_BS_random_intervals.txt -b $existing_transposons > interval_tmp && mv interval_tmp ${run_ID}_BS_random_intervals.txt
@@ -149,7 +149,7 @@ awk -F'[\t/]' '{printf $1"\t"; if($17=="old") printf $2-1"\t"$2"\t"$8"\t"$5"_ref
 bedtools sort -i "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_presort.txt" > "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_sorted_redundant.txt"
 awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5NR"\t"$6"\t"$7}' "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_sorted_redundant.txt" > "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_counted_redundant.txt"
 awk '{print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7}' "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_counted_redundant.txt" >> "${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed"
-cat ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed | awk '$4~/_non-reference/ {print $0}' > tmp && mv tmp ${run_ID}_tmpfile_telocate_redundant.bed 
+cat ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed | awk '$4~/_non-reference/ {print $0}' > tmp && mv tmp ${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed 
 mv ${dir1}/${run_ID}_${bam_name}/${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed ${run_ID}_${bam_name}_non_filter_results/
 echo "STEP1"
 cd ${run_ID}_${bam_name}_non_filter_results/
@@ -158,11 +158,6 @@ mv ${run_ID}_${bam_name}_tmpfile_telocate_redundant.bed ${run_ID}_${bam_name}_te
 python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2_set2.py $family_renames ${run_ID}_${bam_name}_telocate_nonredundant.bed  TMP
 mv ${run_ID}_${bam_name}_telocate_nonredundant.bed  ${run_ID}_nonredundant_org_copy.bed
 mv TMP ${run_ID}_${bam_name}_telocate_nonredundant.bed 
-
-closestBed -a $ref_tes -b ${run_ID}_${bam_name}_telocate_nonredundant.bed   -d -t all | awk '$13<=1000 {print $0}' > ${bam_name}_closest.txt
-python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/process_telocate_output.py ${bam_name}_closest.txt
-cat processed_calls.txt| sort -k1,1 -k2,2n > ${run_ID}_${bam_name}_telocate_nonredundant.bed 
-
 cat ${run_ID}_${bam_name}_telocate_nonredundant.bed| awk '$4 ~/_non-reference/ && $4 !~ /TC8/ && $1 !~ /MtDNA/ {print $0}'> ${run_ID}_temp && mv ${run_ID}_temp ${run_ID}_${bam_name}_telocate_nonredundant.bed 
 cd ..
 
@@ -178,9 +173,6 @@ cd ${run_ID}_${bam_name}_filter_results/
 python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2_set2.py $family_renames ${run_ID}_${bam_name}_telocate_nonredundant.bed  TMP
 mv ${run_ID}_${bam_name}_telocate_nonredundant.bed  ${run_ID}_nonredundant_org_copy.bed
 mv TMP ${run_ID}_${bam_name}_telocate_nonredundant.bed
-closestBed -a $ref_tes -b ${run_ID}_${bam_name}_telocate_nonredundant.bed   -d -t all | awk '$13<=1000 {print $0}' > ${bam_name}_closest.txt
-python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/process_telocate_output.py ${bam_name}_closest.txt
-cat processed_calls.txt| sort -k1,1 -k2,2n > ${run_ID}_${bam_name}_telocate_nonredundant.bed 
 cat ${run_ID}_${bam_name}_telocate_nonredundant.bed| awk '$4 ~/_non-reference/ && $4 !~ /TC8/ && $1 !~ /MtDNA/ {print $0}'> ${run_ID}_temp && mv ${run_ID}_temp ${run_ID}_${bam_name}_telocate_nonredundant.bed 
 
 cd ..

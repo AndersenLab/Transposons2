@@ -65,7 +65,7 @@ def calculate_mean(TE_program,raw_or_filter,fam):
         else:
             TPR_value=0
             FDR_value=0
-        for uk in sorted(unique_distances.keys(),key=int): #CHANGE TO KEY=INT
+        for uk in sorted(unique_distances.keys(),key=float): #CHANGE TO KEY=INT
             if uk in sim_TPR.keys():
                 print "THE KEY IS {uk}".format(**locals())
                 TPR_value=sim_TPR[uk]
@@ -79,7 +79,7 @@ def calculate_mean(TE_program,raw_or_filter,fam):
                 #print "{uk} is not in the keys".format(**locals())
 
                 ##get rid of the zero later
-    for key in sorted(average_TPR.keys(),key=int):
+    for key in sorted(average_TPR.keys(),key=float):
         print key
         print average_TPR[key]
         average_TPR[key] = map(float, average_TPR[key]) #convert strings in list to integers
