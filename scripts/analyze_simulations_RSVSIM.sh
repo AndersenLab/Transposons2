@@ -11,12 +11,12 @@ average=run_average_TFPNs_RSVSIM.sh
 family_average=run_family_TFPNs_RSVSIM.sh
 graph_TFPN=graph_TFPR_distances_RSVSIM.R
 graph_family_TFPN=graph_TFPN_families.R
-script_dir=/lscr2/andersenlab/kml436/git_repos2/Transposons/scripts
+script_dir=/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts
 
 
-consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/round2_consensus_set2.fasta
-consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/AB-PR/consensus_wTC8.fasta 
-TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/AB-PR/fake_lengths.txt
+consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
+consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta 
+TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/lengths_plusTC8.txt
 
 #bash ${script_dir}/${recalculate} $length
 #merge the distance calculations

@@ -6,8 +6,8 @@
 # NOTE: specific to RSVSIM data output
 
 consensus=${1}
-#consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/CORRECTIONS/round2_consensus_fasta.fasta
-#consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/CORRECTIONS/round3_consensus_fasta.fasta
+#consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/CORRECTIONS/round2_consensus_fasta.fasta
+#consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/CORRECTIONS/round3_consensus_fasta.fasta
 #consensus=WB_all_tes_plus_strand.fasta
 mkdir averages
 for i in {1..8}
@@ -18,4 +18,4 @@ done
 cd averages
 dir=`pwd`
 echo $dir
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/TFPN_average4.py $dir 
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/TFPN_average4.py $dir 

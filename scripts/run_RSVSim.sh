@@ -5,13 +5,13 @@
 #SBATCH --nodes=1
 # this script runs the RSVSimtransposon simulation and detection scripts 
 # USE: run_RSVSim.sh <run_number>
-consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/round2_consensus_set2.fasta
-consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/AB-PR/consensus_wTC8.fasta
-#consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/LENGTHS/consensus.fasta
-TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/AB-PR/fake_lengths.txt
-#TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/LENGTHS/lengths.txt
-WB_elements=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/Wb-TC8.fasta #these are the plus strands without TC8
-family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/round2_WB_familes_set2.txt
+consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
+consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta
+#consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/consensus.fasta
+TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/lengths_plusTC8.txt
+#TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/lengths.txt
+WB_elements=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/Wb-TC8.fasta #these are the plus strands without TC8
+family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt
 
 #Rockman was not included in the N2 bam, so do not include it here
 #A_N2_1=/lscr2/andersenlab/kml436/fasta_subset/Rockman096-R096.2-N2-paired-1.fq
@@ -39,8 +39,8 @@ I_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET6b-N2_HRH-paired-2.fq
 TEMP_scripts=/lscr2/andersenlab/kml436/git_repos2/mcclintock/TEMP/scripts/
 absence=/lscr2/andersenlab/kml436/git_repos2/mcclintock/TEMP/scripts/TEMP_Absence.sh
 faToTwoBit_dir=/exports/people/andersenlab/kml436
-original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/WB_pos_element_names.gff
-#original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons/files/round2_consensus_RSV_sim.bed
+original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_element_names.gff
+#original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_consensus_RSV_sim.bed
 TTR=/lscr2/andersenlab/kml436/git_repos2/mcclintock/
 minimal_Distance_to_count=1000
 minimal_supporting_reads=3
@@ -52,27 +52,27 @@ dir=`pwd`
 echo $dir
 
 #choose 100 TEs from the consensus TE seqs to randomly simulate in the reference
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/create_RSVSim_genome.py  $WB_elements $run_ID
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/create_RSVSim_genome.py  $WB_elements $run_ID
 
 #run RSV SIM
-Rscript /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/RSV_SIM_OLDER6.R RSVSIM_genome_${run_ID}.fasta RSVSIM_te_pos_${run_ID}.txt
+Rscript /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_SIM_OLDER6.R RSVSIM_genome_${run_ID}.fasta RSVSIM_te_pos_${run_ID}.txt
 mv insertions.csv insertions_${run_ID}.csv
 cp insertions_${run_ID}.csv original_insertion_file_${run_ID}.txt
 cat insertions_${run_ID}.csv | sed 's/_copy[1-9]//g' | awk '{print $5"\t"$6"\t"$7"\t"$2"\t0\t+"}'|sort -k1,1 -k2,2n > tmp && mv tmp insertions_${run_ID}.csv
 
 #from the RSV genome, pull out only the original chromosomes containing the simualted TEs (removes the "copy" TEs taken in addition to the original genome)
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/edit_rearranged_genome.py genome_rearranged.fasta ${run_ID}
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/edit_rearranged_genome.py genome_rearranged.fasta ${run_ID}
 sed '1d' insertions_${run_ID}.csv > insertions_${run_ID}.bed
 rm insertions_${run_ID}.csv
 cat $original_ref_pos insertions_${run_ID}.bed > all_tes_${run_ID}.bed
 cat all_tes_${run_ID}.bed|sort -k1,1 -k2,2n > tmp && mv tmp all_tes_${run_ID}.bed
 
 #adjust the postions of the TEs to account for the simulated TEs
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/adjust_RSVSIM_positions.py all_tes_${run_ID}.bed
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/adjust_RSVSIM_positions.py all_tes_${run_ID}.bed
 
 #rename the position file (from WB element names to consensus names)
 cp adjusted_pos_all_tes_${run_ID}.bed  adjusted_pos_all_tes_${run_ID}_WB_copy.bed
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/correct_names_2.py $family_renames adjusted_pos_all_tes_${run_ID}.bed adjusted_pos_all_tes_${run_ID}_TMP.bed
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2.py $family_renames adjusted_pos_all_tes_${run_ID}.bed adjusted_pos_all_tes_${run_ID}_TMP.bed
 mv adjusted_pos_all_tes_${run_ID}_TMP.bed adjusted_pos_all_tes_${run_ID}.bed
 
 #created position file usable as input to telocate
@@ -166,7 +166,7 @@ cd run_${run_ID}_non_filter_results/
 
 #rename TELOCATE NON FILTER results (from WB element names to consensus names)....won't actualy end up using the "unfiltered" results...same as "filtered"
 mv run_${run_ID}_tmpfile_telocate_redundant.bed run_${run_ID}_telocate_nonredundant.bed
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/correct_names_2_set2.py $family_renames run_${run_ID}_telocate_nonredundant.bed  TMP
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2_set2.py $family_renames run_${run_ID}_telocate_nonredundant.bed  TMP
 mv run_${run_ID}_telocate_nonredundant.bed  ${run_ID}_nonredundant_org_copy.bed
 mv TMP run_${run_ID}_telocate_nonredundant.bed
 cat run_${run_ID}_telocate_nonredundant.bed| awk '$4 ~/_reference/ && $4 !~ /TC8/ && $1 !~ /MtDNA/ {print $0}'> ${run_ID}_temp && mv ${run_ID}_temp run_${run_ID}_telocate_nonredundant.bed
@@ -183,14 +183,14 @@ mv ${dir}/run_${run_ID}_telocate_nonredundant.bed run_${run_ID}_filter_results_t
 
 #rename TELOCATE results (from WB element names to consensus names)
 cd run_${run_ID}_filter_results_telocate/
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/correct_names_2_set2.py $family_renames run_${run_ID}_telocate_nonredundant.bed  TMP
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2_set2.py $family_renames run_${run_ID}_telocate_nonredundant.bed  TMP
 mv run_${run_ID}_telocate_nonredundant.bed  ${run_ID}_nonredundant_org_copy.bed
 mv TMP run_${run_ID}_telocate_nonredundant.bed
 
 #find closest matches to reference TEs within 1000 base pairs
 closestBed -a ../adjusted_pos_all_tes_${run_ID}.bed -b run_${run_ID}_telocate_nonredundant.bed -d -t all | awk '$13<=1000 {print $0}' > ${run_ID}_closest.txt
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/remove_telocate_redundancies.py ${run_ID}_closest.txt
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/process_telocate_output.py closest_prepped.txt
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/remove_telocate_redundancies.py ${run_ID}_closest.txt
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/process_telocate_output.py closest_prepped.txt
 cat processed_calls.txt| sort -k1,1 -k2,2n > run_${run_ID}_telocate_nonredundant.bed
 
 
@@ -199,10 +199,10 @@ cd ..
 
 #rename TEMP results (from WB element names to consensus names)
 cd run_${run_ID}_filter_results_temp/
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/correct_names_2_set2.py $family_renames run_${run_ID}_temp_nonredundant.bed  TMP
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2_set2.py $family_renames run_${run_ID}_temp_nonredundant.bed  TMP
 mv run_${run_ID}_temp_nonredundant.bed  ${run_ID}_nonredundant_org_copy.bed
 mv TMP run_${run_ID}_temp_nonredundant.bed
-python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/process_double_deletion.py run_${run_ID}_temp_nonredundant.bed ../adjusted_pos_all_tes_${run_ID}.bed
+python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/process_double_deletion.py run_${run_ID}_temp_nonredundant.bed ../adjusted_pos_all_tes_${run_ID}.bed
 mv tmp_double_deletion.txt run_${run_ID}_temp_nonredundant.bed
 cat run_${run_ID}_temp_nonredundant.bed | awk '$4 ~/_reference/ && $4 !~ /TC8/ && $1 !~ /MtDNA/ {print $0}' > ${run_ID}_temp && mv ${run_ID}_temp run_${run_ID}_temp_nonredundant.bed
 
@@ -223,7 +223,7 @@ python /lscr2/andersenlab/kml436/git_repos2/bamsurgeon/bed_compare9_redo_EDIT_RE
 cd ..
 
 
-####python /lscr2/andersenlab/kml436/git_repos2/bamsurgeon/bed_compare9_redo_EDIT_RECALCULATE_absence.py 20 /lscr2/andersenlab/kml436/RSV_TEST4/run_7/run_7_filter_results_temp/ /lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/LENGTHS/lengths.txt adjusted_pos_SIM_tes_7.bed run_7 /lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/LENGTHS/consensus.fasta >& run_7_bedcompare.log
+####python /lscr2/andersenlab/kml436/git_repos2/bamsurgeon/bed_compare9_redo_EDIT_RECALCULATE_absence.py 20 /lscr2/andersenlab/kml436/RSV_TEST4/run_7/run_7_filter_results_temp/ /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/lengths.txt adjusted_pos_SIM_tes_7.bed run_7 /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/consensus.fasta >& run_7_bedcompare.log
 
 #FEED JUST REFERENCE to TELOCATE
 cp adjusted_pos_all_tes_${run_ID}.bed run_${run_ID}_filter_results_telocate/
@@ -232,7 +232,7 @@ python /lscr2/andersenlab/kml436/git_repos2/bamsurgeon/bed_compare9_redo_EDIT_RE
 cd ..
 
 
-#python /lscr2/andersenlab/kml436/git_repos2/bamsurgeon/bed_compare9_redo_EDIT_RECALCULATE_absence.py 20 /lscr2/andersenlab/kml436/RSV_TEST4/run_7/run_7_filter_results_telocate/ /lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/AB-PR/fake_lengths.txt adjusted_pos_REF_tes_7.bed run_7 /lscr2/andersenlab/kml436/git_repos2/Transposons/files/SET2/AB-PR/consensus_wTC8.fasta
+#python /lscr2/andersenlab/kml436/git_repos2/bamsurgeon/bed_compare9_redo_EDIT_RECALCULATE_absence.py 20 /lscr2/andersenlab/kml436/RSV_TEST4/run_7/run_7_filter_results_telocate/ /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/fake_lengths.txt adjusted_pos_REF_tes_7.bed run_7 /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta
 
 
 #process TEMP results
@@ -273,7 +273,7 @@ cd ..
 #do
 #	echo $i
 #	#sbatch
-#	python /lscr2/andersenlab/kml436/git_repos2/Transposons/scripts/WB_SIM_round5_TransposonBS_N2_SB_TTR.sh $i
+#	python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round5_TransposonBS_N2_SB_TTR.sh $i
 
 #done
 #bwa mem -t 24 new_genome_${run_ID}.fasta $fasta_1 $fasta_2 > test_${run_ID}.sam

@@ -6,7 +6,7 @@
 import os
 import re
 from subprocess import Popen, PIPE
-my_dir="/lscr2/andersenlab/kml436/round21_Aug19/round19_Aug13"
+my_dir="/lscr2/andersenlab/kml436/round20_Aug19_2/round19_Aug13"
 ###CHANGE TO 1 through 8
 run_list=[1,2,3,4,5,6,7,8]
 for i in run_list:
