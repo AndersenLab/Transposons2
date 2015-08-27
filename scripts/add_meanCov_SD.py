@@ -1,4 +1,9 @@
 #!/usr/bin/env python 
+# this scripts calculates the mean coverage and SD in a bam
+# USE: add_meanCov_SD.py
+# NOTE: change "my_dir" to the directory of interest
+# NOTE: elements of this script are ran in depth_TFPD_ins.py
+
 import os
 import re
 from subprocess import Popen, PIPE

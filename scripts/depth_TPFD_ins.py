@@ -2,11 +2,19 @@
 # this script goes through a simulation set and for every detected position made by the transposon caller outputs the interval 20 bp upstream and downstream of that position
 # with the average coverage acorss that interval and wherther the call was a true or false positive
 # USE: depth_TPFD.py **change "my_dir" to specify the simulation set
+# NOTE: change "my_dir" to the directory of interest
 
 import os
 import re
 from subprocess import Popen, PIPE
-my_dir="/lscr2/andersenlab/kml436/round20_Aug19_2/round19_Aug13"
+import statistics
+my_dir="/lscr2/andersenlab/kml436/round20_Aug19/round19_Aug13"
+
+
+means=[]
+SDs=[]
+
+
 ###CHANGE TO 1 through 8
 run_list=[1,2,3,4,5,6,7,8]
 for i in run_list:
@@ -74,6 +82,7 @@ for i in run_list:
 	OUT.close()
 	FINAL_POSITIONS=open(final_positions, "r")###
 	OUT2=open("{run}_depth_TPDF.bed_FN".format(**locals()), "w")
+	print "Calculating interval coverages..."
 	for line in FINAL_POSITIONS:
 		line=line.rstrip('\n')
 		items=re.split("[\t]", line)
@@ -98,8 +107,29 @@ for i in run_list:
 			TPFD="FN"
 			OUT2.write("{run}\t{chromosome}\t{left_interval}\t{right_interval}\t{te}\t{N}\t{orient}\t{TPFD}\t{result}".format(**locals()))
 
+	#calculate overall mean and standard deviations:
+	print "Calculating mean coverage..."
+	result, err = Popen(["""samtools depth {bam_file}| datamash mean 3 sstdev 3""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+	result=result.split('\t')
+	mean=float(result[0])
+	SD=float(result[1])
+	means.append(mean)
+	SDs.append(SD)
+
 	FINAL_POSITIONS.close()
 	OUT2.close()
+
+mean_of_means=statistics.mean(means)
+mean_of_SDs=statistics.mean(SDs)
+one_SDs=mean_of_means+(1*mean_of_SDs)
+two_SDs=mean_of_means+(2*mean_of_SDs)
+three_SDs=mean_of_means+(3*mean_of_SDs)
+four_SDs=mean_of_means+(4*mean_of_SDs)
+
+
+MEAN_COVERAGE=open("mean_coverage_and_sd.txt","w")
+MEAN_COVERAGE.write("Mean\tOneSD\tTwoSD\tThreeSD\tFourSD\n")
+MEAN_COVERAGE.write("{mean_of_means}\t{one_SDs}\t{two_SDs}\t{three_SDs}\t{four_SDs}\n".format(**locals()))
 
 header="chromosome\tleft_interval\tright_interval\tTE\tN\torient\tcall\tcoverage"
 result, err = Popen(["""cat *.bed > summary_depth_TPFD_ins.txt"""], stdout=PIPE, stderr=PIPE, shell=True).communicate()

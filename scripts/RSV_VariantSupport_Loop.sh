@@ -41,12 +41,13 @@ echo $dir
 
 rm final_results_RECALCULATED/BEDCOMPARE_SUMMARY_run_${run_ID}_N2.txt
 rm final_results_RECALCULATED/FAMILY_TFPNs_F
-for i in {1..30}
+for i in {1..10}
 do
+	i=$( echo "scale=4;$i / 10 " | bc -l )
 	#FEED JUST SIMULATED to TEMP
 	cd run_${run_ID}_filter_results_temp/
 	cp run_${run_ID}_temp_nonredundant.bed SAVE.bed
-	cat run_${run_ID}_temp_nonredundant.bed | awk -v i=$i '$5>=i {print $0}' > tmp && mv tmp run_${run_ID}_temp_nonredundant.bed
+	cat run_${run_ID}_temp_nonredundant.bed | awk -v i=$i '$7>=i {print $0}' > tmp && mv tmp run_${run_ID}_temp_nonredundant.bed
 	python /lscr2/andersenlab/kml436/git_repos2/bamsurgeon/bed_compare9_redo_EDIT_RECALCULATE_absence.py 20000000 ${dir}/run_${run_ID}_filter_results_temp/ $TE_lengths adjusted_pos_SIM_tes_${run_ID}.bed run_${run_ID} $consensus_renamed >& run_${run_ID}_bedcompare.log
 	mv SAVE.bed run_${run_ID}_temp_nonredundant.bed 
 	cd ..
