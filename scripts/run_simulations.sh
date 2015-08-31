@@ -34,5 +34,8 @@ do
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop_round20.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_VariantSupport_Loop_round20.sh $i
 	sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_half.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_quarter.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_tenth.sh $i
 
 done

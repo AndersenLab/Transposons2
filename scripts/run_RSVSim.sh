@@ -130,19 +130,19 @@ bwa mem -t 24 -R '@RG\tID:I_N2\tSM:N2' new_genome_${run_ID}.fasta $I_N2_1 $I_N2_
 #PICARD MARK DUPLICATES
 java -jar /opt/picard-tools/MarkDuplicates.jar I=B_N2.sorted.bam O=MD_B_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
 mv MD_B_N2.sorted.bam B_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=C_N2.sorted.bam O=MD_C_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+java -jar /opt/picard-tools/MarkDuplicates.jar I=C_N2.sorted.bam O=MD_C_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=C_N2_metrics.txt ASSUME_SORTED=true
 mv MD_C_N2.sorted.bam C_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=D_N2.sorted.bam O=MD_D_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+java -jar /opt/picard-tools/MarkDuplicates.jar I=D_N2.sorted.bam O=MD_D_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=D_N2_metrics.txt ASSUME_SORTED=true
 mv MD_D_N2.sorted.bam D_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=E_N2.sorted.bam O=MD_E_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+java -jar /opt/picard-tools/MarkDuplicates.jar I=E_N2.sorted.bam O=MD_E_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=E_N2_metrics.txt ASSUME_SORTED=true
 mv MD_E_N2.sorted.bam E_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=F_N2.sorted.bam O=MD_F_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+java -jar /opt/picard-tools/MarkDuplicates.jar I=F_N2.sorted.bam O=MD_F_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=F_N2_metrics.txt ASSUME_SORTED=true
 mv MD_F_N2.sorted.bam F_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=G_N2.sorted.bam O=MD_G_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+java -jar /opt/picard-tools/MarkDuplicates.jar I=G_N2.sorted.bam O=MD_G_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=G_N2_metrics.txt ASSUME_SORTED=true
 mv MD_G_N2.sorted.bam G_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=H_N2.sorted.bam O=MD_H_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+java -jar /opt/picard-tools/MarkDuplicates.jar I=H_N2.sorted.bam O=MD_H_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=H_N2_metrics.txt ASSUME_SORTED=true
 mv MD_H_N2.sorted.bam H_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=I_N2.sorted.bam O=MD_I_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+java -jar /opt/picard-tools/MarkDuplicates.jar I=I_N2.sorted.bam O=MD_I_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=I_N2_metrics.txt ASSUME_SORTED=true
 mv MD_I_N2.sorted.bam I_N2.sorted.bam
 
 
@@ -159,8 +159,8 @@ mv MD_I_N2.sorted.bam I_N2.sorted.bam
 
 
 #SAMTOOLS MERGE AND INDEX
-samtools merge -f merged_bam_${run_ID}.sorted.bam B_N2.sorted.bam C_N2.sorted.bam D_N2.sorted.bam E_N2.sorted.bam F_N2.sorted.bam G_N2.sorted.bam H_N2.sorted.bam I_N2.sorted.bam
-samtools index merged_bam_${run_ID}.sorted.bam
+/opt/samtools/x64/samtools/samtools merge -f merged_bam_${run_ID}.sorted.bam B_N2.sorted.bam C_N2.sorted.bam D_N2.sorted.bam E_N2.sorted.bam F_N2.sorted.bam G_N2.sorted.bam H_N2.sorted.bam I_N2.sorted.bam
+/opt/samtools/x64/samtools/samtools index merged_bam_${run_ID}.sorted.bam
 
 #eventually step to get rid of:
 #/lscr2/andersenlab/kml436/test_Aug26/run_1/merged_bam_1.excision.cluster.rpmk.refined.bp.refsup

@@ -56,6 +56,7 @@ for i in run_list:
 		te_info2="_".join(items[0:4])
 		result, err = Popen(["""samtools depth {bam_file} -r {chromosome}:{left_interval}-{right_interval}| datamash mean 3""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 		 # result is the mean coverage over the interval
+		print err
 		if te_info2 in true_positives.keys():
 			TPFD="TP"
 		else:

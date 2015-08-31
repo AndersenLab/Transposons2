@@ -10,10 +10,7 @@ from subprocess import Popen, PIPE
 import statistics
 my_dir="/lscr2/andersenlab/kml436/round20_Aug19/round19_Aug13"
 
-
 means=[]
-SDs=[]
-
 
 ###CHANGE TO 1 through 8
 run_list=[1,2,3,4,5,6,7,8]
@@ -71,6 +68,8 @@ for i in run_list:
 		if result=="": # if samtools depth returns no coverage, set result equal to zero
 			result='0\n'
 
+		means.append(float(result))
+
 
 		if te_info2 in true_positives.keys():
 			TPFD="TP"
@@ -103,33 +102,26 @@ for i in run_list:
 			result='0\n'
 		
 		
+		
 		if pos_info2 not in true_pos_position.keys():
 			TPFD="FN"
 			OUT2.write("{run}\t{chromosome}\t{left_interval}\t{right_interval}\t{te}\t{N}\t{orient}\t{TPFD}\t{result}".format(**locals()))
 
-	#calculate overall mean and standard deviations:
-	print "Calculating mean coverage..."
-	result, err = Popen(["""samtools depth {bam_file}| datamash mean 3 sstdev 3""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
-	result=result.split('\t')
-	mean=float(result[0])
-	SD=float(result[1])
-	means.append(mean)
-	SDs.append(SD)
 
 	FINAL_POSITIONS.close()
 	OUT2.close()
 
-mean_of_means=statistics.mean(means)
-mean_of_SDs=statistics.mean(SDs)
-one_SDs=mean_of_means+(1*mean_of_SDs)
-two_SDs=mean_of_means+(2*mean_of_SDs)
-three_SDs=mean_of_means+(3*mean_of_SDs)
-four_SDs=mean_of_means+(4*mean_of_SDs)
+final_mean=statistics.mean(means)
+final_SD=statistics.stdev(means)
+one_SDs=final_mean+(1*final_SD)
+two_SDs=final_mean+(2*final_SD)
+three_SDs=final_mean+(3*final_SD)
+four_SDs=final_mean+(4*final_SD)
 
 
 MEAN_COVERAGE=open("mean_coverage_and_sd.txt","w")
 MEAN_COVERAGE.write("Mean\tOneSD\tTwoSD\tThreeSD\tFourSD\n")
-MEAN_COVERAGE.write("{mean_of_means}\t{one_SDs}\t{two_SDs}\t{three_SDs}\t{four_SDs}\n".format(**locals()))
+MEAN_COVERAGE.write("{final_mean}\t{one_SDs}\t{two_SDs}\t{three_SDs}\t{four_SDs}\n".format(**locals()))
 
 header="chromosome\tleft_interval\tright_interval\tTE\tN\torient\tcall\tcoverage"
 result, err = Popen(["""cat *.bed > summary_depth_TPFD_ins.txt"""], stdout=PIPE, stderr=PIPE, shell=True).communicate()

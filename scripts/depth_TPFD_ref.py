@@ -13,7 +13,7 @@ for i in run_list:
 	print "Processing Run:"
 	print i
 
-	run="{i}".format(**locals()) 
+	run="run_{i}".format(**locals()) 
 	bam_file="{my_dir}/run_{run}/merged_bam_{run}.sorted.bam".format(**locals()) 
 	call_file="{my_dir}/run_{run}/run_{run}_filter_results_telocate/intermediates_RECALCULATED/new_CT_run_{run}_telocate_nonredundant.bed".format(**locals())
 	final_positions="{my_dir}/run_{run}/run_{run}_filter_results_telocate/adjusted_pos_REF_tes_{run}.bed".format(**locals())###
