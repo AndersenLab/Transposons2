@@ -102,7 +102,7 @@ calculate_mean("temp","_F","family_aware") #last setting
 #calculate_mean("telocate","_NF","overall")
 #calculate_mean("telocate","_F","overall") #last setting
 #calculate_mean("telocate","_NF","family_aware")
-#calculate_mean("telocate","_F","family_aware") #last setting
+calculate_mean("telocate","_F","family_aware") #last setting
 #calculate_mean("retroseq")
 #calculate_mean("retroseq","_NF","overall")
 #calculate_mean("retroseq","_F","overall")

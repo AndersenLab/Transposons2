@@ -41,7 +41,7 @@ echo $dir
 
 rm final_results_RECALCULATED/BEDCOMPARE_SUMMARY_run_${run_ID}_N2.txt
 rm final_results_RECALCULATED/FAMILY_TFPNs_F
-for i in {1..30}
+for i in {3..3}
 do
 	#FEED JUST SIMULATED to TEMP
 	cd run_${run_ID}_filter_results_temp/

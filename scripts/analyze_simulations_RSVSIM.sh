@@ -24,14 +24,14 @@ mkdir averages
 #calculate averages
 bash ${script_dir}/${average} $consensus # consensus seq file doesn't matter here
 #only sometimes run the below line
-bash ${script_dir}/${family_average} $consensus_renamed
+#bash ${script_dir}/${family_average} $consensus_renamed
 #graph the TPR and FDR
 cd averages
 cat BEDCOMPARE_MEANS.txt | sed 's/_temp/_N2_temp/g' > tmp && mv tmp BEDCOMPARE_MEANS.txt
 cat BEDCOMPARE_MEANS.txt | sed 's/_telocate/_N2_telocate/g' > tmp && mv tmp BEDCOMPARE_MEANS.txt
 
-Rscript ${script_dir}/${graph_TFPN}
-cd ..
+#Rscript ${script_dir}/${graph_TFPN}
+#cd ..
 #plot the TPR and FDR per family
 #only sometimes run the below line
 #cd families

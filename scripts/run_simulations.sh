@@ -1,7 +1,7 @@
 #!/bin/bash
 # this script runs the transposon simulation and detection scripts with sbatch the number of times specified (edit script)
 # USE: run_simulations.sh
-for i in {1..4}
+for i in {1..8}
 do
 	echo $i
 	#sbatch /exports/people/andersenlab/kml436/scripts/TransposonBS_N2_SB_TTR.sh $i
@@ -33,9 +33,12 @@ do
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round23_TransposonBS_N2_SB_TTR.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop_round20.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_VariantSupport_Loop_round20.sh $i
-	sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_half.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_quarter.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_tenth.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop_round20_strict_VS.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_VariantSupport_Loop_round20_strict_RS.sh $i
+	sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop_round20_strict_VS_and_RS.sh $i
 
 done
