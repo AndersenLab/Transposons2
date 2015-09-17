@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=18
+#SBATCH --ntasks=2
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --mem=40000
@@ -72,7 +72,7 @@ mkdir sam_file
 cd sam_file
 samtools view ../../${bam_name}.sorted.bam |sort --temporary-directory=${dir}/raw_results_telocate/sam_file > ${bam_name}.sorted.sam
 cd ..
-echo "Running TELOCATE absence caller..."
+echo "Running TELOCATE reference caller..."
 mkdir TELOCATE
 cd ${TTR}/TE-locate/
 perl TE_locate.pl 2 ${dir}/raw_results_telocate/sam_file/ $HL_gff $reference ${dir}/raw_results_telocate/TELOCATE/TEL $minimal_Distance_to_count $minimal_supporting_reads $minimal_supporting_individuals &> ${dir}/${bam_name}_TELOCATE_log.txt

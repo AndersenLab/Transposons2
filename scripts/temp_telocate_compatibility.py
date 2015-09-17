@@ -19,8 +19,8 @@ CONTRADICTORY_CALLS_SUMMARY=open("contradictory_calls_summary.txt", "w")
 SAMPLE_LIST=open(sample_list, "r")
 for line in SAMPLE_LIST:
 	strain=line.rstrip('\n')
-	telocate="{data_dir}/{strain}/final_results/{strain}_telocate_nonredundant.bed".format(**locals())
-	temp="{data_dir}/{strain}/final_results/{strain}_temp_absence_nonredundant.bed".format(**locals())
+	telocate="{data_dir}/{strain}/final_results/org_{strain}_telocate_nonredundant.bed_org".format(**locals())
+	temp="{data_dir}/{strain}/final_results/org_{strain}_temp_absence_nonredundant.bed_org".format(**locals())
 
 	TELOCATE=open(telocate, "r")
 	TEMP=open(temp, "r")

@@ -1,6 +1,6 @@
 #!/usr/bin/env python 
-# this script takes the base transposon traits for each strain and outputput additional measures of transposon counts and activity
-# USE: reformat_te_traits.py <FINAL_RESULTS_LF>
+# this script takes extract colum names from the final results long format for the Full_Results.txt file
+# USE: te_column_names.py <FINAL_RESULTS_LF>
 
 import sys
 import re

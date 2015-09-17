@@ -53,12 +53,16 @@ RESULTS_FILE.write("{date}\t{bam_name}\t{method}\t{end_tes}\t{total_tes}\t".form
 RESULTS_FILE_LF.write("{date}\t{bam_name}\t{method}_TRANS_total\t{total_tes}\n".format(**locals()))
 RESULTS_FILE_LF.write("{date}\t{bam_name}\t{method}_TRANS_end_tes\t{end_tes}\n".format(**locals()))
 
-
+NAMES=open("/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/te_names_ordered.txt", "w")
+NAMES. write("date\tsample\tmethod\tend_tes\ttotal_tes")
 for key in sorted(consensus_families.keys()):
 	count = consensus_families[key]
+	NAMES.write("\t{key}".format(**locals())) # print column names to this file
 	RESULTS_FILE.write("{count}\t".format(**locals()))
 	RESULTS_FILE_LF.write("{date}\t{bam_name}\t{method}_TRANS_{key}\t{count}\n".format(**locals()))
 RESULTS_FILE.write("\n")
+NAMES. write("\n")
+NAMES.close()
 
 
 

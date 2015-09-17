@@ -3,8 +3,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
-#SBATCH --nodelist=node9
-#SBATCH --mem=2000
+#SBATCH --nodelist=node6
+#SBATCH --mem=18000
 
 family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt
 TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/lengths.txt
@@ -33,7 +33,7 @@ rm ${bam_name}_temp_nonredundant.bed
 rm ${bam_name}_temp_raw.bed
 rm ${bam_name}_temp_redundant.bed
 
-cp ${bam_name}.insertion.refined.bp.summary current_${bam_name}.insertion.refined.bp.summary
+cat ${bam_name}.insertion.refined.bp.summary | awk '$6 =="1p1" && $8>.25 && $7>8 && $10>0 {print $0}' > current_${bam_name}.insertion.refined.bp.summary
 sed '1d' "current_${bam_name}.insertion.refined.bp.summary" | awk '{if ($4 == "sense" || $4 == "antisense"); else print $0}' | awk '{ printf $1"\t"$9"\t"$11"\t"$7"\t"$4"_non-reference_"sample"_temp_\t0\t"; if ( $5 == "sense" ) printf "+"; else printf "-"; print "\t"$6"\t"$10"\t"$12"\t"$8}' > "${bam_name}_temp_presort_raw.txt"
 bedtools sort -i "${bam_name}_temp_presort_raw.txt" > "${bam_name}_temp_sorted_raw.txt"
 awk '{ printf $1"\t"$2"\t"$3"\t"$4"\t"$5; if ($9 > 0 && $10 > 0) printf "sr_"; else printf "rp_"; print NR"\t"$6"\t"$7"\t"$8"\t"$9"\t"$10"\t"$11}' "${bam_name}_temp_sorted_raw.txt" > "${bam_name}_temp_sorted_precut_raw.txt"
@@ -44,7 +44,7 @@ echo "Filtering TEMP output......"
 awk '{if ($8 == "1p1") print $0}' "${bam_name}_temp_sorted_precut_raw.txt" > "${bam_name}_temp_sorted_redundant.txt"
 cut -f1-3,5-7 "${bam_name}_temp_sorted_redundant.txt" >> "${bam_name}_temp_redundant.bed"
 # Filter out redundant insertions
-sort -k1,3 -k4rn "${bam_name}_temp_sorted_redundant.txt" | sort -u -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t"$11}' > "${bam_name}_tmp"
+sort -k1,3 -k4rn "${bam_name}_temp_sorted_redundant.txt" | sort -k1,3 | awk '{ print $1"\t"$2"\t"$3"\t"$5"\t"$4"\t"$7"\t"$11}' > "${bam_name}_tmp"
 bedtools sort -i "${bam_name}_tmp">> "${bam_name}_temp_nonredundant.bed"
 
 
@@ -55,7 +55,6 @@ mv ${bam_name}_temp_nonredundant.bed ${bam_name}_nonredundant_org_copy.bed
 mv TMP ${bam_name}_temp_nonredundant.bed
 #rename chr X, ensure all lines contain "non-reference" (should already be the case for TEMP)
 cat ${bam_name}_temp_nonredundant.bed| sed s'/chrX/X/g'| sed '/^track/d' | awk '$4 ~/non-reference/ && $4 !~ /TC8/ && $1 !~ /MtDNA/ {print $0}'> ${bam_name}_temp && mv ${bam_name}_temp ${bam_name}_temp_nonredundant.bed  
-cat ${bam_name}_temp_nonredundant.bed | awk '$7>.25 && $5>=8 {print $0}' > tmp && mv tmp ${bam_name}_temp_nonredundant.bed #rec_edit
 
 # COLLAPSE TRANSPOSONS
 #run collapse transposons script
@@ -102,7 +101,6 @@ cd ..
 
 cd raw_results_telocate
 rm ${bam_name}_telocate_nonredundant.bed
-rm ${bam_name}_tmpfile_telocate_redundant.bed
 echo "Filtering TELOCATE output..."
 sed -e '1,2d' "./TELOCATE/TEL_${minimal_Distance_to_count}_reads${minimal_supporting_reads}_acc${minimal_supporting_individuals}.info" > "${bam_name}_tmpfile"
 awk -F'[\t/]' '{printf $1"\t"; if($17=="old") printf $2-1"\t"$2"\t"$8"\t"$5"_reference_telocate_rp_\t0"; else if($17=="new") printf $2-1"\t"$2"\t"$8"\t"$5"_non-reference_telocate_rp_\t0"; if($14=="parallel") print "\t+"; else if($14 =="uncertain") print "\t."; else print "\t-";}' "${bam_name}_tmpfile" > "${bam_name}_tmpfile_telocate_presort.txt"
