@@ -26,4 +26,9 @@ do
 	mv contradictory_calls.txt ${name}_contradictory_calls.txt
 done
 
+#rename "kml436" files to "full"
+mv kml436_contra_call_TPFD.txt RSV_simulations_Aug31_full_contra_call_TPFD.txt
+mv kml436_contradictory_calls_summary.txt RSV_simulations_Aug31_full_contradictory_calls_summary.txt
+mv kml436_contradictory_calls.txt RSV_simulations_Aug31_full_contradictory_calls.txt
+
 

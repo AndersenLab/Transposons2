@@ -15,17 +15,19 @@ for line in IN_FILE:
 	chromosome = items[2]
 	category = items[3]
 	start_pos = items[5]
-	te_info = items[6]
+	te_start = items[8]
+	te_info = items[9]
+	te_orient = items[11]
 	match = re.search("(.*)_(\w+-)?reference", te_info)
 	family = match.group(1)
 
-	ID_info = items[4]
-	match2 = re.search("(?:Pseudogene|Transcript|sequence_name|^Name)(?:=|:)([\w.]+)", ID_info)
+	ID_info = items[7]
+	match2 = re.search("(?:Pseudogene|Transcript|sequence_name|^Name)(?:=|:)([\w|\d]+.\d+)", ID_info) #jsut pull gene name, remove splice info
 	ID = match2.group(1)
 
-	other_fields = '\t'.join(items[0:2])
+	other_fields = '\t'.join(items[0:7])
 
-	OUT_FILE.write("{other_fields}\t{category}\t{chromosome}\t{start_pos}\t{ID}\t{family}\n".format(**locals()))
+	OUT_FILE.write("{other_fields}\t{ID}\t{te_start}\t{family}\t{te_orient}\n".format(**locals()))
 
 
 IN_FILE.close()
