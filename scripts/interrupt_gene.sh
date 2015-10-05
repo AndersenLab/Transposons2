@@ -11,6 +11,8 @@ exon_positions=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/exon.gff
 fiveUTR_positions=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/five_prime_UTR.gff
 threeUTR_positions=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/three_prime_UTR.gff
 process_script=/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/process_gene_interrupt.py
+check_script=/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/gene_check.py
+other_gene=/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/other_gene_determination.py
 
 #pull only Wormbase marked positions!!!
 cat  $gene_positions |awk '$2=="WormBase" {print $0}' > ${filedir}WB_gene_positions.gff
@@ -36,11 +38,11 @@ while read -r sample
 do
 	#GENE FILE
 	# use bedtools window with -w to extend search by certain number of base pairs on either side
-	bedtools window -a ${filedir}WB_gene_positions.gff -b ${dir}/${sample}/final_results/${sample}_temp_insertion_nonredundant.bed -l 1000 -r 25 >intermediate.txt
+	bedtools window -a ${filedir}WB_gene_positions.gff -b ${dir}/${sample}/final_results/${sample}_temp_insertion_nonredundant.bed -w 1 >intermediate.txt
 	cat intermediate.txt | awk -v sample="$sample" '{print sample"\tinsertion\t"$0}' > insertions_into_genes.txt
-	bedtools window -a ${filedir}WB_gene_positions.gff -b ${dir}/${sample}/final_results/${sample}_temp_absence_nonredundant.bed -w 25 >intermediate.txt
+	bedtools window -a ${filedir}WB_gene_positions.gff -b ${dir}/${sample}/final_results/${sample}_temp_absence_nonredundant.bed -w 1 >intermediate.txt
 	cat intermediate.txt | awk -v sample="$sample" '{print sample"\tabsence\t"$0}' > absences_from_genes.txt
-	bedtools window -a ${filedir}WB_gene_positions.gff -b ${dir}/${sample}/final_results/${sample}_telocate_nonredundant.bed -w 25 >intermediate.txt
+	bedtools window -a ${filedir}WB_gene_positions.gff -b ${dir}/${sample}/final_results/${sample}_telocate_nonredundant.bed -w 1 >intermediate.txt
 	cat intermediate.txt | awk -v sample="$sample" '{print sample"\treference\t"$0}' > references_in_genes.txt
 
 	#INTRON FILE
@@ -87,16 +89,28 @@ do
 
 done < "${file}"
 
-echo "7"
+
 python $process_script all_gene_insertions_and_excisions.txt
 python $process_script all_introns_insertions_and_excisions.txt
 python $process_script all_exons_insertions_and_excisions.txt
 python $process_script all_fiveUTR_insertions_and_excisions.txt
 python $process_script all_threeUTR_insertions_and_excisions.txt
 
-echo "8"
+python $check_script
+
+
 cat final_all_gene_insertions_and_excisions.txt\
   final_all_introns_insertions_and_excisions.txt\
    final_all_exons_insertions_and_excisions.txt\
    final_all_fiveUTR_insertions_and_excisions.txt\
    final_all_threeUTR_insertions_and_excisions.txt > final_gene_table.txt
+
+
+cat final_gene_table.txt | sort -k2,2 -k4,4 -k3,3 -k5,5n| awk '!x[$2,$3,$4,$5,$6]++' > final_gene_table_dedup.txt
+
+#separate genes from all other events
+
+ cat final_gene_table_dedup.txt | awk '$4=="gene" {print $0}' > dedup_genes.txt
+ cat final_gene_table_dedup.txt | awk '$4!="gene" {print $0}' > dedup_nongene.txt
+
+ python $other_gene

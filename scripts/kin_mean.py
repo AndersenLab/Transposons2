@@ -11,6 +11,9 @@ from  collections import defaultdict
 from subprocess import Popen, PIPE
 
 
+#python ../scripts/kin_mean.py /lscr2/andersenlab/kml436/git_repos2/Transposons2/kintest/CtCp_all_nonredundant.txt 
+
+
 kin_step2="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/kin_step2.sh"
 ##NEED TO EDIT SAMPLE FILE IN BELOWSCRIPT TOO
 kin_step3="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/kin_temp.py"
@@ -91,7 +94,7 @@ for i in output_files.keys():
 		if first_line == False:
 			if chromosome == prev_chromosome:
 				if method == "new": # allow for bp differences in insertion calls
-					distance = 50
+					distance = 10
 				else:
 					distance = 0 # do not allow for bp differences in absence or reference call--should already be correct/exact
 				if (int(start_pos)-int(prev_end_pos)) <= int(distance) :
