@@ -86,6 +86,12 @@ python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/process_double_
 mv tmp_double_deletion.txt ${bam_name}_temp_nonredundant.bed
 cat ${bam_name}_temp_nonredundant.bed| sed s'/chrX/X/g'| sed '/^track/d' | awk '$4 ~/_reference/ && $4 !~ /TC8/ && $1 !~ /MtDNA/ {print $0}'> ${bam_name}_temp && mv ${bam_name}_temp ${bam_name}_temp_nonredundant.bed 
 cat ${bam_name}_temp_nonredundant.bed | sort -k1,1 -k2,2n > ${bam_name}_temp && mv ${bam_name}_temp ${bam_name}_temp_nonredundant.bed 
+
+# Filter out redundant calls (which can occur if a TE was counted both indiviually and in a 'double deletion' call)
+sort -k1,1 -k2,2rn "${bam_name}_temp_nonredundant.bed" | sort -u -k1,2 > "${bam_name}_tmp"
+bedtools sort -i "${bam_name}_tmp"> tmp && mv tmp ${bam_name}_temp_nonredundant.bed
+
+
 cat ${bam_name}_temp_nonredundant.bed | awk '$5>=3 {print $0}' > tmp && mv tmp ${bam_name}_temp_nonredundant.bed #rec_edit
 cp ${bam_name}_temp_nonredundant.bed ../final_results/${bam_name}_temp_absence_nonredundant.bed
 

@@ -299,8 +299,10 @@ for key,value in FINAL_SAMPLES.items():
 
 KIN_MATRIX.close()
 
+result, err = Popen(["""head -n1 kin_matrix_ins.txt  > tmp"""],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""cat kin_matrix_ins.txt  |sed 1d| sort -t"_" -k1,1 -k2,2n >>tmp """],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""mv tmp kin_matrix_ins.txt  """],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-result, err = Popen(["""cat kin_matrix_ins.txt |sort -t"_" -k1,1 -k2,2n > tmp && mv tmp kin_matrix_ins.txt"""],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 #error check for smae TE at same position
 #why getting only zeros
