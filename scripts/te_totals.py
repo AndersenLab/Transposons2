@@ -19,7 +19,6 @@ method = sys.argv[5]
 end_tes = sys.argv[6]
 ##COUNT TOTAL
 file_name=os.path.splitext(results_file)[0]
-print file_name
 RESULTS_FILE=open(results_file, "aw")
 RESULTS_FILE_LF=open("{file_name}_LF.txt".format(**locals()), "aw")
 date = date.today()

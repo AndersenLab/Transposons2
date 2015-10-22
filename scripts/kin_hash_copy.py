@@ -6,8 +6,8 @@
 # 4) calculates the coverage for each sample at each insertion postion +/- 25 base pairs
 # 5) for each unique position scores strains where a TE was not found as a 0 if coverage was above 8, or "NA" if coverage below 8
 # 6) outputs a kinship matrix
-# USE: kin_hash.py <sample_list>  <CtCp_all_nonredundant.txt>
-# ex: kin_hash.py /lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt /lscr2/andersenlab/kml436/git_repos2/Transposons2/kin_hash/CtCp_all_nonredundant.txt
+# USE: kin_hash.py <CtCp_ll_nonredundant.txt>
+# ex: kin_hash.py /lscr2/andersenlab/kml436/git_repos2/Transposons2/kin_hash/CtCp_all_nonredundant.txt
 
 import sys
 import re
@@ -17,10 +17,27 @@ from  collections import defaultdict
 from subprocess import Popen, PIPE
 
 
-transpose_matrix="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/transpose_matrix.sh"
-bam_dir="/lscr2/andersenlab/dec211/RUN/v2_snpset/bam"
-sample_list=sys.argv[1]
+#python ../scripts/kin_mean.py /lscr2/andersenlab/kml436/git_repos2/Transposons2/kintest/CtCp_all_nonredundant.txt 
 
+
+kin_step2="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/kin_step2.sh"
+##NEED TO EDIT SAMPLE FILE IN BELOWSCRIPT TOO
+kin_step3="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/kin_temp.py"
+transpose_matrix="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/transpose_matrix.sh"
+
+bam_dir="/lscr2/andersenlab/dec211/RUN/v2_snpset/bam"
+#
+#
+#
+#
+#change smaple list to full one later
+sample_list=sys.argv[1]
+#sample_list="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/test_list.txt"
+####
+#
+#
+#
+#
 os.system("mkdir TE_matrix")
 dir=os.getcwd() # get current directory
 os.chdir("{dir}/TE_matrix".format(**locals()))
@@ -166,8 +183,6 @@ for i in output_files.keys():
 		average_start=int(round(statistics.mean(TE_positions[ID])))
 		FINAL_OUT.write("{chromosome}\t{average_start}\t{average_start}\t{info}\n".format(**locals()))
 
-		#remove duplicates from list(can occcur is a sample can 2 TEs of the same family clsoe together separated by a TE of a differnet family )
-		TE_samples[ID]=list(set(TE_samples[ID]))
 		#add to the parent hashes because above block is only for individual TE families
 		TE_samples[ID]=[i+":1" for i in TE_samples[ID]] # mark "1" for samples where that TE was found
 		FINAL_SAMPLES[POSITION_COUNTER]=TE_samples[ID]
@@ -180,22 +195,37 @@ for i in output_files.keys():
 ##########################################################
 # SORT POSITION FILES
 ##########################################################
-#result, err = Popen(["""cat final_* > cleaned_positions.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
-#result, err = Popen(["""sort -k1,1 -k2,2n cleaned_positions.gff > tmp && mv tmp cleaned_positions.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""cat final_* > cleaned_positions.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""sort -k1,1 -k2,2n cleaned_positions.gff > tmp && mv tmp cleaned_positions.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 result, err = Popen(["""cat final_new* > cleaned_positions_new.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 result, err = Popen(["""sort -k1,1 -k2,2n cleaned_positions_new.gff > tmp && mv tmp cleaned_positions_new.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-#result, err = Popen(["""cat final_reference* > cleaned_positions_reference.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
-#result, err = Popen(["""sort -k1,1 -k2,2n cleaned_positions_reference.gff > tmp && mv tmp cleaned_positions_reference.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""cat final_reference* > cleaned_positions_reference.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""sort -k1,1 -k2,2n cleaned_positions_reference.gff > tmp && mv tmp cleaned_positions_reference.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-#result, err = Popen(["""cat final_absent* > cleaned_positions_absent.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
-#result, err = Popen(["""sort -k1,1 -k2,2n cleaned_positions_absent.gff > tmp && mv tmp cleaned_positions_absent.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""cat final_absent* > cleaned_positions_absent.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+result, err = Popen(["""sort -k1,1 -k2,2n cleaned_positions_absent.gff > tmp && mv tmp cleaned_positions_absent.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 ##########################################################
-# SCORE BASED ON COVERAGE
+# RUN BEDTOOLS WINDOW ON ALL SAMPLES
 ##########################################################
-#for each unique transposon postion, in the coverage interval file record its chromomse and interval 25 base pair up and down stream
+#result, err = Popen(["""bash {kin_step2} {sample_list}""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#output files from above step are named "insertions_bedt.txt" "absences_bedt.txt" "references_bedt.txt"
+
+##########################################################
+# GENERATE KINSHIP MATRIX
+##########################################################
+#ensure that the family found in bedtools matches that of the unique postion in the gff and output a matrix:
+#result, err = Popen(["""python {kin_step3} insertions_bedt.txt cleaned_positions_new.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#result, err = Popen(["""python {kin_step3} references_bedt.txt cleaned_positions_reference.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#result, err = Popen(["""python {kin_step3} absences_bedt.txt cleaned_positions_absent.gff""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#transpose matrices:
+#result, err = Popen(["""bash {transpose_matrix} Samples_insertions_bedt.txt T_Samples_insertions_bedt.txt""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#result, err = Popen(["""bash {transpose_matrix} Samples_references_bedt.txt T_Samples_references_bedt.txt""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#result, err = Popen(["""bash {transpose_matrix} Samples_absences_bedt.txt T_Samples_absences_bedt.txt""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+#for each unique transposon postion, in the coverage interval fil record its chromomse and interval 25 base pair up and down stream
 FINAL_INTERVALS={}
 FINAL_INTERVALS=defaultdict(list)
 COVERAGE_INTERVALS=open("coverage_intervals.txt", "w")
@@ -212,51 +242,37 @@ COVERAGE_INTERVALS.close()
 result, err = Popen(["cat coverage_intervals.txt | sort -k3,3 -k4,4n > tmp && mv tmp coverage_intervals.txt"], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 print "Calculating Coverages....."
-result, err = Popen(["""touch sample_coverages_and_positions.txt"""],stdout=PIPE, stderr=PIPE, shell=True).communicate()
-OUT=open("sample_coverages_and_positions.txt",'w')
-OUT.write("strain")
-for key in sorted(FINAL_INTERVALS.keys()):
-	value=FINAL_INTERVALS[key]
-	value = map(str, value) 
-	info="_".join(value)
-	OUT.write("\t{key}_{info}".format(**locals()))
-OUT.write('\n')
-OUT.close()
-
-#run samtools depth
-cmd="parallel --gnu -j 0 /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/calculate_cov_at_intervals.py {{}} :::: {sample_list}".format(**locals())
-print cmd
-result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
-#result, err = Popen(["""parallel --gnu -j4 /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/calulate_cov_at_intervals.py {} :::: /lscr2/andersenlab/kml436/git_repos2/Transposons2/data/test_list.txt""".format(**locals())],stdout=PIPE, stderr=PIPE, shell=True).communicate()
-print "Scoring....."
-#add scoring from coverage file to FINAL SAMPPLES dictionary
-with open("sample_coverages_and_positions.txt", 'r') as IN:
-	header=next(IN)
+#for each sample, calculate the coverage at each of those intervals
+SAMPLE_COV=open("sample_coverages_and_positions.txt", 'w')
+with open(sample_list,'r') as IN:
 	for line in IN:
-		line=line.rstrip('\n')
-		items=re.split("[\t]", line)
-		sample=items[0]
-		for index,coverage in enumerate(items[1:len(items)],start=1):
-		#for coverage in items[1:len(items)]:
-			key=index-1
-			#find the strains that have already been scored for that TE within a 1, these need to further scoring so analyzing the covrage at that position can be skipped
-			strain_list=[(re.split(":", x))[0] for x in FINAL_SAMPLES[key]] #move this lien up
+		sample=line.rstrip('\n')
+		for key,value in FINAL_INTERVALS.items():
+			av_pos,chromosome,start,end=value[0:4]
+			result, err = Popen(["""samtools depth {bam_dir}/{sample}.bam -r {chromosome}:{start}-{end}|datamash mean 3""".format(**locals())],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+			if result:
+				coverage=round(float(result),2)
+			else:
+				coverage=0
+
+			#find the strains that have already been scored for that TE within a 1, these need to further scoring so analyzing the coerage at that position can be skipped
+			strain_list=[(re.split(":", x))[0] for x in FINAL_SAMPLES[key]]
 
 			# if the sample has not already been scored and the coverage is greater than 8, that sample is marked 0, if less than 8 it's marked with "NA"
- 			if sample not in strain_list:
- 				if float(coverage) >= 8:
+			if sample not in strain_list:
+				if coverage >= 8:
+					FINAL_SAMPLES[key].append("{sample}:0".format(**locals()))
+				elif coverage <8:
+					FINAL_SAMPLES[key].append("{sample}:NA".format(**locals()))
+				else:
+					print("coverage not found...exiting....")
+					sys.exit
 
- 					FINAL_SAMPLES[key].append("{sample}:0".format(**locals()))
- 				elif float(coverage) <8:
- 					FINAL_SAMPLES[key].append("{sample}:NA".format(**locals()))
- 				else:
- 					print("coverage not found...exiting....")
- 					sys.exit()
+			SAMPLE_COV.write("{key}\t{chromosome}\t{av_pos}\t{sample}\t{coverage}\n".format(**locals()))
+SAMPLE_COV.close()
 
-##########################################################
-# GENERATE KINSHIP MATRIX
-##########################################################
 print "Generating Kinship matrix for insertion calls....."
+
 KIN_MATRIX=open("kin_matrix_ins.txt", 'w')
 KIN_MATRIX.write("TE")
 
@@ -271,20 +287,24 @@ KIN_MATRIX.write('\n')
 #output the final matrix
 for key,value in FINAL_SAMPLES.items():
 	value=sorted(value)
+
 	full_info=FINAL_POSITIONS[key]
 	full_info=map(str, full_info) #convert the integers to strings
 	te_info='_'.join(full_info)
 	te_info = te_info.replace("\t", "_")
-	KIN_MATRIX.write(str(te_info)) #or output key ID here? ######
 
-
+	KIN_MATRIX.write(str(te_info)) #or output key ID here?
 	for i in value:
 		score=(re.split(":", i))[1]
 		KIN_MATRIX.write("\t{score}".format(**locals()))
 	KIN_MATRIX.write('\n')
+
 KIN_MATRIX.close()
 
 result, err = Popen(["""head -n1 kin_matrix_ins.txt  > tmp"""],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 result, err = Popen(["""cat kin_matrix_ins.txt  |sed 1d| sort -t"_" -k1,1 -k2,2n >>tmp """],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 result, err = Popen(["""mv tmp kin_matrix_ins.txt  """],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
+
+#error check for smae TE at same position
+#why getting only zeros

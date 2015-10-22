@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # this scripts adds  "dnatransposon, retrotransposon, or unknown" information to the transposon calls
+# NOTE: Specific to the second round of assignment
 # USE: assign_cut_or_copy_paste.py <repbase_fasta> <consensus_fasta> <all_nonredundant file>
 
 import sys
@@ -128,7 +129,7 @@ for line in ALL_NONREDUNDANT:
 	line=line.rstrip('\n')
 	items=re.split("[\t]", line)
 	te_info=items[3]
-	match=re.search("(.*)_(\w+-)?reference", te_info) #old version
+	match=re.search("\w+_\d+_(.*)_(\w+-)?reference", te_info)
 	family=match.group(1)
 	if family in classes.keys():
 		CtCp=classes[family]

@@ -4,7 +4,7 @@
 
 file=${1}
 data_dir=/lscr2/andersenlab/kml436/git_repos2/Transposons2/data
-cd /lscr2/andersenlab/kml436/git_repos2/Transposons2/
+cd /lscr2/andersenlab/kml436/git_repos2/Transposons2/results
 
 touch non_Nas.txt 
 
@@ -17,8 +17,8 @@ do
 	total=$(echo "scale=4; $ref_calls + $abs_calls" | bc -l)
 	
 	overall="$sample $total"
-	echo $overall >> /lscr2/andersenlab/kml436/git_repos2/Transposons2/non_Nas.txt
+	echo $overall >> /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/non_Nas.txt
 done < "${file}"
 
-cd /lscr2/andersenlab/kml436/git_repos2/Transposons2/
+cd /lscr2/andersenlab/kml436/git_repos2/Transposons2/results
 cat non_Nas.txt| sort -k2,2nr > tmp && mv tmp non_Nas.txt

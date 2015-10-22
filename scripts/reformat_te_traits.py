@@ -32,9 +32,6 @@ for i in result:
 	RESULTS_FILE_REFORMATTED.write(i)
 	for TE in sorted(te_dict.keys()):
 		value=te_dict[TE]
-		print i
-		print TE
-		print value
 		RESULTS_FILE_REFORMATTED.write("\t{value}".format(**locals()))
 	RESULTS_FILE_REFORMATTED.write('\n')
 
