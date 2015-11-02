@@ -133,4 +133,8 @@ python ${scripts_dir}/generate_CtCp.py kin_matrix_full.txt
 python ${scripts_dir}/${assign_cut_copy_R2} $repbase_fasta $consensus_renamed all_nonredundant.txt
 rm all_nonredundant.txt
 cat T_Full_Results_Activity.txt | awk '{for (i=2;i<=NF;i++) {if($i !="NA"){print $0;break}}}' > tmp && mv tmp T_Full_Results_Activity.txt 
+#clip CtCp files to remove redundancies
+cat CtCp_all_nonredundant.txt |sort -k1,1 -k2,2n -k3,3 -k4,4 -k6,6|awk '!x[$1,$2,$3,$4,$6]++' > CtCp_clipped.txt #LEFT OFF HERE
+cat CtCp_clipped.txt| sort -k1,1 -k2,2n > tmp && mv tmp CtCp_clipped.txt
+cat CtCp_clipped.txt |awk '{print $1"\tTE\t"$4"\t"$2"\t"$3"\t"$6"\t"$5"\tNA\t"$8}' > CtCp_clipped.gff 
 echo "DONE"
