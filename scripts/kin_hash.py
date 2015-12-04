@@ -18,7 +18,7 @@ from subprocess import Popen, PIPE
 
 
 transpose_matrix="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/transpose_matrix.sh"
-bam_dir="/lscr2/andersenlab/dec211/RUN/v2_snpset/bam"
+bam_dir="/lscr2/andersenlab/dec211/WI/bam"
 sample_list=sys.argv[1]
 
 os.system("mkdir TE_matrix")
@@ -258,7 +258,7 @@ with open("sample_coverages_and_positions.txt", 'r') as IN:
 ##########################################################
 print "Generating Kinship matrix for insertion calls....."
 KIN_MATRIX=open("kin_matrix_ins.txt", 'w')
-KIN_MATRIX.write("TE")
+KIN_MATRIX.write("trait")
 
 #print headers
 value=FINAL_SAMPLES[1]

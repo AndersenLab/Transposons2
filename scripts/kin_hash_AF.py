@@ -92,7 +92,7 @@ with open(sample_list, 'r') as SAMPLE_LIST:
 
 #print kinship matrix
 KIN_MATRIX=open("kin_matrix_AF.txt", 'w')
-KIN_MATRIX.write("TE")
+KIN_MATRIX.write("trait")
 
 #print headers
 value=SAMPLES.values()[1] #pull first value from dictionary

@@ -23,8 +23,8 @@ with open(infile, 'r') as IN:
 		indexed_fam[ID]=family
 		all_families[family]=0
 
-	OUT.write("Strain")
-	OUTC.write("Strain")
+	OUT.write("trait")
+	OUTC.write("trait")
 	#out insertion names
 	for i in sorted(all_families.keys()):
 		nameN="new_TRANS_"+i

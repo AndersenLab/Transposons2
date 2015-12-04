@@ -9,7 +9,7 @@ from subprocess import Popen, PIPE
 
 file_name=sys.argv[1] #insertions_bedt.txt
 file_pos=sys.argv[2] #cleaned_positions_new.gff
-sample_file="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt"
+sample_file="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/master_sample_list.txt"
 result, err = Popen(["""cat {file_pos} | awk '{{print $1"_"$2"_"$3"_"$4"_"$5"_"$6"_"$7"_"$8}}'""".format(**locals())], stdout=PIPE, stderr=PIPE, shell=True).communicate() ###too out$7 to $6
 
 insertion_tes={}

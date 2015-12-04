@@ -23,7 +23,7 @@ transpose_matrix="/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/tran
 #
 #
 #change smaple list to full one later
-sample_list="/lscr2/andersenlab/kml436/git_repos2/Transposons2/data/full_sample_list.txt"
+sample_list="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/master_sample_list.txt"
 ####
 #
 #

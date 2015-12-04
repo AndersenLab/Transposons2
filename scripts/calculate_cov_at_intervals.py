@@ -7,7 +7,7 @@ import sys
 from subprocess import Popen, PIPE
 
 OUT=open("sample_coverages_and_positions.txt", 'aw')
-bam_dir="/lscr2/andersenlab/dec211/RUN/v2_snpset/bam"
+bam_dir="/lscr2/andersenlab/dec211/WI/bam"
 interval_file="/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/TE_matrix/coverage_intervals.txt"
 sample=sys.argv[1]
 

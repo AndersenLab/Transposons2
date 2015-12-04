@@ -23,8 +23,8 @@ with open(infile, 'r') as IN:
 		indexed_fam[ID]=family
 		all_families[family]=0
 
-	OUT.write("Strain")
-	OUTC.write("Strain")
+	OUT.write("trait")
+	OUTC.write("trait")
 	#out reference and absence names
 	for i in sorted(all_families.keys()):
 		nameR="reference_TRANS_"+i

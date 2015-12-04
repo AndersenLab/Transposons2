@@ -3,13 +3,13 @@
 #SBATCH --ntasks=2
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
+#SBATCH --nodelist=node[2,3,4]
 #SBATCH --mem=40000
 
 
 
 
 ##create error log file for everything?
-### CHANGING JU11398 to JT11398
 
 #######################
 # FILE LOCATIONS
@@ -22,7 +22,6 @@ twobit=/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.2bit
 #2bit=/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.2bit
 #2bit=/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.2bit 
 TE_consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
-processors=18
 TTR=/lscr2/andersenlab/kml436/git_repos2/mcclintock/
 HL_gff=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_element_names_alias.bed
 original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_element_names.gff
@@ -38,7 +37,7 @@ minimal_supporting_individuals=1
 #######################
 bam_name=${1}
 echo "bam name is ${bam_name}"
-dir_to_bam=/lscr2/andersenlab/dec211/RUN/v2_snpset/bam
+dir_to_bam=/lscr2/andersenlab/dec211/WI/bam
 bam=${dir_to_bam}/${bam_name}.bam
 echo "full path is ${bam}"
 mkdir ${bam_name}

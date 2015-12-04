@@ -23,7 +23,6 @@ for line in TE_INPUT:
 	items = re.split("[\t]",line)
 	strain_name = items[0]
 	activity_strain_traits = {}
-	print strain_name
 	if first_line:
 		#nomber_traits=len(items)
 		for i in range(1,(len(items))): ##CHECK!!!..include last and avoid first "trait"

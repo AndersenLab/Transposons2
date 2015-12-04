@@ -36,7 +36,6 @@ for line in COVERAGE_FILE:
 	if field =="BAM Statistics - Merged" and statistic=="Depth of Coverage (genome)":
 		stat_value=round(float(stat_value),2)
 		coverage[bam]=stat_value
-		print stat_value
 SAMPLE_TES_AND_COVERAGE.write("sample\tabsence\tinsertion\treference\tcoverage\n")
 #remove the 2 unnecessary QX strains
 #del totals['QX2265']
