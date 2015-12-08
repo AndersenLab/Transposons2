@@ -1,11 +1,15 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=2
+#SBATCH --ntasks=18
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=1
 #SBATCH --mem=40000
-#SBATCH --exclude=node[2,3,4,5]
+
+
+
 
 ##create error log file for everything?
+### CHANGING JU11398 to JT11398
 
 #######################
 # FILE LOCATIONS
@@ -18,6 +22,7 @@ twobit=/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.2bit
 #2bit=/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.2bit
 #2bit=/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.2bit 
 TE_consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
+processors=18
 TTR=/lscr2/andersenlab/kml436/git_repos2/mcclintock/
 HL_gff=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_element_names_alias.bed
 original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_element_names.gff
@@ -33,7 +38,7 @@ minimal_supporting_individuals=1
 #######################
 bam_name=${1}
 echo "bam name is ${bam_name}"
-dir_to_bam=/lscr2/andersenlab/dec211/WI/bam
+dir_to_bam=/lscr2/andersenlab/dec211/RUN/v2_snpset/bam
 bam=${dir_to_bam}/${bam_name}.bam
 echo "full path is ${bam}"
 mkdir ${bam_name}
@@ -67,7 +72,7 @@ mkdir sam_file
 cd sam_file
 samtools view ../../${bam_name}.sorted.bam |sort --temporary-directory=${dir}/raw_results_telocate/sam_file > ${bam_name}.sorted.sam
 cd ..
-echo "Running TELOCATE reference caller..."
+echo "Running TELOCATE absence caller..."
 mkdir TELOCATE
 cd ${TTR}/TE-locate/
 perl TE_locate.pl 2 ${dir}/raw_results_telocate/sam_file/ $HL_gff $reference ${dir}/raw_results_telocate/TELOCATE/TEL $minimal_Distance_to_count $minimal_supporting_reads $minimal_supporting_individuals &> ${dir}/${bam_name}_TELOCATE_log.txt
@@ -85,4 +90,6 @@ rm -rf raw_results_telocate/sam_file
 
 echo "Done"
 
-
+#ADD IN TELOCATE
+#ADD IN TEMP EXCISION
+#mkdir final_results
