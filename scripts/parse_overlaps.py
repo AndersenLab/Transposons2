@@ -100,7 +100,7 @@ with open("{results_dir}/CtCp_clipped.txt".format(**locals())) as IN:
 			phenotype="NA"
 			OUT.write("{chromosome}\t{TE_start}\t{method}\t{family}\tintergenic\t{transcript_name}\tNA\t{phenotype}\n".format(**locals()))
 OUT.close()
-os.system("cat test.txt|sort|uniq >tmp && mv tmp test.txt")
+#os.system("cat test.txt|sort|uniq >tmp && mv tmp test.txt")
 
 # base call on priority order exon > five prime UTR > three prime UTR > promoter > intron > gene > intergenic
 exon={}
@@ -156,4 +156,4 @@ for ID in IDs.keys():
 		print "ERROR, ID not classified, exiting..."
 		sys.exit()
 OUT.close()
-os.system("cat test2.txt| sort -k1,1 -k2,2n -k3,3 -k4,4 > tmp && mv tmp test2.txt")
+#os.system("cat test2.txt| sort -k1,1 -k2,2n -k3,3 -k4,4 > tmp && mv tmp test2.txt")

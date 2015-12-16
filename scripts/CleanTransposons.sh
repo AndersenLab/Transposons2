@@ -34,7 +34,7 @@ samples=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/master_sample_li
 results_file=/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/FINAL_RESULTS.txt
 consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta 
 repbase_fasta=/lscr2/andersenlab/kml436/repbase.fasta
-bam_stats=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/eav.txt
+bam_stats=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/eav.global.tsv
 
 # Rename results files so that they will not be overwritten in a later step
 bash ${scripts_dir}/${rename_final_results} $samples
@@ -140,5 +140,17 @@ cat CtCp_clipped.txt| sort -k1,1 -k2,2n > tmp && mv tmp CtCp_clipped.txt
 cat CtCp_clipped.txt |awk '{print $1"\tTE\t"$4"\t"$2"\t"$3"\t"$6"\t"$5"\tNA\t"$8}' > CtCp_clipped.gff 
 #determine genomic features that TEs are located in 
 bash ${scripts_dir}/${gene_interrupt}
+#put input files for figure generation in new directory
+mkdir data_for_figures
+cd data_for_figures
+
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/coverage_and_te_counts.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/gene_interrupt/essentiality_nonredundant_GO.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/kin_matrix_full.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/contradictory_calls.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/T_kin_C_matrix_full.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/CtCp_all_nonredundant.txt .
+
+
 
 echo "DONE"

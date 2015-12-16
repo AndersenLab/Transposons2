@@ -22,7 +22,7 @@ mkdir gene_interrupt
 cd gene_interrupt
 
 bedtools window -a ${file_dir}/WB_gene_positions.gff -b ${results_dir}/final_results/CtCp_clipped.gff -w 0 |awk -F'\t' '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$7"\t"$9"\t"$13"\t"$12"\t"$15"\t"$18}' > gene_overlap.txt ##the output files
-bedtools window -a ${file_dir}/WB_gene_positions.gff -b ${results_dir}/final_results/CtCp_clipped.gff -w 0 |awk -F'\t' '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$7"\t"$9"\t"$13"\t"$12"\t"$15"\t"$18}' > gene_overlap.txt ##the output files
+bedtools window -a ${file_dir}/WB_intron_positions.gff -b ${results_dir}/final_results/CtCp_clipped.gff -w 0 |awk -F'\t' '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$7"\t"$9"\t"$13"\t"$12"\t"$15"\t"$18}' > intron_overlap.txt ##the output files
 bedtools window -a ${file_dir}/WB_exon_positions.gff -b ${results_dir}/final_results/CtCp_clipped.gff -w 0 |awk -F'\t' '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$7"\t"$9"\t"$13"\t"$12"\t"$15"\t"$18}'  > exon_overlap.txt
 bedtools window -a ${file_dir}/WB_threeUTR_positions.gff -b ${results_dir}/final_results/CtCp_clipped.gff -w 0 |awk -F'\t' '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$7"\t"$9"\t"$13"\t"$12"\t"$15"\t"$18}'  > threeUTR_overlap.txt
 bedtools window -a ${file_dir}/WB_fiveUTR_positions.gff -b ${results_dir}/final_results/CtCp_clipped.gff -w 0 |awk -F'\t' '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$7"\t"$9"\t"$13"\t"$12"\t"$15"\t"$18}' > fiveUTR_overlap.txt
@@ -37,6 +37,8 @@ python ${scripts_dir}/add_GO_terms.py ${file_dir}/WB_GO.txt essentiality_nonredu
 
 cat essentiality_nonredundant_GO.txt|sort -k1,1 -k2,2n -k3,3 -k4,4 -k6,6 > tmp && mv tmp essentiality_nonredundant_GO.txt
 echo  -e  "Chromosome\tTE_start\tMethod\tTE\tRegion\tTranscript_Name\tBiotype\tPhenotype\tGO_Annotation" | cat  - essentiality_nonredundant_GO.txt > tmp && mv tmp essentiality_nonredundant_GO.txt
+head -n1 essentiality_nonredundant_GO.txt > tmp
+cat essentiality_nonredundant_GO.txt | awk '$3=="new" {print $0}' >> tmp && mv tmp  essentiality_nonredundant_GO_only_new.txt
 
 
 

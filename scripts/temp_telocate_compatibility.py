@@ -55,8 +55,9 @@ for line in SAMPLE_LIST:
 		absence_count+=1
 
 		if position in reference_calls.keys():
-			value= reference_calls[position]
+			value = reference_calls[position]
 			contradictory_count+=1
+
 			CONTRADICTORY_CALLS.write("{strain}\t{value}\t{transposon}\t{temp_support}\t{orientation}\n".format(**locals()))
 	CONTRADICTORY_CALLS_SUMMARY.write("{strain}\t{contradictory_count}\t{reference_count}\t{absence_count}\n".format(**locals()))
 

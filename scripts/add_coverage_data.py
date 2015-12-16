@@ -26,16 +26,26 @@ for line in RESULTS_FILE:
 		sample=items[0]
 		totals[sample].extend((items[total_absent],items[total_new],items[total_reference])) # use extend to append multiple items to a list
 	first_line=False
+
+
+#AB1	length=100286401;chrom=genome;ATTR=depth_of_coverage	116.647962958	2015-11-21 22:52:57.502182
 for line in COVERAGE_FILE:
 	line=line.rstrip('\n')
 	items=re.split("[\t]",line)
 	bam=items[0]
-	field=items[2]
-	statistic=items[3]
-	stat_value=items[4]
-	if field =="BAM Statistics - Merged" and statistic=="Depth of Coverage (genome)":
-		stat_value=round(float(stat_value),2)
-		coverage[bam]=stat_value
+	attributes=items[1]
+	stat_value=items[2]
+
+
+	
+	if re.search("chrom=genome", attributes):
+		if re.search("ATTR=depth_of_coverage",attributes):
+			attr_fields=re.split(";", attributes)
+			stat_value=round(float(stat_value),2)
+			coverage[bam]=stat_value
+
+
+	
 SAMPLE_TES_AND_COVERAGE.write("sample\tabsence\tinsertion\treference\tcoverage\n")
 #remove the 2 unnecessary QX strains
 #del totals['QX2265']
