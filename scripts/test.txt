@@ -1,6096 +1,4808 @@
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-AB1	III	1293379	1294625	MARINER2_reference_telocate_rp_337	65	-	MARINER2_reference_temp_rp_20	67	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4851_CGC	II	4168678	4169607	Tc1_reference_telocate_rp_899	41	+	Tc1_reference_temp_rp_10	44	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4851_CGC	V	1836070	1837681	Tc1_reference_telocate_rp_2782	85	+	Tc1_reference_temp_rp_48	86	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-TIE!
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4853	X	8766336	8767259	Tc1A_reference_telocate_rp_1140	37	+	Tc1A_reference_temp_rp_75	40	+
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-CB4854	II	2553770	2556450	WBTransposon00000428_reference_telocate_rp_111	15	+	WBTransposon00000428_reference_temp_rp_9	17	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4854	V	17805798	17807409	Tc1_reference_telocate_rp_532	4	+	Tc1_reference_temp_rp_44	5	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-CB4857	II	4168678	4169607	Tc1_reference_telocate_rp_126	3	+	Tc1_reference_temp_rp_19	7	+
-temp wins
-telocate wins
-telocate wins
-TIE!
-temp wins
-CB4857	V	13135006	13135928	Tc1A_reference_telocate_rp_483	23	+	Tc1A_reference_temp_rp_40	26	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4858_UK	V	1836070	1837681	Tc1_reference_telocate_rp_474	35	+	Tc1_reference_temp_rp_15	37	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4858_UK	V	13135006	13135928	Tc1A_reference_telocate_rp_572	16	+	Tc1A_reference_temp_rp_20	18	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4932	IV	12315119	12316366	MARINER2_reference_telocate_rp_546	34	+	MARINER2_reference_temp_rp_49	35	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CB4932	V	2562874	2564121	MARINER2_reference_telocate_rp_754	24	-	MARINER2_reference_temp_rp_62	25	+
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-CX11254	II	12520749	12522360	Tc1_reference_telocate_rp_149	4	+	Tc1_reference_temp_rp_30	6	+
-temp wins
-telocate wins
-temp wins
-CX11254	IV	1884724	1885645	Tc1A_reference_telocate_rp_253	10	+	Tc1A_reference_temp_rp_41	12	+
-telocate wins
-temp wins
-telocate wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CX11254	X	8901004	8901927	Tc1A_reference_telocate_rp_617	10	+	Tc1A_reference_temp_rp_65	12	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-CX11262	V	13135006	13135928	Tc1A_reference_telocate_rp_434	3	+	Tc1A_reference_temp_rp_41	4	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CX11264	I	598760	601097	Tc3_reference_telocate_rp_11	11	-	Tc3_reference_temp_rp_1	15	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-CX11264	I	13595054	13597430	WBTransposon00000746_reference_telocate_rp_173	65	+	WBTransposon00000746_reference_temp_rp_13	68	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-CX11264	X	11311199	11312810	Tc1_reference_telocate_rp_1814	55	-	Tc1_reference_temp_rp_104	56	+
-temp wins
-CX11264	X	17250468	17252638	WBTransposon00000074_reference_telocate_rp_1926	35	-	WBTransposon00000074_reference_temp_rp_109	39	+
-telocate wins
-telocate wins
-temp wins
-CX11271	I	1980116	1980851	WBTransposon00000600_reference_telocate_rp_23	7	-	WBTransposon00000600_reference_temp_rp_4	11	+
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-CX11271	IV	17169416	17170703	MARINCE1_reference_telocate_rp_641	24	+	MARINCE1_reference_temp_rp_58	25	+
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CX11276	II	12520749	12522360	Tc1_reference_telocate_rp_138	5	+	Tc1_reference_temp_rp_28	7	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-CX11285	IV	12315119	12316366	MARINER2_reference_telocate_rp_841	51	+	MARINER2_reference_temp_rp_65	54	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-CX11285	X	12371788	12372666	Tc1A_reference_telocate_rp_1866	29	-	Tc1A_reference_temp_rp_108	30	+
-temp wins
-telocate wins
-temp wins
-CX11285	X	17644646	17648937	CER4-I_CE_reference_telocate_rp_2033	66	-	CER4-I_CE_reference_temp_rp_116	70	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-CX11292	V	3251323	3252934	Tc1_reference_telocate_rp_794	34	-	Tc1_reference_temp_rp_56	35	+
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-CX11314	II	4168678	4169607	Tc1_reference_telocate_rp_138	5	+	Tc1_reference_temp_rp_20	7	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-CX11315	V	13135006	13135928	Tc1A_reference_telocate_rp_516	13	+	Tc1A_reference_temp_rp_41	15	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-ED3011	V	13135006	13135928	Tc1A_reference_telocate_rp_433	14	+	Tc1A_reference_temp_rp_48	16	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-TIE!
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-ED3017	I	13740031	13742366	Tc3_reference_telocate_rp_99	7	-	Tc3_reference_temp_rp_9	10	+
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-ED3040	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_188	22	+	WBTransposon00000215_reference_temp_rp_11	25	+
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-ED3040	V	13135006	13135928	Tc1A_reference_telocate_rp_1044	63	+	Tc1A_reference_temp_rp_63	66	+
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-ED3048	I	12481326	12482902	Tc1_reference_telocate_rp_71	13	-	Tc1_reference_temp_rp_5	16	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-ED3052	II	4168678	4169607	Tc1_reference_telocate_rp_137	7	+	Tc1_reference_temp_rp_20	11	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-EG4349	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_130	10	+	WBTransposon00000215_reference_temp_rp_4	12	+
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-EG4724	I	1980116	1980851	WBTransposon00000600_reference_telocate_rp_24	23	-	WBTransposon00000600_reference_temp_rp_3	26	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-EG4725	I	931690	932936	MARINER2_reference_telocate_rp_2	3	+	MARINER2_reference_temp_rp_2	5	+
-telocate wins
-temp wins
-EG4725	I	12481326	12482902	Tc1_reference_telocate_rp_65	6	-	Tc1_reference_temp_rp_8	8	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-GXW1	V	3251323	3252934	Tc1_reference_telocate_rp_546	21	-	Tc1_reference_temp_rp_59	23	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-GXW1	X	17644646	17648937	CER4-I_CE_reference_telocate_rp_924	25	-	CER4-I_CE_reference_temp_rp_87	27	+
-temp wins
-JT11398	II	784381	785993	Tc1_reference_telocate_rp_73	5	+	Tc1_reference_temp_rp_9	7	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-TIE!
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU1172	V	17095444	17097781	Tc3_reference_telocate_rp_460	5	-	Tc3_reference_temp_rp_45	7	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1242	II	15171971	15173218	MARINER2_reference_telocate_rp_169	6	+	MARINER2_reference_temp_rp_19	7	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1242	IV	1884724	1885645	Tc1A_reference_telocate_rp_260	7	+	Tc1A_reference_temp_rp_29	8	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU1242	X	9470448	9471369	Tc1A_reference_telocate_rp_656	9	+	Tc1A_reference_temp_rp_54	10	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1246	IV	507688	513307	MIRAGE1_reference_telocate_rp_295	3	+	MIRAGE1_reference_temp_rp_16	7	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1395	X	53227	54473	MARINER2_reference_telocate_rp_454	4	+	MARINER2_reference_temp_rp_27	6	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-JU1400	IV	15484098	15485709	Tc1_reference_telocate_rp_538	20	-	Tc1_reference_temp_rp_51	23	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1400	V	16312026	16313637	Tc1_reference_telocate_rp_728	18	+	Tc1_reference_temp_rp_68	22	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1400	X	12371788	12372666	Tc1A_reference_telocate_rp_926	19	-	Tc1A_reference_temp_rp_84	22	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU1440	II	5754581	5755746	MAR_CE_reference_telocate_rp_99	6	+	MAR_CE_reference_temp_rp_7	8	+
-temp wins
-JU1440	X	17644646	17648937	CER4-I_CE_reference_telocate_rp_505	7	-	CER4-I_CE_reference_temp_rp_41	11	+
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1568	II	894210	895821	Tc1_reference_telocate_rp_92	11	-	Tc1_reference_temp_rp_3	12	+
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU1580	V	17902631	17903879	MARINER2_reference_telocate_rp_1447	12	+	MARINER2_reference_temp_rp_110	15	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU1580	V	18764519	18766703	Tc3_reference_telocate_rp_1485	5	+	Tc3_reference_temp_rp_114	9	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-JU1586	X	11311199	11312810	Tc1_reference_telocate_rp_1265	62	-	Tc1_reference_temp_rp_79	66	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-TIE!
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-JU2007	I	598760	601097	Tc3_reference_telocate_rp_7	4	-	Tc3_reference_temp_rp_2	5	+
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU258	X	17644646	17648937	CER4-I_CE_reference_telocate_rp_1289	43	-	CER4-I_CE_reference_temp_rp_103	45	+
-temp wins
-JU310	I	186272	188077	Tc4v_reference_telocate_rp_4	3	+	Tc4v_reference_temp_rp_1	6	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU310	V	3251323	3252934	Tc1_reference_telocate_rp_728	31	-	Tc1_reference_temp_rp_62	32	+
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-TIE!
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU312	IV	701904	707528	MIRAGE1_reference_telocate_rp_100	5	+	MIRAGE1_reference_temp_rp_24	8	+
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-JU312	X	7079885	7080807	Tc1A_reference_telocate_rp_267	4	+	Tc1A_reference_temp_rp_55	7	+
-temp wins
-telocate wins
-temp wins
-JU323	II	784381	785993	Tc1_reference_telocate_rp_97	11	+	Tc1_reference_temp_rp_6	12	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU323	V	17095444	17097781	Tc3_reference_telocate_rp_534	11	-	Tc3_reference_temp_rp_40	12	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU323	X	7079885	7080807	Tc1A_reference_telocate_rp_661	6	+	Tc1A_reference_temp_rp_51	10	+
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU346	II	7078954	7081291	Tc3_reference_telocate_rp_559	9	+	Tc3_reference_temp_rp_31	13	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-JU360	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_103	13	+	WBTransposon00000215_reference_temp_rp_5	14	+
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU360	X	13450646	13451568	Tc1A_reference_telocate_rp_1244	40	+	Tc1A_reference_temp_rp_79	44	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU367	X	8766336	8767259	Tc1A_reference_telocate_rp_718	11	+	Tc1A_reference_temp_rp_34	12	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU367	X	12371788	12372666	Tc1A_reference_telocate_rp_748	10	-	Tc1A_reference_temp_rp_38	13	+
-telocate wins
-temp wins
-telocate wins
-TIE!
-telocate wins
-temp wins
-JU393	II	4168678	4169607	Tc1_reference_telocate_rp_126	4	+	Tc1_reference_temp_rp_10	6	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU394	IV	13849891	13850911	MARINER2_reference_telocate_rp_669	23	-	MARINER2_reference_temp_rp_22	27	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU397	II	6571222	6572833	Tc1_reference_telocate_rp_128	3	-	Tc1_reference_temp_rp_13	4	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU397	V	10187656	10189266	Tc1_reference_telocate_rp_443	4	-	Tc1_reference_temp_rp_55	5	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU440	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_86	9	+	WBTransposon00000215_reference_temp_rp_2	13	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU440	IV	7145351	7147226	WBTransposon00000661_reference_telocate_rp_387	25	+	WBTransposon00000661_reference_temp_rp_12	28	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU642	IV	14012382	14013628	MARINER2_reference_telocate_rp_581	6	-	MARINER2_reference_temp_rp_56	9	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU751	V	3590245	3591857	Tc1_reference_telocate_rp_391	7	+	Tc1_reference_temp_rp_53	11	+
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU751	X	12371788	12372666	Tc1A_reference_telocate_rp_606	7	-	Tc1A_reference_temp_rp_79	9	+
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-JU774	V	13135006	13135928	Tc1A_reference_telocate_rp_677	25	+	Tc1A_reference_temp_rp_49	28	+
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU775	I	186272	188077	Tc4v_reference_telocate_rp_5	5	+	Tc4v_reference_temp_rp_1	6	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU775	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_77	7	+	WBTransposon00000215_reference_temp_rp_5	11	+
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU775	III	1293379	1294625	MARINER2_reference_telocate_rp_259	35	-	MARINER2_reference_temp_rp_33	38	+
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU775	X	13450646	13451568	Tc1A_reference_telocate_rp_1036	23	+	Tc1A_reference_temp_rp_122	25	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-JU778	II	4168678	4169607	Tc1_reference_telocate_rp_167	7	+	Tc1_reference_temp_rp_15	9	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU782	X	13450646	13451568	Tc1A_reference_telocate_rp_1572	35	+	Tc1A_reference_temp_rp_105	36	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-JU830	II	4168678	4169607	Tc1_reference_telocate_rp_146	7	+	Tc1_reference_temp_rp_14	8	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-JU847	V	3590245	3591857	Tc1_reference_telocate_rp_391	6	+	Tc1_reference_temp_rp_42	9	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-KR314	II	4168678	4169607	Tc1_reference_telocate_rp_151	5	+	Tc1_reference_temp_rp_22	7	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-LKC34	II	7078954	7081291	Tc3_reference_telocate_rp_183	7	+	Tc3_reference_temp_rp_21	9	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-MY10	V	18442343	18443954	Tc1_reference_telocate_rp_673	8	-	Tc1_reference_temp_rp_60	9	+
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-MY10	X	17644646	17648937	CER4-I_CE_reference_telocate_rp_922	24	-	CER4-I_CE_reference_temp_rp_75	26	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-MY1	II	7078954	7081291	Tc3_reference_telocate_rp_411	14	+	Tc3_reference_temp_rp_25	17	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-MY23	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_94	12	+	WBTransposon00000215_reference_temp_rp_5	16	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-MY23	V	20078546	20079557	MARINER3_reference_telocate_rp_1383	5	-	MARINER3_reference_temp_rp_87	6	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-NIC166	V	16312026	16313637	Tc1_reference_telocate_rp_403	8	+	Tc1_reference_temp_rp_45	11	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-NIC195	II	4168678	4169607	Tc1_reference_telocate_rp_243	8	+	Tc1_reference_temp_rp_28	10	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-NIC195	IV	15484098	15485709	Tc1_reference_telocate_rp_550	10	-	Tc1_reference_temp_rp_63	12	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-NIC199	II	6571222	6572833	Tc1_reference_telocate_rp_139	8	-	Tc1_reference_temp_rp_22	12	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-NIC1	V	1954611	1955177	MARINER2_reference_telocate_rp_455	22	-	MARINER2_reference_temp_rp_32	24	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-TIE!
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-NIC207	V	3590245	3591857	Tc1_reference_telocate_rp_410	5	+	Tc1_reference_temp_rp_30	7	+
-telocate wins
-telocate wins
-temp wins
-NIC231	I	14021875	14023486	Tc1_reference_telocate_rp_87	12	+	Tc1_reference_temp_rp_5	16	+
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-NIC231	V	17805798	17807409	Tc1_reference_telocate_rp_611	12	+	Tc1_reference_temp_rp_52	13	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-NIC236	V	16312026	16313637	Tc1_reference_telocate_rp_557	8	+	Tc1_reference_temp_rp_58	10	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-NIC3	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_101	5	+	WBTransposon00000215_reference_temp_rp_8	9	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-NIC3	IV	15484098	15485709	Tc1_reference_telocate_rp_642	21	-	Tc1_reference_temp_rp_65	24	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-PB306	V	20078546	20079557	MARINER3_reference_telocate_rp_1629	5	-	MARINER3_reference_temp_rp_95	7	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-QG536	V	18442343	18443954	Tc1_reference_telocate_rp_1310	52	-	Tc1_reference_temp_rp_65	56	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-QG556	V	4603248	4604504	MARINER3_reference_telocate_rp_582	16	+	MARINER3_reference_temp_rp_69	17	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-QG556	X	12371788	12372666	Tc1A_reference_telocate_rp_870	14	-	Tc1A_reference_temp_rp_94	18	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-QG557	X	9470448	9471369	Tc1A_reference_telocate_rp_695	14	+	Tc1A_reference_temp_rp_68	18	+
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-QX1233	V	17095444	17097781	Tc3_reference_telocate_rp_666	6	-	Tc3_reference_temp_rp_63	8	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-QX1791	V	1954611	1955177	MARINER2_reference_telocate_rp_666	28	-	MARINER2_reference_temp_rp_69	32	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-QX1792	IV	14186414	14189810	WBTransposon00000617_reference_telocate_rp_600	28	+	WBTransposon00000617_reference_temp_rp_63	31	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-QX1792	V	12020055	12020977	Tc1A_reference_telocate_rp_811	25	+	Tc1A_reference_temp_rp_80	29	+
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-QX1793	I	3491066	3492710	WBTransposon00000074_reference_telocate_rp_29	18	-	WBTransposon00000074_reference_temp_rp_6	21	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-QX1793	V	18151055	18152301	MARINER2_reference_telocate_rp_899	3	-	MARINER2_reference_temp_rp_84	5	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-QX1794	V	18442343	18443954	Tc1_reference_telocate_rp_662	3	-	Tc1_reference_temp_rp_88	5	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-TIE!
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-WN2001	I	11305494	11305759	WBTransposon00000215_reference_telocate_rp_215	21	+	WBTransposon00000215_reference_temp_rp_8	24	+
-telocate wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-WN2002	I	4814234	4816112	RTE1_reference_telocate_rp_17	11	+	RTE1_reference_temp_rp_1	14	+
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-telocate wins
-temp wins
-WN2002	V	13135006	13135928	Tc1A_reference_telocate_rp_422	14	+	Tc1A_reference_temp_rp_46	15	+
-telocate wins
-temp wins
-telocate wins
-23
+ONE_new_TRANS_total_C
+reference_TRANS_total_C
+absent_TRANS_total_C
+reference_TRANS_total_dnatransposon_C
+new_TRANS_total_dnatransposon_C
+reference_TRANS_total_unknown_C
+absent_TRANS_total_unknown_C
+new_TRANS_total_unknown_C
+absent_TRANS_total_retrotransposon_C
+reference_TRANS_total_retrotransposon_C
+new_TRANS_total_retrotransposon_C
+absent_TRANS_total_dnatransposon_C
+282.075926021
+458.218604605
+77.1417085372
+13.8622274755
+new_TRANS_total_dnatransposon_C
+BRC20067
+64.6842105263
+50.8219830508
+28
+36.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CB4851
+64.6842105263
+50.8219830508
+519
+454.315789474
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CB4854
+64.6842105263
+50.8219830508
+31
+33.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CB4856
+64.6842105263
+50.8219830508
+163
+98.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CB4858
+64.6842105263
+50.8219830508
+185
+120.315789474
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11254
+64.6842105263
+50.8219830508
+46
+18.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11262
+64.6842105263
+50.8219830508
+40
+24.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11264
+64.6842105263
+50.8219830508
+100
+35.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11276
+64.6842105263
+50.8219830508
+30
+34.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11285
+64.6842105263
+50.8219830508
+103
+38.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11307
+64.6842105263
+50.8219830508
+48
+16.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11314
+64.6842105263
+50.8219830508
+42
+22.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+CX11315
+64.6842105263
+50.8219830508
+46
+18.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+DL200
+64.6842105263
+50.8219830508
+33
+31.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+DL238
+64.6842105263
+50.8219830508
+122
+57.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+ECA36
+64.6842105263
+50.8219830508
+104
+39.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+ED3011
+64.6842105263
+50.8219830508
+35
+29.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+ED3012
+64.6842105263
+50.8219830508
+44
+20.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+ED3040
+64.6842105263
+50.8219830508
+82
+17.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+ED3046
+64.6842105263
+50.8219830508
+81
+16.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+ED3048
+64.6842105263
+50.8219830508
+36
+28.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+ED3052
+64.6842105263
+50.8219830508
+41
+23.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+EG4347
+64.6842105263
+50.8219830508
+35
+29.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+EG4349
+64.6842105263
+50.8219830508
+96
+31.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+EG4724
+64.6842105263
+50.8219830508
+90
+25.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JT11398
+64.6842105263
+50.8219830508
+42
+22.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1172
+64.6842105263
+50.8219830508
+31
+33.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1200
+64.6842105263
+50.8219830508
+34
+30.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1212
+64.6842105263
+50.8219830508
+25
+39.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1213
+64.6842105263
+50.8219830508
+45
+19.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1242
+64.6842105263
+50.8219830508
+48
+16.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1395
+64.6842105263
+50.8219830508
+18
+46.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1440
+64.6842105263
+50.8219830508
+34
+30.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1491
+64.6842105263
+50.8219830508
+79
+14.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1568
+64.6842105263
+50.8219830508
+16
+48.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1580
+64.6842105263
+50.8219830508
+97
+32.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1581
+64.6842105263
+50.8219830508
+98
+33.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU1586
+64.6842105263
+50.8219830508
+45
+19.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU2001
+64.6842105263
+50.8219830508
+79
+14.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU2007
+64.6842105263
+50.8219830508
+79
+14.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU2316
+64.6842105263
+50.8219830508
+32
+32.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU2466
+64.6842105263
+50.8219830508
+21
+43.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU2513
+64.6842105263
+50.8219830508
+40
+24.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU2519
+64.6842105263
+50.8219830508
+42
+22.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU2522
+64.6842105263
+50.8219830508
+49
+15.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU258
+64.6842105263
+50.8219830508
+100
+35.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU311
+64.6842105263
+50.8219830508
+83
+18.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU323
+64.6842105263
+50.8219830508
+35
+29.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU367
+64.6842105263
+50.8219830508
+35
+29.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU393
+64.6842105263
+50.8219830508
+24
+40.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU397
+64.6842105263
+50.8219830508
+34
+30.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU406
+64.6842105263
+50.8219830508
+18
+46.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU440
+64.6842105263
+50.8219830508
+46
+18.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU561
+64.6842105263
+50.8219830508
+38
+26.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU642
+64.6842105263
+50.8219830508
+81
+16.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU751
+64.6842105263
+50.8219830508
+43
+21.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU775
+64.6842105263
+50.8219830508
+95
+30.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU782
+64.6842105263
+50.8219830508
+130
+65.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU792
+64.6842105263
+50.8219830508
+21
+43.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU830
+64.6842105263
+50.8219830508
+41
+23.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+JU847
+64.6842105263
+50.8219830508
+32
+32.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+LSJ1
+64.6842105263
+50.8219830508
+11
+53.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+MY16
+64.6842105263
+50.8219830508
+153
+88.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+MY18
+64.6842105263
+50.8219830508
+86
+21.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+MY1
+64.6842105263
+50.8219830508
+80
+15.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+MY23
+64.6842105263
+50.8219830508
+129
+64.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+N2
+64.6842105263
+50.8219830508
+5
+59.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC166
+64.6842105263
+50.8219830508
+35
+29.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC195
+64.6842105263
+50.8219830508
+105
+40.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC199
+64.6842105263
+50.8219830508
+79
+14.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC1
+64.6842105263
+50.8219830508
+39
+25.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC207
+64.6842105263
+50.8219830508
+32
+32.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC231
+64.6842105263
+50.8219830508
+38
+26.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC242
+64.6842105263
+50.8219830508
+30
+34.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC252
+64.6842105263
+50.8219830508
+35
+29.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC255
+64.6842105263
+50.8219830508
+31
+33.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC259
+64.6842105263
+50.8219830508
+39
+25.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC266
+64.6842105263
+50.8219830508
+44
+20.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC267
+64.6842105263
+50.8219830508
+38
+26.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC271
+64.6842105263
+50.8219830508
+47
+17.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC274
+64.6842105263
+50.8219830508
+19
+45.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC275
+64.6842105263
+50.8219830508
+34
+30.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC276
+64.6842105263
+50.8219830508
+20
+44.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC277
+64.6842105263
+50.8219830508
+41
+23.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC2
+64.6842105263
+50.8219830508
+26
+38.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+NIC3
+64.6842105263
+50.8219830508
+87
+22.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+PB303
+64.6842105263
+50.8219830508
+44
+20.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+PB306
+64.6842105263
+50.8219830508
+104
+39.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+PS2025
+64.6842105263
+50.8219830508
+100
+35.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QG2075
+64.6842105263
+50.8219830508
+41
+23.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QG557
+64.6842105263
+50.8219830508
+48
+16.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QW947
+64.6842105263
+50.8219830508
+47
+17.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QX1211
+64.6842105263
+50.8219830508
+291
+226.315789474
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QX1212
+64.6842105263
+50.8219830508
+96
+31.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QX1791
+64.6842105263
+50.8219830508
+105
+40.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QX1792
+64.6842105263
+50.8219830508
+100
+35.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QX1793
+64.6842105263
+50.8219830508
+116
+51.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+QX1794
+64.6842105263
+50.8219830508
+90
+25.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+RC301
+64.6842105263
+50.8219830508
+79
+14.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+WN2001
+64.6842105263
+50.8219830508
+96
+31.3157894737
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_dnatransposon_C
+WN2002
+64.6842105263
+50.8219830508
+33
+31.6842105263
+13.8622274755
+OUTLIERRRRRRRRRRRRRRRRRRRR
+0.453069262388
+absent_TRANS_total_unknown_C
+AB1
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+BRC20067
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CB4852
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CB4853
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CB4854
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CB4855
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CB4857
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CB4858
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CB4932
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CX11264
+1.61184210526
+1.15877284288
+4
+2.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CX11271
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CX11276
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+CX11307
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+DL200
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+DL226
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ECA36
+1.61184210526
+1.15877284288
+6
+4.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ED3011
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ED3017
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ED3040
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ED3048
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ED3052
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ED3073
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+ED3077
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+EG4347
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+EG4349
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JT11398
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1172
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1200
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1246
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1395
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1400
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1440
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1530
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1568
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1580
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1581
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1586
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU1652
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU2001
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU2007
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU2466
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU2513
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU2522
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU310
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU323
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU346
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU360
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU367
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU397
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU406
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU440
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU751
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU774
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU775
+1.61184210526
+1.15877284288
+4
+2.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU778
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU782
+1.61184210526
+1.15877284288
+4
+2.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU792
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU830
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+JU847
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+LKC34
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+LSJ1
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+MY10
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+MY16
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+MY18
+1.61184210526
+1.15877284288
+4
+2.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+MY1
+1.61184210526
+1.15877284288
+4
+2.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+MY23
+1.61184210526
+1.15877284288
+4
+2.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+N2
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC166
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC195
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC1
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC207
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC236
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC242
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC251
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC255
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC256
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC259
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC261
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC266
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC267
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC269
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC271
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC272
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC276
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC277
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC2
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+NIC3
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+PS2025
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+PX179
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+QG2075
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+QG536
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+QG556
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+QW947
+1.61184210526
+1.15877284288
+0
+1.61184210526
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+QX1211
+1.61184210526
+1.15877284288
+6
+4.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+QX1233
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+QX1791
+1.61184210526
+1.15877284288
+3
+1.38815789474
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+RC301
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_unknown_C
+WN2001
+1.61184210526
+1.15877284288
+1
+0.611842105263
+0.453069262388
+OUTLIERRRRRRRRRRRRRRRRRRRR
+19.8278665523
+ONE_new_TRANS_total_C
+BRC20067
+73.25
+53.4221334477
+31
+42.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CB4851
+73.25
+53.4221334477
+524
+450.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CB4854
+73.25
+53.4221334477
+34
+39.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CB4856
+73.25
+53.4221334477
+181
+107.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CB4858
+73.25
+53.4221334477
+186
+112.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CX11262
+73.25
+53.4221334477
+48
+25.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CX11264
+73.25
+53.4221334477
+111
+37.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CX11276
+73.25
+53.4221334477
+36
+37.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CX11285
+73.25
+53.4221334477
+116
+42.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CX11314
+73.25
+53.4221334477
+48
+25.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+CX11315
+73.25
+53.4221334477
+52
+21.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+DL200
+73.25
+53.4221334477
+37
+36.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+DL238
+73.25
+53.4221334477
+143
+69.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+ECA36
+73.25
+53.4221334477
+117
+43.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+ED3011
+73.25
+53.4221334477
+39
+34.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+ED3012
+73.25
+53.4221334477
+47
+26.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+ED3048
+73.25
+53.4221334477
+42
+31.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+ED3052
+73.25
+53.4221334477
+45
+28.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+EG4347
+73.25
+53.4221334477
+42
+31.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+EG4349
+73.25
+53.4221334477
+109
+35.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+EG4724
+73.25
+53.4221334477
+100
+26.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JT11398
+73.25
+53.4221334477
+49
+24.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1172
+73.25
+53.4221334477
+38
+35.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1200
+73.25
+53.4221334477
+37
+36.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1212
+73.25
+53.4221334477
+28
+45.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1213
+73.25
+53.4221334477
+52
+21.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1395
+73.25
+53.4221334477
+22
+51.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1440
+73.25
+53.4221334477
+42
+31.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1491
+73.25
+53.4221334477
+95
+21.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1568
+73.25
+53.4221334477
+18
+55.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1580
+73.25
+53.4221334477
+109
+35.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1581
+73.25
+53.4221334477
+111
+37.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU1586
+73.25
+53.4221334477
+50
+23.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU2316
+73.25
+53.4221334477
+40
+33.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU2466
+73.25
+53.4221334477
+22
+51.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU2513
+73.25
+53.4221334477
+48
+25.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU258
+73.25
+53.4221334477
+111
+37.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU323
+73.25
+53.4221334477
+38
+35.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU367
+73.25
+53.4221334477
+37
+36.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU393
+73.25
+53.4221334477
+32
+41.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU397
+73.25
+53.4221334477
+40
+33.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU406
+73.25
+53.4221334477
+21
+52.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU440
+73.25
+53.4221334477
+52
+21.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU561
+73.25
+53.4221334477
+39
+34.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU751
+73.25
+53.4221334477
+50
+23.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU775
+73.25
+53.4221334477
+110
+36.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU782
+73.25
+53.4221334477
+149
+75.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU792
+73.25
+53.4221334477
+30
+43.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU830
+73.25
+53.4221334477
+46
+27.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+JU847
+73.25
+53.4221334477
+36
+37.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+LSJ1
+73.25
+53.4221334477
+11
+62.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+MY16
+73.25
+53.4221334477
+178
+104.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+MY18
+73.25
+53.4221334477
+101
+27.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+MY23
+73.25
+53.4221334477
+141
+67.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+N2
+73.25
+53.4221334477
+5
+68.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC166
+73.25
+53.4221334477
+38
+35.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC195
+73.25
+53.4221334477
+118
+44.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC1
+73.25
+53.4221334477
+47
+26.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC207
+73.25
+53.4221334477
+40
+33.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC231
+73.25
+53.4221334477
+41
+32.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC242
+73.25
+53.4221334477
+39
+34.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC252
+73.25
+53.4221334477
+41
+32.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC255
+73.25
+53.4221334477
+35
+38.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC259
+73.25
+53.4221334477
+46
+27.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC266
+73.25
+53.4221334477
+47
+26.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC267
+73.25
+53.4221334477
+40
+33.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC274
+73.25
+53.4221334477
+26
+47.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC275
+73.25
+53.4221334477
+46
+27.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC276
+73.25
+53.4221334477
+24
+49.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC277
+73.25
+53.4221334477
+46
+27.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC2
+73.25
+53.4221334477
+27
+46.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+NIC3
+73.25
+53.4221334477
+101
+27.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+PB303
+73.25
+53.4221334477
+49
+24.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+PB306
+73.25
+53.4221334477
+117
+43.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+PS2025
+73.25
+53.4221334477
+109
+35.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+QG2075
+73.25
+53.4221334477
+47
+26.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+QX1211
+73.25
+53.4221334477
+332
+258.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+QX1212
+73.25
+53.4221334477
+108
+34.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+QX1791
+73.25
+53.4221334477
+121
+47.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+QX1792
+73.25
+53.4221334477
+116
+42.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+QX1793
+73.25
+53.4221334477
+134
+60.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+QX1794
+73.25
+53.4221334477
+102
+28.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+WN2001
+73.25
+53.4221334477
+106
+32.75
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+ONE_new_TRANS_total_C
+WN2002
+73.25
+53.4221334477
+41
+32.25
+19.8278665523
+OUTLIERRRRRRRRRRRRRRRRRRRR
+0.193295770093
+new_TRANS_total_unknown_C
+AB1
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+AB4
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+BRC20067
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4851
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4852
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4853
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4854
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4855
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4856
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4857
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4858
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CB4932
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11254
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11262
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11264
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11271
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11276
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11285
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11292
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11307
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11314
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+CX11315
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+DL200
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+DL226
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+DL238
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ECA36
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3005
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3011
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3012
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3017
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3040
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3046
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3048
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3049
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3052
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3073
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+ED3077
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+EG4347
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+EG4349
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+EG4724
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+EG4725
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+EG4946
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+GXW1
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JT11398
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1088
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1172
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1200
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1212
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1213
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1242
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1246
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1395
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1400
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1409
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1440
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1491
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1530
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1568
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1580
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1581
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1586
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1652
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU1896
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2001
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2007
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2316
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2464
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2466
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2513
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2519
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2522
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU2526
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU258
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU310
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU311
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU323
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU346
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU360
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU367
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU393
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU394
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU397
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU406
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU440
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU561
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU642
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU751
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU774
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU775
+1.78947368421
+1.59617791412
+6
+4.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU778
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU782
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU792
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU830
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+JU847
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+KR314
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+LKC34
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+LSJ1
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+MY10
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+MY16
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+MY18
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+MY1
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+MY23
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+N2
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC166
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC195
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC199
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC1
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC207
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC231
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC236
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC242
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC251
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC252
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC255
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC256
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC258
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC259
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC260
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC261
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC262
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC265
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC266
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC267
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC268
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC269
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC271
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC272
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC274
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC275
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC276
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC277
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC2
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+NIC3
+1.78947368421
+1.59617791412
+5
+3.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+PB303
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+PB306
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+PS2025
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+PX179
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QG2075
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QG536
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QG556
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QG557
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QW947
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QX1211
+1.78947368421
+1.59617791412
+7
+5.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QX1212
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QX1233
+1.78947368421
+1.59617791412
+0
+1.78947368421
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QX1791
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QX1792
+1.78947368421
+1.59617791412
+2
+0.210526315789
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QX1793
+1.78947368421
+1.59617791412
+4
+2.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+QX1794
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+RC301
+1.78947368421
+1.59617791412
+3
+1.21052631579
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+WN2001
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_unknown_C
+WN2002
+1.78947368421
+1.59617791412
+1
+0.789473684211
+0.193295770093
+OUTLIERRRRRRRRRRRRRRRRRRRR
+1.74811438356
+absent_TRANS_total_retrotransposon_C
+CB4851
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+CB4854
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+CB4858
+3.53947368421
+1.79135930066
+0
+3.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+CB4932
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+CX11254
+3.53947368421
+1.79135930066
+7
+3.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+ECA36
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+ED3012
+3.53947368421
+1.79135930066
+0
+3.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+ED3017
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+ED3052
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+EG4347
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+GXW1
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU1200
+3.53947368421
+1.79135930066
+0
+3.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU1395
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU1568
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU1586
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU1652
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU2519
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU258
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU367
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU394
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU406
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+JU847
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+LSJ1
+3.53947368421
+1.79135930066
+0
+3.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+N2
+3.53947368421
+1.79135930066
+0
+3.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC199
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC1
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC207
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC231
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC242
+3.53947368421
+1.79135930066
+0
+3.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC251
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC255
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC258
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC272
+3.53947368421
+1.79135930066
+7
+3.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC277
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+NIC2
+3.53947368421
+1.79135930066
+1
+2.53947368421
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+PS2025
+3.53947368421
+1.79135930066
+7
+3.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+QG556
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+QX1211
+3.53947368421
+1.79135930066
+10
+6.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+QX1212
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+QX1791
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+QX1792
+3.53947368421
+1.79135930066
+7
+3.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_retrotransposon_C
+WN2001
+3.53947368421
+1.79135930066
+6
+2.46052631579
+1.74811438356
+OUTLIERRRRRRRRRRRRRRRRRRRR
+97.5069275791
+35.7209091787
+absent_TRANS_total_C
+CB4856
+61.6447368421
+25.9238276634
+112
+50.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+DL238
+61.6447368421
+25.9238276634
+100
+38.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+ECA36
+61.6447368421
+25.9238276634
+168
+106.355263158
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+ED3012
+61.6447368421
+25.9238276634
+21
+40.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+EG4347
+61.6447368421
+25.9238276634
+19
+42.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+JU1200
+61.6447368421
+25.9238276634
+13
+48.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+JU1568
+61.6447368421
+25.9238276634
+24
+37.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+JU1586
+61.6447368421
+25.9238276634
+21
+40.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+JU2316
+61.6447368421
+25.9238276634
+104
+42.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+JU2526
+61.6447368421
+25.9238276634
+108
+46.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+JU258
+61.6447368421
+25.9238276634
+101
+39.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+JU775
+61.6447368421
+25.9238276634
+107
+45.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+LSJ1
+61.6447368421
+25.9238276634
+2
+59.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+N2
+61.6447368421
+25.9238276634
+2
+59.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+NIC195
+61.6447368421
+25.9238276634
+102
+40.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+NIC199
+61.6447368421
+25.9238276634
+103
+41.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+NIC251
+61.6447368421
+25.9238276634
+113
+51.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+NIC261
+61.6447368421
+25.9238276634
+100
+38.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+NIC265
+61.6447368421
+25.9238276634
+109
+47.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+NIC2
+61.6447368421
+25.9238276634
+12
+49.6447368421
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+QX1211
+61.6447368421
+25.9238276634
+182
+120.355263158
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_C
+QX1792
+61.6447368421
+25.9238276634
+102
+40.3552631579
+35.7209091787
+OUTLIERRRRRRRRRRRRRRRRRRRR
+2.63220556115
+new_TRANS_total_retrotransposon_C
+AB4
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+BRC20067
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CB4851
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CB4852
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CB4854
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CB4856
+6.77631578947
+4.14411022832
+13
+6.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CB4858
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CB4932
+6.77631578947
+4.14411022832
+10
+3.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CX11264
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CX11271
+6.77631578947
+4.14411022832
+12
+5.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+CX11285
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+DL200
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+DL238
+6.77631578947
+4.14411022832
+16
+9.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+ECA36
+6.77631578947
+4.14411022832
+13
+6.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+ED3011
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+ED3012
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+ED3048
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+ED3052
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+ED3073
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+EG4349
+6.77631578947
+4.14411022832
+10
+3.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+GXW1
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1200
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1212
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1213
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1246
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1395
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1491
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1530
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1568
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU1652
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU2001
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU2466
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU310
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU323
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU346
+6.77631578947
+4.14411022832
+10
+3.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU360
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU367
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU394
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU406
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU561
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU778
+6.77631578947
+4.14411022832
+10
+3.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU782
+6.77631578947
+4.14411022832
+14
+7.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU830
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+JU847
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+KR314
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+LSJ1
+6.77631578947
+4.14411022832
+0
+6.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+MY16
+6.77631578947
+4.14411022832
+20
+13.2236842105
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+MY18
+6.77631578947
+4.14411022832
+12
+5.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+MY23
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+N2
+6.77631578947
+4.14411022832
+0
+6.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC166
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC199
+6.77631578947
+4.14411022832
+10
+3.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC231
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC236
+6.77631578947
+4.14411022832
+10
+3.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC252
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC255
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC265
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC266
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC267
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC268
+6.77631578947
+4.14411022832
+2
+4.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC276
+6.77631578947
+4.14411022832
+4
+2.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC277
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+NIC2
+6.77631578947
+4.14411022832
+1
+5.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+PB303
+6.77631578947
+4.14411022832
+3
+3.77631578947
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+PB306
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+PX179
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+QG536
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+QG556
+6.77631578947
+4.14411022832
+10
+3.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+QX1211
+6.77631578947
+4.14411022832
+34
+27.2236842105
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+QX1791
+6.77631578947
+4.14411022832
+14
+7.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+QX1792
+6.77631578947
+4.14411022832
+14
+7.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+QX1793
+6.77631578947
+4.14411022832
+14
+7.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+new_TRANS_total_retrotransposon_C
+QX1794
+6.77631578947
+4.14411022832
+11
+4.22368421053
+2.63220556115
+OUTLIERRRRRRRRRRRRRRRRRRRR
+32.3061046966
+absent_TRANS_total_dnatransposon_C
+CB4856
+56.4934210526
+24.187316356
+106
+49.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+DL238
+56.4934210526
+24.187316356
+95
+38.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+ECA36
+56.4934210526
+24.187316356
+156
+99.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+ED3012
+56.4934210526
+24.187316356
+19
+37.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+EG4347
+56.4934210526
+24.187316356
+18
+38.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU1200
+56.4934210526
+24.187316356
+13
+43.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU1568
+56.4934210526
+24.187316356
+22
+34.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU1586
+56.4934210526
+24.187316356
+20
+36.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU2316
+56.4934210526
+24.187316356
+100
+43.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU2526
+56.4934210526
+24.187316356
+103
+46.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU258
+56.4934210526
+24.187316356
+93
+36.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU775
+56.4934210526
+24.187316356
+100
+43.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+JU782
+56.4934210526
+24.187316356
+89
+32.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+LSJ1
+56.4934210526
+24.187316356
+2
+54.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+N2
+56.4934210526
+24.187316356
+2
+54.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+NIC195
+56.4934210526
+24.187316356
+94
+37.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+NIC199
+56.4934210526
+24.187316356
+95
+38.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+NIC251
+56.4934210526
+24.187316356
+104
+47.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+NIC261
+56.4934210526
+24.187316356
+96
+39.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+NIC262
+56.4934210526
+24.187316356
+90
+33.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+NIC265
+56.4934210526
+24.187316356
+104
+47.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+NIC2
+56.4934210526
+24.187316356
+11
+45.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+PX179
+56.4934210526
+24.187316356
+24
+32.4934210526
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+QX1211
+56.4934210526
+24.187316356
+166
+109.506578947
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+QX1792
+56.4934210526
+24.187316356
+93
+36.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR
+absent_TRANS_total_dnatransposon_C
+QX1794
+56.4934210526
+24.187316356
+90
+33.5065789474
+32.3061046966
+OUTLIERRRRRRRRRRRRRRRRRRRR

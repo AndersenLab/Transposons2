@@ -36,7 +36,7 @@ python ${scripts_dir}/parse_overlaps.py
 python ${scripts_dir}/add_GO_terms.py ${file_dir}/WB_GO.txt essentiality_nonredundant.txt
 
 cat essentiality_nonredundant_GO.txt|sort -k1,1 -k2,2n -k3,3 -k4,4 -k6,6 > tmp && mv tmp essentiality_nonredundant_GO.txt
-echo  -e  "Chromosome\tTE_start\tMethod\tTE\tRegion\tTranscript_Name\tBiotype\tPhenotype\tGO_Annotation" | cat  - essentiality_nonredundant_GO.txt > tmp && mv tmp essentiality_nonredundant_GO.txt
+echo  -e  "Chromosome\tTE_start\tMethod\tTE\tRegion\tTranscript_Name\tGene_Name\tBiotype\tPhenotype\tGO_Annotation" | cat  - essentiality_nonredundant_GO.txt > tmp && mv tmp essentiality_nonredundant_GO.txt
 head -n1 essentiality_nonredundant_GO.txt > tmp
 cat essentiality_nonredundant_GO.txt | awk '$3=="new" {print $0}' >> tmp && mv tmp  essentiality_nonredundant_GO_only_new.txt
 

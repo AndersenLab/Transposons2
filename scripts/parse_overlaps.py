@@ -21,6 +21,7 @@ with open(phenotypes, 'r')as IN:
 
 #match biotype to transcript name
 gene_transcripts={}
+alias_codes={}
 original_gene_giff="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/gene.gff"
 with open(original_gene_giff, 'r') as IN:
 	for line in IN:
@@ -32,9 +33,16 @@ with open(original_gene_giff, 'r') as IN:
 			match = re.search("(?:Pseudogene|Transcript|sequence_name|^Name)(?:=|:)([\w|\d]+.\d+)", transcript) #jsut pull gene name, remove splice info
 			transcript_name=match.group(1)	
 			match2=re.search("biotype=(protein_coding|pseudogene|transposon_pseudogene);", transcript) #only take these 2 biotypes
+			match3=re.search("Alias=(.*)",transcript)
 			if match2:
 				biotype=match2.group(1)
 				gene_transcripts[transcript_name]=biotype
+			if match3:
+				aliases=re.split(",",match3.group(1))
+				for alias in aliases:
+					if alias != transcript_name:
+						alias_codes[transcript_name]=alias
+
 
 #go through overlap file
 found={}
@@ -67,7 +75,14 @@ with open("overlaps.txt", "r") as IN:
 		else:
 			biotype="other"
 			Gene_type="gene"
-		OUT.write("{chromosome}\t{TE_start}\t{method}\t{family}\t{Gene_type}\t{transcript_name}\t{biotype}\t{phenotype}\n".format(**locals()))
+
+		if transcript_name in alias_codes.keys():
+			alias=alias_codes[transcript_name]
+		else:
+			alias="NA"
+
+
+		OUT.write("{chromosome}\t{TE_start}\t{method}\t{family}\t{Gene_type}\t{transcript_name}\t{alias}\t{biotype}\t{phenotype}\n".format(**locals()))
 		
 with open("gene_overlap.txt", 'r') as IN:
 	for line in IN:
@@ -78,11 +93,17 @@ with open("gene_overlap.txt", 'r') as IN:
 		transcript_name=match.group(1)
 		match2=re.search(".*_\d+_(.*)_(\w+-)?reference",TE)
 		family=match2.group(1)
+		match3=re.search("Alias=(.*)",transcript)
+		if match3:
+			aliases=re.split(",",match3.group(1))
+			for alias in aliases:
+				if alias != transcript_name:
+					alias_codes[transcript_name]=alias
 		ID=TE+"_"+method
 		full_ID=TE+"_"+method+"_"+transcript_name
 		biotype=gene_transcripts[transcript_name]
 		if full_ID not in found.keys(): # if in a gene but not in exon, intron, UTR, promoter
-			OUT.write("{chromosome}\t{TE_start}\t{method}\t{family}\t{Gene_type}\t{transcript_name}\t{biotype}\t{phenotype}\n".format(**locals()))
+			OUT.write("{chromosome}\t{TE_start}\t{method}\t{family}\t{Gene_type}\t{transcript_name}\t{alias}\t{biotype}\t{phenotype}\n".format(**locals()))
 			overall[ID]=line
 
 #print out TEs in intergenic regions 
@@ -98,7 +119,7 @@ with open("{results_dir}/CtCp_clipped.txt".format(**locals())) as IN:
 		if ID not in overall.keys():
 			transcript_name="NA"
 			phenotype="NA"
-			OUT.write("{chromosome}\t{TE_start}\t{method}\t{family}\tintergenic\t{transcript_name}\tNA\t{phenotype}\n".format(**locals()))
+			OUT.write("{chromosome}\t{TE_start}\t{method}\t{family}\tintergenic\t{transcript_name}\tNA\tNA\t{phenotype}\n".format(**locals()))
 OUT.close()
 #os.system("cat test.txt|sort|uniq >tmp && mv tmp test.txt")
 
@@ -115,7 +136,7 @@ with open("essentiality_redundant.txt", 'r') as IN:
 	for line in IN:
 		line=line.rstrip('\n')
 		items=re.split('[\t]', line)
-		chromosome,TE_start,method,family,gene_type,transcript_name,biotype,phenotype=items[0:len(items)]
+		chromosome,TE_start,method,family,gene_type,transcript_name,alias,biotype,phenotype=items[0:len(items)]
 		ID="{chromosome}_{TE_start}_{method}_{family}_{transcript_name}".format(**locals())
 		#redundant dictionaries
 		if gene_type=="exon":
