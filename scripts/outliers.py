@@ -42,7 +42,7 @@ for i,values in totals.items():
 		strain,count=info
 		if count != "NA":
 			strain_difference=abs(float(av)-float(count))
-			if strain_difference>sd:
+			if strain_difference> (2*sd):
 				if re.search("total",i):
 					OUT_TOTAL.write("{i}\t{strain}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
 				else:

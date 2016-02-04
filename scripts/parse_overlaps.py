@@ -32,7 +32,7 @@ with open(original_gene_giff, 'r') as IN:
 			chromosome,WB,Gene_type,WB_start,WB_end,NA1,WB_orient,NA2,transcript=items[0:len(items)]
 			match = re.search("(?:Pseudogene|Transcript|sequence_name|^Name)(?:=|:)([\w|\d]+.\d+)", transcript) #jsut pull gene name, remove splice info
 			transcript_name=match.group(1)	
-			match2=re.search("biotype=(protein_coding|pseudogene|transposon_pseudogene);", transcript) #only take these 2 biotypes
+			match2=re.search("biotype=(protein_coding|pseudogene|transposon_pseudogene);", transcript) #only take these 3 biotypes
 			match3=re.search("Alias=(.*)",transcript)
 			if match2:
 				biotype=match2.group(1)

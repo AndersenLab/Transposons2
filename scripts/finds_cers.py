@@ -2,7 +2,7 @@
 # this scripts compare the absence/reference calls of TEMP/TELOCATE for the CER1 transposon and compares them to a "truth set"
 # from "Chromosome-scale selective sweeps shape Caenorhabditis elegans genomic diversity" and output a file of the strain, TE call, truth call, 
 # and whether the TE call was correct,incorrect, or "NA" if a comparison could not be made due to missing data
-# USE: find_cers.py in directory containing teh "Full_Results.txt" anf "cer_PA.txt" files
+# USE: find_cers.py in directory containing the "Full_Results.txt" and "cer_PA.txt" files
 
 import re
 
@@ -28,7 +28,7 @@ for line in CALLS:
 
 for i in absences.keys():
 	if absences[i] == references[i]:
-		print "ERROR: TE cannot be both present and absent"
+		print "ERROR: TE cannot be both present and absent" # not necessarily error, could both be NAs, adjust if needed
 	if absences[i]=="1":
 		call[i]="absent"
 	elif references[i]=="1":

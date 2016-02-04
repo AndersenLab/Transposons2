@@ -19,7 +19,6 @@ transpose=transpose_matrix.sh
 assign_cut_copy=assign_copy_or_cut_paste.py
 assign_cut_copy_R2=assign_copy_or_cut_paste_round2.py
 coverage=add_coverage_data.py
-fix_cov=fix_cov.py
 NA=check_NAs.sh
 kin=kin_hash.py
 kin_AF=kin_hash_AF.py
@@ -122,13 +121,9 @@ python ${scripts_dir}/${activity} kin_C_matrix_full.txt
 bash ${scripts_dir}/transpose_matrix.sh Full_Results_Activity.txt T_Full_Results_Activity.txt
 # add in coverage trait
 python ${scripts_dir}/${coverage} ../Full_Results.txt $bam_stats
-python ${scripts_dir}/${fix_cov}
-
-result=`diff <(head -n 1 T_kin_C_matrix_full.txt) <(head -n 1 T_coverage.txt )`
-if [$result eq '']
-	then echo "matched"
-	else echo "column names do not match, exiting..." && exit 1
-fi
+cat coverage_and_te_counts.txt |sed '1d'| cut -f1,5 > temp_cov
+bash ${scripts_dir}/transpose_matrix.sh temp_cov temp_cov2
+cat temp_cov2 | awk 'NR==1 {print "trait\t"$0}; NR==2 {print "coverage\t"$0}' > T_coverage.txt
 cat T_coverage.txt |sed '1d' >tmp
 cat T_kin_C_matrix_full.txt tmp > all && mv all T_kin_C_matrix_full.txt
 # copy files to final folder

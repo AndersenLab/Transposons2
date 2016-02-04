@@ -38,7 +38,7 @@ for i in totals.keys():
 	for strain in strain_list:
 		if strain in countedTEs.keys():
 			te_count=countedTEs[strain]
-			OUT.write("\t" + str(te_count))
+			OUT.write("\t"  + str(te_count))
 		else:
 			OUT.write("\t0")
 

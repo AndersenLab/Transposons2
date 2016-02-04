@@ -40,5 +40,7 @@ echo  -e  "Chromosome\tTE_start\tMethod\tTE\tRegion\tTranscript_Name\tGene_Name\
 head -n1 essentiality_nonredundant_GO.txt > tmp
 cat essentiality_nonredundant_GO.txt | awk '$3=="new" {print $0}' >> tmp && mv tmp  essentiality_nonredundant_GO_only_new.txt
 
+python ${scripts_dir}/insertion_distribution.py
+
 
 
