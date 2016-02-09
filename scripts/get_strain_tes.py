@@ -13,8 +13,10 @@ with open(infile, 'r') as IN:
 
 
 
-		if chromosome == "V":
-			if int(pos)>= 11026000 and int(pos) <= 11300000:
+		if chromosome == "IV":
+
+			#3794443-3794543
+			if int(pos)>= 3794443-1000 and int(pos) <= 3794543+1000:
 				if strain=="N2" or strain== "CB4856":
 					print chromosome
 					print pos

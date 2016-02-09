@@ -263,7 +263,7 @@ KIN_MATRIX.write("trait")
 #print headers
 value=FINAL_SAMPLES[1]
 value=sorted(value)
-print value
+
 for i in value:
 	strain=(re.split(":", i))[0]
 	KIN_MATRIX.write("\t{strain}".format(**locals()))
@@ -272,7 +272,6 @@ KIN_MATRIX.write('\n')
 #output the final matrix
 for key,value in FINAL_SAMPLES.items():
 	value=sorted(value)
-	print value
 	full_info=FINAL_POSITIONS[key]
 	full_info=map(str, full_info) #convert the integers to strings
 	te_info='_'.join(full_info)
