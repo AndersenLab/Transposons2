@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=18
-#SBATCH --cpus-per-task=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
 #SBATCH --nodes=1
 
 # this script filters TE caller output for varying amounts of read support (1-50 reads) and outputs the resulting TPR and FDR information files for RSVSIM
@@ -41,7 +41,7 @@ echo $dir
 
 rm final_results_RECALCULATED/BEDCOMPARE_SUMMARY_run_${run_ID}_N2.txt
 rm final_results_RECALCULATED/FAMILY_TFPNs_F
-for i in {3..3}
+for i in {1..30}
 do
 	#FEED JUST SIMULATED to TEMP
 	cd run_${run_ID}_filter_results_temp/

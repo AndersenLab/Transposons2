@@ -49,7 +49,7 @@ cp -s $bam.bai ${bam_name}.sorted.bam.bai
 mkdir raw_results_temp_insertion
 cd raw_results_temp_insertion
 echo "Running TEMP insertion caller..."
-bash ${TTR}/TEMP/scripts/TEMP_Insertion.sh -i ../${bam_name}.sorted.bam -s ${TTR}/TEMP/scripts/ -x 30 -r $TE_consensus -t $HL_gff -m 1 -c 20 &> ../${bam_name}_TEMP_insertion_log.txt
+bash ${TTR}/TEMP/scripts/TEMP_Insertion.sh -i ../${bam_name}.sorted.bam -s ${TTR}/TEMP/scripts/ -x 30 -r $TE_consensus -t $original_ref_pos -m 1 -c 20 &> ../${bam_name}_TEMP_insertion_log.txt
 cd ..
 
 mkdir raw_results_temp_absence

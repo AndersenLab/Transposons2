@@ -8,7 +8,8 @@ import os
 import re
 from subprocess import Popen, PIPE
 import statistics
-my_dir="/lscr2/andersenlab/kml436/RSV_simulations_Aug31_half/RSV_simulations_Aug31"
+#my_dir="/lscr2/andersenlab/kml436/RSV_simulations_Aug31_half/RSV_simulations_Aug31"
+my_dir="/lscr2/andersenlab/kml436/feb_rsv_tenth/RSV_simulations_Aug31_tenth/RSV_simulations_Aug31"
 
 means=[]
 

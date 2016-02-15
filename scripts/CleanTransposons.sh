@@ -146,7 +146,7 @@ cat kin_matrix_full.txt | awk '{for (i=2;i<=NF;i++) {if($i !="NA"){print $0;brea
 #clip CtCp files to remove redundancies
 cat CtCp_all_nonredundant.txt |sort -k1,1 -k2,2n -k3,3 -k4,4 -k6,6|awk '!x[$1,$2,$3,$4,$6]++' > CtCp_clipped.txt #LEFT OFF HERE
 cat CtCp_clipped.txt| sort -k1,1 -k2,2n > tmp && mv tmp CtCp_clipped.txt
-cat CtCp_clipped.txt |awk '{print $1"\tTE\t"$4"\t"$2"\t"$3"\t"$6"\t"$5"\tNA\t"$8}' > CtCp_clipped.gff 
+cat CtCp_clipped.txt |awk '{print $1"\tTE\t"$4"\t"$2+1"\t"$3+1"\t"$6"\t"$5"\tNA\t"$8}' > CtCp_clipped.gff 
 #determine genomic features that TEs are located in 
 bash ${scripts_dir}/${gene_interrupt}
 #CER1 checks
