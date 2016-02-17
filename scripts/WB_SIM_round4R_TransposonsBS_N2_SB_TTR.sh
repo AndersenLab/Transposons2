@@ -1,9 +1,10 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=6
-#SBATCH --cpus-per-task=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
 #SBATCH --nodes=1
 #SBATCH --mem=18000
+#SBATCH --exclude=node[6,8]
 
 # this script runs round4 of the transposon simulations/detection
 # USE: WB_SIM_round4_TransposonsBS_N2_SB_TTR.sh
@@ -23,6 +24,7 @@ element_list=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/fast
 location_list=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/bed_list.txt
 ##ALTERNATE: location_list=/lscr2/andersenlab/kml436/sv_files/WB_REPB_locationlist.gff
 HL_gff=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/WB_pos_element_names_alias_round4.bed
+HL_gff_T=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/telcoate_WB_pos_element_names_alias_round4.bed
 ##ALTERNATE: HL_gff=/lscr2/andersenlab/kml436/sv_files/WB_REPB_ID_transposable_element_HL.gff
 minimal_Distance_to_count=1000
 minimal_supporting_reads=3
@@ -108,7 +110,7 @@ echo "running TELOCATE..."
 mkdir ${dir}/${run_ID}_${bam_name}
 mkdir ${dir}/${run_ID}_${bam_name}/TELOCATE
 cd ${TTR}/TE-locate/
-perl TE_locate.pl 2 ${dir}/${run_ID}_${bam_name}_sam_file/ $HL_gff $reference ${dir}/${run_ID}_${bam_name}/TELOCATE/TEL $minimal_Distance_to_count $minimal_supporting_reads $minimal_supporting_individuals
+perl TE_locate.pl 2 ${dir}/${run_ID}_${bam_name}_sam_file/ $HL_gff_T $reference ${dir}/${run_ID}_${bam_name}/TELOCATE/TEL $minimal_Distance_to_count $minimal_supporting_reads $minimal_supporting_individuals
 cd ${dir}
 echo "TELOCATE finished...altering output..."
 ##LEFT OFF HERE

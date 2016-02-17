@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=18
-#SBATCH --cpus-per-task=1
-#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
+#SBATCH --exclude=node[6,8]
 # this script runs the RSVSimtransposon simulation and detection scripts 
 # USE: run_RSVSim.sh <run_number>
 consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
@@ -13,27 +13,27 @@ TE_lengths=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/LENGTHS/
 WB_elements=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/Wb-TC8.fasta #these are the plus strands without TC8
 family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt
 
-#Rockman was not included in the N2 bam, so do not include it here
-#A_N2_1=/lscr2/andersenlab/kml436/fasta_subset/Rockman096-R096.2-N2-paired-1.fq
-#A_N2_2=/lscr2/andersenlab/kml436/fasta_subset/Rockman096-R096.2-N2-paired-2.fq
-B_N2_1=/lscr2/andersenlab/kml436/fasta_subset/Princeton-P-N2_CGC-paired-1.fq
-B_N2_2=/lscr2/andersenlab/kml436/fasta_subset/Princeton-P-N2_CGC-paired-2.fq
-C_N2_1=/lscr2/andersenlab/kml436/fasta_subset/Uchicago-L001-N2Baer-paired-1.fq
-C_N2_2=/lscr2/andersenlab/kml436/fasta_subset/Uchicago-L001-N2Baer-paired-2.fq
+##Rockman was not included in the N2 bam, so do not include it here
+##A_N2_1=/lscr2/andersenlab/kml436/fasta_subset/Rockman096-R096.2-N2-paired-1.fq
+##A_N2_2=/lscr2/andersenlab/kml436/fasta_subset/Rockman096-R096.2-N2-paired-2.fq
+#B_N2_1=/lscr2/andersenlab/kml436/fasta_subset/Princeton-P-N2_CGC-paired-1.fq
+#B_N2_2=/lscr2/andersenlab/kml436/fasta_subset/Princeton-P-N2_CGC-paired-2.fq
+#C_N2_1=/lscr2/andersenlab/kml436/fasta_subset/Uchicago-L001-N2Baer-paired-1.fq
+#C_N2_2=/lscr2/andersenlab/kml436/fasta_subset/Uchicago-L001-N2Baer-paired-2.fq
 
 ###
-D_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET1-N2_CGC-paired-1.fq
-D_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET1-N2_CGC-paired-2.fq
-E_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET6-N2_HRH-paired-1.fq
-E_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET6-N2_HRH-paired-2.fq
-F_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET1-N2_CGC-paired-1.fq
-F_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET1-N2_CGC-paired-2.fq
-G_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET6-N2_HRH-paired-1.fq
-G_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET6-N2_HRH-paired-2.fq
-H_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET1a-N2_CGC-paired-1.fq
-H_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET1a-N2_CGC-paired-2.fq
-I_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET6b-N2_HRH-paired-1.fq
-I_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET6b-N2_HRH-paired-2.fq
+#D_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET1-N2_CGC-paired-1.fq
+#D_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET1-N2_CGC-paired-2.fq
+#E_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET6-N2_HRH-paired-1.fq
+#E_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI1-RET6-N2_HRH-paired-2.fq
+#F_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET1-N2_CGC-paired-1.fq
+#F_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET1-N2_CGC-paired-2.fq
+#G_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET6-N2_HRH-paired-1.fq
+#G_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI2-RET6-N2_HRH-paired-2.fq
+#H_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET1a-N2_CGC-paired-1.fq
+#H_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET1a-N2_CGC-paired-2.fq
+#I_N2_1=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET6b-N2_HRH-paired-1.fq
+#I_N2_2=/lscr2/andersenlab/kml436/fasta_subset/BGI3-RET6b-N2_HRH-paired-2.fq
 
 
 TEMP_scripts=/lscr2/andersenlab/kml436/git_repos2/mcclintock/TEMP/scripts/
@@ -43,7 +43,7 @@ original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_
 #original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_consensus_RSV_sim.bed
 TTR=/lscr2/andersenlab/kml436/git_repos2/mcclintock/
 minimal_Distance_to_count=1000
-minimal_supporting_reads=3
+minimal_supporting_reads=1
 minimal_supporting_individuals=1
 run_ID=${1}
 mkdir run_${run_ID}
@@ -51,116 +51,132 @@ cd run_${run_ID}
 dir=`pwd`
 echo $dir
 
-#choose 100 TEs from the consensus TE seqs to randomly simulate in the reference
-python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/create_RSVSim_genome.py  $WB_elements $run_ID
+find . -name "*unpair*" -type f -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
+find . -name "*insertion*" -type f -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
+find . -name "*align*" -type f -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
+find . -name "*uniq*" -type f -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
+find . -name "*clipped*" -type f -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
+find . -name "*filter_results*" -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
+find . -name "*final_results*" -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
 
-#run RSV SIM
-Rscript /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_SIM_OLDER6.R RSVSIM_genome_${run_ID}.fasta RSVSIM_te_pos_${run_ID}.txt
-mv insertions.csv insertions_${run_ID}.csv
-cp insertions_${run_ID}.csv original_insertion_file_${run_ID}.txt
-cat insertions_${run_ID}.csv | sed 's/_copy[1-9]//g' | awk '{print $5"\t"$6"\t"$7"\t"$2"\t0\t+"}'|sort -k1,1 -k2,2n > tmp && mv tmp insertions_${run_ID}.csv
+mkdir run_${run_ID}_filter_results_temp/
+mkdir run_${run_ID}_filter_results_telocate/
 
-#from the RSV genome, pull out only the original chromosomes containing the simualted TEs (removes the "copy" TEs taken in addition to the original genome)
-python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/edit_rearranged_genome.py genome_rearranged.fasta ${run_ID}
-sed '1d' insertions_${run_ID}.csv > insertions_${run_ID}.bed
-rm insertions_${run_ID}.csv
-cat $original_ref_pos insertions_${run_ID}.bed > all_tes_${run_ID}.bed
-cat all_tes_${run_ID}.bed|sort -k1,1 -k2,2n > tmp && mv tmp all_tes_${run_ID}.bed
 
-#adjust the postions of the TEs to account for the simulated TEs
-python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/adjust_RSVSIM_positions.py all_tes_${run_ID}.bed
 
-#rename the position file (from WB element names to consensus names)
-cp adjusted_pos_all_tes_${run_ID}.bed  adjusted_pos_all_tes_${run_ID}_WB_copy.bed
-python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2.py $family_renames adjusted_pos_all_tes_${run_ID}.bed adjusted_pos_all_tes_${run_ID}_TMP.bed
-mv adjusted_pos_all_tes_${run_ID}_TMP.bed adjusted_pos_all_tes_${run_ID}.bed
 
-#created position file usable as input to telocate
-cat adjusted_pos_all_tes_${run_ID}.bed | awk '{print $1"\tTransposon\t"$4"\t"$2"\t"$3"\t"$5"\t"$6"\t.\tID="$4";Name="$4";Alias="$4}' > telocate_adjusted_pos_all_tes_${run_ID}.bed
-/opt/samtools/x64/samtools/samtools faidx new_genome_${run_ID}.fasta
-bwa index new_genome_${run_ID}.fasta
+##choose 100 TEs from the consensus TE seqs to randomly simulate in the reference
+#python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/create_RSVSim_genome.py  $WB_elements $run_ID
 
-#BWA MEM
-#bwa mem -t 24 -R '@RG\tID:A_N2\tSM:N2' new_genome_${run_ID}.fasta $A_N2_1 $A_N2_2 > A_N2.sam
-bwa mem -t 24 -R '@RG\tID:B_N2\tSM:N2' new_genome_${run_ID}.fasta $B_N2_1 $B_N2_2 -M > B_N2.sam
-bwa mem -t 24 -R '@RG\tID:C_N2\tSM:N2' new_genome_${run_ID}.fasta $C_N2_1 $C_N2_2 -M > C_N2.sam
-bwa mem -t 24 -R '@RG\tID:D_N2\tSM:N2' new_genome_${run_ID}.fasta $D_N2_1 $D_N2_2 -M > D_N2.sam
-bwa mem -t 24 -R '@RG\tID:E_N2\tSM:N2' new_genome_${run_ID}.fasta $E_N2_1 $E_N2_2 -M > E_N2.sam
-bwa mem -t 24 -R '@RG\tID:F_N2\tSM:N2' new_genome_${run_ID}.fasta $F_N2_1 $F_N2_2 -M > F_N2.sam
-bwa mem -t 24 -R '@RG\tID:G_N2\tSM:N2' new_genome_${run_ID}.fasta $G_N2_1 $G_N2_2 -M > G_N2.sam
-bwa mem -t 24 -R '@RG\tID:H_N2\tSM:N2' new_genome_${run_ID}.fasta $H_N2_1 $H_N2_2 -M > H_N2.sam
-bwa mem -t 24 -R '@RG\tID:I_N2\tSM:N2' new_genome_${run_ID}.fasta $I_N2_1 $I_N2_2 -M > I_N2.sam
+##run RSV SIM
+#Rscript /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_SIM_OLDER6.R RSVSIM_genome_${run_ID}.fasta RSVSIM_te_pos_${run_ID}.txt
+#mv insertions.csv insertions_${run_ID}.csv
+#cp insertions_${run_ID}.csv original_insertion_file_${run_ID}.txt
+#cat insertions_${run_ID}.csv | sed 's/_copy[1-9]//g' | awk '{print $5"\t"$6"\t"$7"\t"$2"\t0\t+"}'|sort -k1,1 -k2,2n > tmp && mv tmp insertions_${run_ID}.csv
+
+##from the RSV genome, pull out only the original chromosomes containing the simualted TEs (removes the "copy" TEs taken in addition to the original genome)
+#python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/edit_rearranged_genome.py genome_rearranged.fasta ${run_ID}
+#sed '1d' insertions_${run_ID}.csv > insertions_${run_ID}.bed
+#rm insertions_${run_ID}.csv
+#cat $original_ref_pos insertions_${run_ID}.bed > all_tes_${run_ID}.bed
+#cat all_tes_${run_ID}.bed|sort -k1,1 -k2,2n > tmp && mv tmp all_tes_${run_ID}.bed
+
+##adjust the postions of the TEs to account for the simulated TEs
+#python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/adjust_RSVSIM_positions.py all_tes_${run_ID}.bed
+
+##rename the position file (from WB element names to consensus names)
+#cp adjusted_pos_all_tes_${run_ID}.bed  adjusted_pos_all_tes_${run_ID}_WB_copy.bed
+#python /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/correct_names_2.py $family_renames adjusted_pos_all_tes_${run_ID}.bed adjusted_pos_all_tes_${run_ID}_TMP.bed
+#mv adjusted_pos_all_tes_${run_ID}_TMP.bed adjusted_pos_all_tes_${run_ID}.bed
+
+##created position file usable as input to telocate
+cat adjusted_pos_all_tes_${run_ID}.bed | awk '{print $1"\tTransposon\t"$4"\t"$2+1"\t"$3+1"\t"$5"\t"$6"\t.\tID="$4";Name="$4";Alias="$4}' > telocate_adjusted_pos_all_tes_${run_ID}.bed
+
+#cat adjusted_pos_all_tes_${run_ID}.bed | awk '{print $1"\tTransposon\t"$4"\t"$2"\t"$3"\t"$5"\t"$6"\t.\tID="$4";Name="$4";Alias="$4}' > telocate_adjusted_pos_all_tes_${run_ID}.bed
+#/opt/samtools/x64/samtools/samtools faidx new_genome_${run_ID}.fasta
+#bwa index new_genome_${run_ID}.fasta
+
+##BWA MEM
+##bwa mem -t 24 -R '@RG\tID:A_N2\tSM:N2' new_genome_${run_ID}.fasta $A_N2_1 $A_N2_2 > A_N2.sam
+#bwa mem -t 24 -R '@RG\tID:B_N2\tSM:N2' new_genome_${run_ID}.fasta $B_N2_1 $B_N2_2 -M > B_N2.sam
+#bwa mem -t 24 -R '@RG\tID:C_N2\tSM:N2' new_genome_${run_ID}.fasta $C_N2_1 $C_N2_2 -M > C_N2.sam
+#bwa mem -t 24 -R '@RG\tID:D_N2\tSM:N2' new_genome_${run_ID}.fasta $D_N2_1 $D_N2_2 -M > D_N2.sam
+#bwa mem -t 24 -R '@RG\tID:E_N2\tSM:N2' new_genome_${run_ID}.fasta $E_N2_1 $E_N2_2 -M > E_N2.sam
+#bwa mem -t 24 -R '@RG\tID:F_N2\tSM:N2' new_genome_${run_ID}.fasta $F_N2_1 $F_N2_2 -M > F_N2.sam
+#bwa mem -t 24 -R '@RG\tID:G_N2\tSM:N2' new_genome_${run_ID}.fasta $G_N2_1 $G_N2_2 -M > G_N2.sam
+#bwa mem -t 24 -R '@RG\tID:H_N2\tSM:N2' new_genome_${run_ID}.fasta $H_N2_1 $H_N2_2 -M > H_N2.sam
+#bwa mem -t 24 -R '@RG\tID:I_N2\tSM:N2' new_genome_${run_ID}.fasta $I_N2_1 $I_N2_2 -M > I_N2.sam
 
 
 
 #SAMTOOLS VIEW
 #/opt/samtools/x64/samtools/samtools view A_N2.sam -@ 24 -bhu -o A_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view B_N2.sam -@ 24 -bhu -o B_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view C_N2.sam -@ 24 -bhu -o C_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view D_N2.sam -@ 24 -bhu -o D_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view E_N2.sam -@ 24 -bhu -o E_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view F_N2.sam -@ 24 -bhu -o F_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view G_N2.sam -@ 24 -bhu -o G_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view H_N2.sam -@ 24 -bhu -o H_N2.unsorted.bam
-/opt/samtools/x64/samtools/samtools view I_N2.sam -@ 24 -bhu -o I_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view B_N2.sam -@ 24 -bhu -o B_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view C_N2.sam -@ 24 -bhu -o C_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view D_N2.sam -@ 24 -bhu -o D_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view E_N2.sam -@ 24 -bhu -o E_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view F_N2.sam -@ 24 -bhu -o F_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view G_N2.sam -@ 24 -bhu -o G_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view H_N2.sam -@ 24 -bhu -o H_N2.unsorted.bam
+#/opt/samtools/x64/samtools/samtools view I_N2.sam -@ 24 -bhu -o I_N2.unsorted.bam
 
 #SAMTOOLS SORT
 #/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp1 A_N2.unsorted.bam > A_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp2 B_N2.unsorted.bam > B_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp3 C_N2.unsorted.bam > C_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp4 D_N2.unsorted.bam > D_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp5 E_N2.unsorted.bam > E_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp6 F_N2.unsorted.bam > F_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp7 G_N2.unsorted.bam > G_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp8 H_N2.unsorted.bam > H_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp9 I_N2.unsorted.bam > I_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp2 B_N2.unsorted.bam > B_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp3 C_N2.unsorted.bam > C_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp4 D_N2.unsorted.bam > D_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp5 E_N2.unsorted.bam > E_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp6 F_N2.unsorted.bam > F_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp7 G_N2.unsorted.bam > G_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp8 H_N2.unsorted.bam > H_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools sort -@ 24 -O bam -T tmp9 I_N2.unsorted.bam > I_N2.sorted.bam
 
 
 #SAMTOOLS INDEX
 #/opt/samtools/x64/samtools/samtools index A_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index B_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index C_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index D_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index E_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index F_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index G_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index H_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index I_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index B_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index C_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index D_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index E_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index F_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index G_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index H_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index I_N2.sorted.bam
 
-#PICARD MARK DUPLICATES
-java -jar /opt/picard-tools/MarkDuplicates.jar I=B_N2.sorted.bam O=MD_B_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
-mv MD_B_N2.sorted.bam B_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=C_N2.sorted.bam O=MD_C_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=C_N2_metrics.txt ASSUME_SORTED=true
-mv MD_C_N2.sorted.bam C_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=D_N2.sorted.bam O=MD_D_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=D_N2_metrics.txt ASSUME_SORTED=true
-mv MD_D_N2.sorted.bam D_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=E_N2.sorted.bam O=MD_E_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=E_N2_metrics.txt ASSUME_SORTED=true
-mv MD_E_N2.sorted.bam E_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=F_N2.sorted.bam O=MD_F_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=F_N2_metrics.txt ASSUME_SORTED=true
-mv MD_F_N2.sorted.bam F_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=G_N2.sorted.bam O=MD_G_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=G_N2_metrics.txt ASSUME_SORTED=true
-mv MD_G_N2.sorted.bam G_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=H_N2.sorted.bam O=MD_H_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=H_N2_metrics.txt ASSUME_SORTED=true
-mv MD_H_N2.sorted.bam H_N2.sorted.bam
-java -jar /opt/picard-tools/MarkDuplicates.jar I=I_N2.sorted.bam O=MD_I_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=I_N2_metrics.txt ASSUME_SORTED=true
-mv MD_I_N2.sorted.bam I_N2.sorted.bam
-
-
-#SAMTOOLS RE_INDEX (not necessary?)
-#/opt/samtools/x64/samtools/samtools index A_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index B_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index C_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index D_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index E_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index F_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index G_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index H_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index I_N2.sorted.bam
+##PICARD MARK DUPLICATES
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=B_N2.sorted.bam O=MD_B_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=B_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_B_N2.sorted.bam B_N2.sorted.bam
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=C_N2.sorted.bam O=MD_C_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=C_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_C_N2.sorted.bam C_N2.sorted.bam
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=D_N2.sorted.bam O=MD_D_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=D_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_D_N2.sorted.bam D_N2.sorted.bam
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=E_N2.sorted.bam O=MD_E_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=E_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_E_N2.sorted.bam E_N2.sorted.bam
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=F_N2.sorted.bam O=MD_F_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=F_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_F_N2.sorted.bam F_N2.sorted.bam
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=G_N2.sorted.bam O=MD_G_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=G_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_G_N2.sorted.bam G_N2.sorted.bam
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=H_N2.sorted.bam O=MD_H_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=H_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_H_N2.sorted.bam H_N2.sorted.bam
+#java -jar /opt/picard-tools/MarkDuplicates.jar I=I_N2.sorted.bam O=MD_I_N2.sorted.bam VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true METRICS_FILE=I_N2_metrics.txt ASSUME_SORTED=true
+#mv MD_I_N2.sorted.bam I_N2.sorted.bam
 
 
-#SAMTOOLS MERGE AND INDEX
-/opt/samtools/x64/samtools/samtools merge -f merged_bam_${run_ID}.sorted.bam B_N2.sorted.bam C_N2.sorted.bam D_N2.sorted.bam E_N2.sorted.bam F_N2.sorted.bam G_N2.sorted.bam H_N2.sorted.bam I_N2.sorted.bam
-/opt/samtools/x64/samtools/samtools index merged_bam_${run_ID}.sorted.bam
+##SAMTOOLS RE_INDEX (not necessary?)
+##/opt/samtools/x64/samtools/samtools index A_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index B_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index C_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index D_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index E_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index F_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index G_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index H_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index I_N2.sorted.bam
+
+
+##SAMTOOLS MERGE AND INDEX
+#/opt/samtools/x64/samtools/samtools merge -f merged_bam_${run_ID}.sorted.bam B_N2.sorted.bam C_N2.sorted.bam D_N2.sorted.bam E_N2.sorted.bam F_N2.sorted.bam G_N2.sorted.bam H_N2.sorted.bam I_N2.sorted.bam
+#/opt/samtools/x64/samtools/samtools index merged_bam_${run_ID}.sorted.bam
 
 #eventually step to get rid of:
 #/lscr2/andersenlab/kml436/test_Aug26/run_1/merged_bam_1.excision.cluster.rpmk.refined.bp.refsup
@@ -176,10 +192,18 @@ mv MD_I_N2.sorted.bam I_N2.sorted.bam
 #/opt/samtools/x64/samtools/samtools index merged_bam_${run_ID}.sorted.bam
 
 #create 2bit file of reference
-cd ${faToTwoBit_dir}
-faToTwoBit ${dir}/new_genome_${run_ID}.fasta new_genome_${run_ID}.2bit
-mv new_genome_${run_ID}.2bit ${dir}
-cd $dir
+#cd ${faToTwoBit_dir}
+#faToTwoBit ${dir}/new_genome_${run_ID}.fasta new_genome_${run_ID}.2bit
+#mv new_genome_${run_ID}.2bit ${dir}
+#cd $dir
+
+#remove preivous temp output so that it doesn't interfere with future steps
+rm ${dir}/merged_bam_${run_ID}.excision.cluster.rpmk.refined.bp.refsup
+rm ${dir}/merged_bam_${run_ID}.absence.refined.bp.summary
+rm ${dir}/merged_bam_${run_ID}.excision.cluster.rpmk.sfcp
+rm ${dir}/merged_bam_${run_ID}.excision.cluster.rpmk.refined.bp
+rm ${dir}/merged_bam_${run_ID}.excision.cluster.rpmk
+
 
 #run TEMP
 echo "running TEMP..."

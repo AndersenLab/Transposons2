@@ -63,7 +63,6 @@ MATRIX={}
 MATRIX=defaultdict(list)
 POSITION_COUNTER=0
 for i in output_files.keys():
-
 	TE_positions={}
 	TE_positions=defaultdict(list)
 	TE_samples={}
@@ -211,28 +210,29 @@ COVERAGE_INTERVALS.close()
 #sort the coverage interval file
 result, err = Popen(["cat coverage_intervals.txt | sort -k3,3 -k4,4n > tmp && mv tmp coverage_intervals.txt"], stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-print "Calculating Coverages....."
-result, err = Popen(["""touch sample_coverages_and_positions.txt"""],stdout=PIPE, stderr=PIPE, shell=True).communicate()
-OUT=open("sample_coverages_and_positions.txt",'w')
-OUT.write("strain")
-for key in sorted(FINAL_INTERVALS.keys()):
-	value=FINAL_INTERVALS[key]
-	value = map(str, value) 
-	info="_".join(value)
-	OUT.write("\t{key}_{info}".format(**locals()))
-OUT.write('\n')
-OUT.close()
+#print "Calculating Coverages....."
+#result, err = Popen(["""touch sample_coverages_and_positions.txt"""],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#OUT=open("sample_coverages_and_positions.txt",'w')
+#OUT.write("strain")
+#for key in sorted(FINAL_INTERVALS.keys()):
+#	value=FINAL_INTERVALS[key]
+#	value = map(str, value) 
+#	info="_".join(value)
+#	OUT.write("\t{key}_{info}".format(**locals()))
+#OUT.write('\n')
+#OUT.close()
 
 #run samtools depth
-cmd="parallel --gnu -j 0 /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/calculate_cov_at_intervals.py {{}} :::: {sample_list}".format(**locals())
-print cmd
-result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#cmd="parallel --gnu -j 0 /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/calculate_cov_at_intervals.py {{}} :::: {sample_list}".format(**locals())
+#print cmd
+#result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 print "Scoring....."
 #add scoring from coverage file to FINAL SAMPPLES dictionary
 with open("sample_coverages_and_positions.txt", 'r') as IN:
 	header=next(IN)
 	for line in IN:
+		print line
 		line=line.rstrip('\n')
 		items=re.split("[\t]", line)
 		sample=items[0]

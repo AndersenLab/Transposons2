@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=18
-#SBATCH --cpus-per-task=1
-#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
+#SBATCH --exclude=node[6,8]
 # this script runs the RSVSimtransposon simulation and detection scripts 
 # USE: run_RSVSim.sh <run_number>
 consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
@@ -23,7 +23,7 @@ original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_pos_
 #original_ref_pos=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_consensus_RSV_sim.bed
 TTR=/lscr2/andersenlab/kml436/git_repos2/mcclintock/
 minimal_Distance_to_count=1000
-minimal_supporting_reads=3
+minimal_supporting_reads=1
 minimal_supporting_individuals=1
 run_ID=${1}
 mkdir run_${run_ID}
@@ -42,12 +42,13 @@ find . -name "*final_results*" -exec rename 's/(\w+)$/$1\_IGNORE/' {} \;
 mkdir run_${run_ID}_filter_results_temp/
 mkdir run_${run_ID}_filter_results_telocate/
 
-mv merged_bam_${run_ID}.sorted.bam copy_merged_bam_${run_ID}.sorted.bam
-mv merged_bam_${run_ID}.sorted.bam.bai copy_merged_bam_${run_ID}.sorted.bam.bai
+#mv merged_bam_${run_ID}.sorted.bam copy_merged_bam_${run_ID}.sorted.bam
+#mv merged_bam_${run_ID}.sorted.bam.bai copy_merged_bam_${run_ID}.sorted.bam.bai
 #tenth of reads
-java -jar /opt/picard-tools/DownsampleSam.jar P=.25 I=copy_merged_bam_${run_ID}.sorted.bam O=testing.bam
-/opt/samtools/x64/samtools/samtools sort -o -@ 8 testing.bam out > merged_bam_${run_ID}.sorted.bam
-/opt/samtools/x64/samtools/samtools index merged_bam_${run_ID}.sorted.bam
+#java -jar /opt/picard-tools/DownsampleSam.jar P=.25 I=copy_merged_bam_${run_ID}.sorted.bam O=testing.bam
+#/opt/samtools/x64/samtools/samtools sort -o -@ 8 testing.bam out > merged_bam_${run_ID}.sorted.bam
+#/opt/samtools/x64/samtools/samtools index merged_bam_${run_ID}.sorted.bam
+cat adjusted_pos_all_tes_${run_ID}.bed | awk '{print $1"\tTransposon\t"$4"\t"$2+1"\t"$3+1"\t"$5"\t"$6"\t.\tID="$4";Name="$4";Alias="$4}' > telocate_adjusted_pos_all_tes_${run_ID}.bed
 
 
 #remove preivous temp output so that it doesn't interfere with future steps

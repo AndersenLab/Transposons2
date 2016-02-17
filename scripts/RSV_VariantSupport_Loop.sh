@@ -41,7 +41,7 @@ echo $dir
 
 rm final_results_RECALCULATED/BEDCOMPARE_SUMMARY_run_${run_ID}_N2.txt
 rm final_results_RECALCULATED/FAMILY_TFPNs_F
-for i in {1..10}
+for i in {1..30}
 do
 	i=$( echo "scale=4;$i / 10 " | bc -l )
 	#FEED JUST SIMULATED to TEMP
