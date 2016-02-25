@@ -31,6 +31,7 @@ gene_interrupt=GENE.sh
 cerfinder=finds_cers.py
 count_classes=total_class.py
 find_outliers=outliers.py
+interest=pull_strains_ins_info.py
 
 #files
 samples=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/master_sample_list.txt
@@ -157,9 +158,12 @@ python ${scripts_dir}/${find_outliers}
 python ${scripts_dir}/${count_classes} 
 cat T_kin_C_matrix_full.txt total_classes.txt > tmp && mv tmp T_kin_C_matrix_full.txt
 mkdir data_for_figures
-cd data_for_figures
+#genes of interest
+cd gene_interrupt
+mkdir models
+python ${scripts_dir}/${interest} gon-2 prg-1 unc-130 vit-1 cdr-2 ceh-34 egl-34 pkd-2
 
-
+cd ${results_dir}/final_results/data_for_figures
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/coverage_and_te_counts.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/gene_interrupt/essentiality_nonredundant_GO.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/kin_matrix_full.txt .

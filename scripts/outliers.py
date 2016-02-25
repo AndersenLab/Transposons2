@@ -10,6 +10,11 @@ OUT_FAMILY = open ("/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/fi
 OUT_TOTAL.write("trait\tstrain\tcount\taverage\tSD\tdifference\n")
 OUT_FAMILY.write("trait\tstrain\tcount\taverage\tSD\tdifference\n")
 
+OUT_HEADS=open("/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/heads.txt", 'w')
+OUT_HEADS.write("Trait\tStrain\tStrain_Count\tStrain_SD\tMEAN\tSD\n".format(**locals()))
+OUT_TAILS=open("/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/tails.txt", 'w')
+OUT_TAILS.write("Trait\tStrain\tStrain_Count\tStrain_SD\tMEAN\tSD\n".format(**locals()))
+
 from collections import defaultdict
 from collections import Counter
 totals=defaultdict(list)
@@ -35,11 +40,23 @@ for i,values in totals.items():
 	values=[float(x) for x in values]
 	av=statistics.mean(values)
 	sd=statistics.pstdev(values)
-	#test_difference=abs(av-sd)
-	#print test_difference
+	unique_values=sorted(set(values))
+
+	no_unique_values= len(unique_values) # get number of unique values
+	if no_unique_values>10:
+		process_tails="TRUE"
+		slice_head=unique_values[0:10] # the first ten values
+		slice_tail=unique_values[-10:] # the last ten values
+	else:
+		process_tails="FALSE"
+
+	
+
+
+
 	for strain_info in strain_totals[i]:
 		info=re.split(":", strain_info)
-		strain,count=info
+		strainN,count=info
 		if count != "NA":
 			strain_difference=abs(float(av)-float(count))
 			if strain_difference> (2*sd):
@@ -48,5 +65,15 @@ for i,values in totals.items():
 				else:
 					OUT_FAMILY.write("{i}\t{strain}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
 
+			if process_tails=="TRUE":
+				if float(count) in slice_head:
+					OUT_HEADS.write("{i}\t{strainN}\t{count}\t{strain_difference}\t{av}\t{sd}\n".format(**locals()))
+				if float(count) in slice_tail:
+					OUT_TAILS.write("{i}\t{strainN}\t{count}\t{strain_difference}\t{av}\t{sd}\n".format(**locals()))
+
+		#if
+
 OUT_TOTAL.close()
 OUT_FAMILY.close()
+OUT_TAILS.close()
+OUT_HEADS.close()

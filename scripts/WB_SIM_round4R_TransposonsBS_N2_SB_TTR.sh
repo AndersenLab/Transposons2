@@ -4,7 +4,7 @@
 #SBATCH --cpus-per-task=10
 #SBATCH --nodes=1
 #SBATCH --mem=18000
-#SBATCH --exclude=node[6,8]
+#SBATCH --exclude=node[6,7,8]
 
 # this script runs round4 of the transposon simulations/detection
 # USE: WB_SIM_round4_TransposonsBS_N2_SB_TTR.sh
@@ -25,6 +25,7 @@ location_list=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/bed
 ##ALTERNATE: location_list=/lscr2/andersenlab/kml436/sv_files/WB_REPB_locationlist.gff
 HL_gff=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/WB_pos_element_names_alias_round4.bed
 HL_gff_T=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/telcoate_WB_pos_element_names_alias_round4.bed
+temp_ref=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round4/temp_ref_pos.bed
 ##ALTERNATE: HL_gff=/lscr2/andersenlab/kml436/sv_files/WB_REPB_ID_transposable_element_HL.gff
 minimal_Distance_to_count=1000
 minimal_supporting_reads=3
@@ -44,7 +45,7 @@ dir=`pwd`
 ##randomsites--add options here?
 
 echo "Generating random intervals to attempt spike ins......"
-$python_version ${bam_surgeon}/etc/randomsites.py -g ${reference} -n 10 --minvaf 1 --maxvaf 1 sv > ${run_ID}_BS_random_intervals.txt
+$python_version ${bam_surgeon}/etc/randomsites.py -g ${reference} -n 1000 --minvaf 1 --maxvaf 1 sv > ${run_ID}_BS_random_intervals.txt
 bedtools intersect -v -a ${run_ID}_BS_random_intervals.txt -b $high_coverage_regions > interval_tmp && mv interval_tmp ${run_ID}_BS_random_intervals.txt
 # avoid spiking in to already existing transposons
 bedtools intersect -v -a ${run_ID}_BS_random_intervals.txt -b $existing_transposons > interval_tmp && mv interval_tmp ${run_ID}_BS_random_intervals.txt
@@ -63,7 +64,7 @@ mkdir ${run_ID}_${bam_name}_filter_results/
 mkdir Retro
 ##############################################################
 echo "Running TEMP..."
-bash ${TTR}/TEMP/scripts/TEMP_Insertion.sh -i ${run_ID}_${bam_name}.sorted.bam -s ${TTR}/TEMP/scripts/ -x 30 -r $TE_consensus -t $HL_gff -m 1 -c 20 &> ${run_ID}_TEMP_log.txt
+bash ${TTR}/TEMP/scripts/TEMP_Insertion.sh -i ${run_ID}_${bam_name}.sorted.bam -s ${TTR}/TEMP/scripts/ -x 30 -r $TE_consensus -t $temp_ref -m 1 -c 20 &> ${run_ID}_TEMP_log.txt
 echo "TEMP finished...altering output..."
 sed '1d' "${run_ID}_${bam_name}.insertion.refined.bp.summary" | awk '{if ($4 == "sense" || $4 == "antisense"); else print $0}' | awk '{ printf $1"\t"$9"\t"$11"\t"$7"\t"$4"_non-reference_"sample"_temp_\t0\t"; if ( $5 == "sense" ) printf "+"; else printf "-"; print "\t"$6"\t"$10"\t"$12}' > "${run_ID}_${bam_name}_temp_presort_raw.txt"
 bedtools sort -i "${run_ID}_${bam_name}_temp_presort_raw.txt" > "${run_ID}_${bam_name}_temp_sorted_raw.txt"

@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # this script takes 3-4 letter gene names as input and pulls out the line of info from essentiality_nonredundant_strain_info.txt if
 # the gene names matches those that were supplied
-# USE: pull_strains_info_ins.py
+# also outputs fasta seunces on UTRs, exons, and introns 
+# USE: pull_strains_info_ins.py <gene names>
 # example: python ../../../scripts/pull_strains_ins_info.py prg-1
 
 
@@ -45,7 +46,8 @@ with open(in_file, 'r') as IN:
 						exons[transcript_name].extend([chromosome,start,te,gene_name])
 						#exons[gene_name].extend([chromosome,start,te,transcript_name])
 OUT.close()
-
+for i in exons.keys():
+	print i
 
 splices={}
 splices_location={}
@@ -67,11 +69,14 @@ with open(exon_overlap, 'r') as IN:
 		transposon=match.group(3)
 
 		if parent_transcript in exons.keys():
+
 			info=exons[parent_transcript]
 			C1,S1,T1,G1=info[0:len(info)]
 			if chromosome_e == C1: # check that chromosome matches
-				if transposon_location==S1: # check that lovation of insertion matches
+				if transposon_location==S1: # check that location of insertion matches
 					if transposon == T1: # check that transposon family matches
+
+
 						splices[splice_form]=parent_transcript
 						splices_location[splice_form]=str(te_location)
 						splices_gene[splice_form]=G1
@@ -191,7 +196,7 @@ for i in splices.keys():
 	parent=splices[i]
 	parent_start=gene_starts[parent]
 	marker=int(location)-int(parent_start)
-	print marker
+
 
 
 	OUT.write(i +"\t" + str(marker) + "\t" + splices_gene[i] + "\t" + splices_transposon[i] + "\n")

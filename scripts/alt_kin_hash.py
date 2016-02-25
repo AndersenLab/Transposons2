@@ -232,7 +232,6 @@ print "Scoring....."
 with open("sample_coverages_and_positions.txt", 'r') as IN:
 	header=next(IN)
 	for line in IN:
-		print line
 		line=line.rstrip('\n')
 		items=re.split("[\t]", line)
 		sample=items[0]
@@ -266,9 +265,10 @@ value=sorted(value)
 
 for i in value:
 	strain=(re.split(":", i))[0]
-	print strain
 	KIN_MATRIX.write("\t{strain}".format(**locals()))
 KIN_MATRIX.write('\n')
+
+print "\nBREAK\n"
 
 #output the final matrix
 for key,value in FINAL_SAMPLES.items():
@@ -281,6 +281,7 @@ for key,value in FINAL_SAMPLES.items():
 
 
 	for i in value:
+		print i
 		score=(re.split(":", i))[1]
 		KIN_MATRIX.write("\t{score}".format(**locals()))
 	KIN_MATRIX.write('\n')

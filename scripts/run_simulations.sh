@@ -40,13 +40,14 @@ do
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop_round20_strict_VS.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_VariantSupport_Loop_round20_strict_RS.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop_round20_strict_VS_and_RS.sh $i
-	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round4R_TransposonBS_N2_SB_TTR.sh $i
-	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round4R_TransposonsBS_N2_SB_TTR.sh $i
 
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_tenth.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_half.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim_subset_quarter.sh $i
 	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/run_RSVSim.sh $i
-	sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop.sh $i
+	#sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/RSV_ReadSupport_Loop.sh $i
+
+	sbatch /lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/WB_SIM_round4R_TransposonsBS_N2_SB_TTR.sh $i
+
 
 done
