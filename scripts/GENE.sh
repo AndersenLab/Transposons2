@@ -43,5 +43,8 @@ cat essentiality_nonredundant_GO.txt | awk '$3=="new" {print $0}' >> tmp && mv t
 
 python ${scripts_dir}/insertion_distribution.py
 
+#pull out only insertion in coding regions
+cat essentiality_nonredundant_strain_info.txt | awk '$5=="CDS" {print $0}' > essentiality_nonredundant_cds.txt
+
 
 

@@ -161,7 +161,8 @@ mkdir data_for_figures
 #genes of interest
 cd gene_interrupt
 mkdir models
-python ${scripts_dir}/${interest} gon-2 prg-1 unc-130 vit-1 cdr-2 ceh-34 egl-34 pkd-2
+python ${scripts_dir}/${interest} vit-1 cdr-2  #gon-2 prg-1 unc-130 ceh-34 egl-34 pkd-2
+cat essentiality_nonredundant_cds.txt |awk '$9 !="NA" {print $0}' > essentiality_nonredundant_cds_lethal.txt
 
 cd ${results_dir}/final_results/data_for_figures
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/coverage_and_te_counts.txt .

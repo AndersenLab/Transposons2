@@ -6,6 +6,7 @@
 # USE:analyze_simulations.sh in appropriate folder
 
 recalculate_edit=RECALCULATE_EDIT_NEWCOLLAPSE.sh
+
 #recalculate_edit=RECALCULATE_EDIT.sh
 #recalculate=RECALCULATE.sh
 merge=merge_SC_files.sh
@@ -35,9 +36,9 @@ bash ${script_dir}/${average} $consensus # consensus seq file doesn't matter her
 #only sometimes run the below line
 #bash ${script_dir}/${family_average} $consensus_renamed
 #graph the TPR and FDR
-cd averages
-Rscript ${script_dir}/${graph_TFPN}
-cd ..
+#cd averages
+#Rscript ${script_dir}/${graph_TFPN}
+#cd ..
 #plot the TPR and FDR per family
 #only sometimes run the below line
 #cd families

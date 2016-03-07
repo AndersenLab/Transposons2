@@ -123,10 +123,11 @@ with open("{results_dir}/CtCp_clipped.txt".format(**locals())) as IN:
 OUT.close()
 #os.system("cat test.txt|sort|uniq >tmp && mv tmp test.txt")
 
-# base call on priority order exon > five prime UTR > three prime UTR > promoter > intron > gene > intergenic
-exon={}
+# base call on priority order CDS > five prime UTR > three prime UTR >  exon > promoter > intron > gene > intergenic
+cds={}
 five_prime_UTR={}
 three_prime_UTR={}
+exon={}
 promoter={}
 intron={}
 gene={}
@@ -139,12 +140,14 @@ with open("essentiality_redundant.txt", 'r') as IN:
 		chromosome,TE_start,method,family,gene_type,transcript_name,alias,biotype,phenotype=items[0:len(items)]
 		ID="{chromosome}_{TE_start}_{method}_{family}_{transcript_name}".format(**locals())
 		#redundant dictionaries
-		if gene_type=="exon":
-			exon[ID]=line
+		if gene_type=="CDS":
+			cds[ID]=line
 		if gene_type=="five_prime_UTR":
 			five_prime_UTR[ID]=line
 		if gene_type=="three_prime_UTR":
 			three_prime_UTR[ID]=line
+		if gene_type=="exon":
+			exon[ID]=line
 		if gene_type=="promoter":
 			promoter[ID]=line
 		if gene_type=="intron":
@@ -159,12 +162,14 @@ with open("essentiality_redundant.txt", 'r') as IN:
 OUT=open("essentiality_nonredundant.txt", 'w')
 #nonredundant classifications
 for ID in IDs.keys():
-	if ID in exon.keys():
-		OUT.write(exon[ID]+'\n')
+	if ID in cds.keys():
+		OUT.write(cds[ID]+'\n')
 	elif ID in five_prime_UTR.keys():
 		OUT.write(five_prime_UTR[ID]+'\n')
 	elif ID in three_prime_UTR.keys():
 		OUT.write(three_prime_UTR[ID]+'\n')
+	elif ID in exon.keys():
+		OUT.write(exon[ID]+'\n')
 	elif ID in promoter.keys():
 		OUT.write(promoter[ID]+'\n')
 	elif ID in intron.keys():

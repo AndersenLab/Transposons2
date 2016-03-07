@@ -3,7 +3,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=40000
-#SBATCH --exclude=node[2,3,4,5]
+#SBATCH --exclude=node[2,3,4,5,8]
 
 ##create error log file for everything?
 
