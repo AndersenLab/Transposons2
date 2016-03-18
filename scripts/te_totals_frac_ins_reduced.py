@@ -9,9 +9,9 @@ infile=sys.argv[1]
 indexed_fam={}
 all_families={}
 
-OUT=open("kin_frac_matrix_ins.txt", 'w') #fractions
-OUTC=open("kin_C_matrix_ins.txt", 'w') #counts
-OUTN=open("kin_C_matrix_NAs.txt", 'w') #NA
+OUT=open("kin_frac_matrix_ins_reduced.txt", 'w') #fractions
+OUTC=open("kin_C_matrix_ins_reduced.txt", 'w') #counts
+OUTN=open("kin_C_matrix_NAs_reduced.txt", 'w') #NA
 
 with open(infile, 'r') as IN:
 	headers=next(IN)

@@ -6,7 +6,7 @@
 
 import re
 
-calls="/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/kin_C_matrix_full.txt"
+calls="/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/kin_C_matrix_full_reduced.txt"
 CALLS=open(calls,"r")
 
 absences={}

@@ -25,6 +25,9 @@ kin=kin_hash.py
 kin_AF=kin_hash_AF.py
 frac_matrix_ins=te_totals_frac_ins.py
 frac_matrix_AF=te_totals_frac_AF.py
+NA_pos=NA_per_ins.py
+reduce_ins=reduce_insertion_positions.py
+frac_matrix_ins_reduced=te_totals_frac_ins_reduced.py
 activity=activity_calculator.py
 CtCp=generate_CtCp.py
 gene_interrupt=GENE.sh
@@ -32,6 +35,7 @@ cerfinder=finds_cers.py
 count_classes=total_class.py
 find_outliers=outliers.py
 interest=pull_strains_ins_info.py
+id=give_id.py
 
 #files
 samples=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/master_sample_list.txt
@@ -95,16 +99,39 @@ cat kin_matrix_ins.txt > tmp && cat kin_matrix_AF.txt |sed 1d >>tmp && mv tmp ki
 #transpose individual matrices:
 bash ${scripts_dir}/transpose_matrix.sh kin_matrix_ins.txt  T_kin_matrix_ins.txt 
 bash ${scripts_dir}/transpose_matrix.sh kin_matrix_AF.txt  T_kin_matrix_AF.txt 
+#calculate percentage of NAs at each insertion position
+python ${scripts_dir}/${NA_pos}
+#reduce positions for mappings (remove sites with a high amount of missing data)
+python ${scripts_dir}/${NA_pos}${reduce_ins}
+bash ${scripts_dir}/transpose_matrix.sh kin_matrix_ins_reduced.txt  T_kin_matrix_ins_reduced.txt 
+
+
+
+
 #calculate fraction totals
 python ${scripts_dir}/${frac_matrix_ins} T_kin_matrix_ins.txt
 python ${scripts_dir}/${frac_matrix_AF} T_kin_matrix_AF.txt
+python ${scripts_dir}/${frac_matrix_ins_reduced} T_kin_matrix_ins_reduced.txt
 #transpose matrices
 bash ${scripts_dir}/transpose_matrix.sh kin_frac_matrix_ins.txt T_kin_frac_matrix_ins.txt
 bash ${scripts_dir}/transpose_matrix.sh kin_frac_matrix_AF.txt T_kin_frac_matrix_AF.txt
 bash ${scripts_dir}/transpose_matrix.sh kin_C_matrix_ins.txt T_kin_C_matrix_ins.txt
 bash ${scripts_dir}/transpose_matrix.sh kin_C_matrix_AF.txt T_kin_C_matrix_AF.txt
+bash ${scripts_dir}/transpose_matrix.sh kin_C_matrix_NAs.txt T_kin_C_matrix_NAs.txt
+#transpose reduced matrices
+bash ${scripts_dir}/transpose_matrix.sh kin_frac_matrix_ins_reduced.txt T_kin_frac_matrix_ins_reduced.txt
+bash ${scripts_dir}/transpose_matrix.sh kin_C_matrix_ins_reduced.txt T_kin_C_matrix_ins_reduced.txt
+bash ${scripts_dir}/transpose_matrix.sh kin_C_matrix_NAs_reduced.txt T_kin_C_matrix_NAs_reduced.txt
+
 # make sure column names between the matrices match
 result=`diff <(head -n 1 T_kin_frac_matrix_ins.txt) <(head -n 1 T_kin_frac_matrix_AF.txt)`
+if [$result eq '']
+	then echo "matched"
+	else echo "column names do not match, exiting..." && exit 1
+fi
+
+# make sure column names between the matrices match
+result=`diff <(head -n 1 T_kin_frac_matrix_ins_reduced.txt) <(head -n 1 T_kin_frac_matrix_AF.txt)` #AF matrix doesn't need to be reduced
 if [$result eq '']
 	then echo "matched"
 	else echo "column names do not match, exiting..." && exit 1
@@ -112,14 +139,27 @@ fi
 #merge matrices
 cat T_kin_frac_matrix_ins.txt > tmp && cat T_kin_frac_matrix_AF.txt |sed 1d >>tmp && mv tmp T_kin_frac_matrix_full.txt
 cat T_kin_C_matrix_ins.txt > tmp && cat T_kin_C_matrix_AF.txt |sed 1d >>tmp && mv tmp T_kin_C_matrix_full.txt
+#merge reduced insertion matrix with original AF matrix
+cat T_kin_frac_matrix_ins_reduced.txt > tmp && cat T_kin_frac_matrix_AF.txt |sed 1d >>tmp && mv tmp T_kin_frac_matrix_full_reduced.txt
+cat T_kin_C_matrix_ins_reduced.txt > tmp && cat T_kin_C_matrix_AF.txt |sed 1d >>tmp && mv tmp T_kin_C_matrix_full_reduced.txt
+
+
+
+
 # remove lines with all NA (no instance of that transposition event in any of the samples)
 mv T_kin_frac_matrix_full.txt original_T_kin_frac_matrix_full.txt
 cat original_T_kin_frac_matrix_full.txt | awk '{for (i=2;i<=NF;i++) {if($i !="NA"){print $0;break}}}' > T_kin_frac_matrix_full.txt
 mv T_kin_C_matrix_full.txt original_T_kin_C_matrix_full.txt
 cat original_T_kin_C_matrix_full.txt | awk '{for (i=2;i<=NF;i++) {if($i !="NA"){print $0;break}}}' > T_kin_C_matrix_full.txt
+# remove lines with all NA  for redcued files
+mv T_kin_frac_matrix_full_reduced.txt original_T_kin_frac_matrix_full_reduced.txt
+cat original_T_kin_frac_matrix_full_reduced.txt | awk '{for (i=2;i<=NF;i++) {if($i !="NA"){print $0;break}}}' > T_kin_frac_matrix_full_reduced.txt
+mv T_kin_C_matrix_full_reduced.txt original_T_kin_C_matrix_full_reduced.txt
+cat original_T_kin_C_matrix_full_reduced.txt | awk '{for (i=2;i<=NF;i++) {if($i !="NA"){print $0;break}}}' > T_kin_C_matrix_full_reduced.txt
 #transpose and calculate activity measurements
 bash ${scripts_dir}/transpose_matrix.sh T_kin_C_matrix_full.txt kin_C_matrix_full.txt
-python ${scripts_dir}/${activity} kin_C_matrix_full.txt
+bash ${scripts_dir}/transpose_matrix.sh T_kin_C_matrix_full_reduced.txt kin_C_matrix_full_reduced.txt
+python ${scripts_dir}/${activity} kin_C_matrix_full.txt #only for non-redcued set
 bash ${scripts_dir}/transpose_matrix.sh Full_Results_Activity.txt T_Full_Results_Activity.txt
 # add in coverage trait
 python ${scripts_dir}/${coverage} ../Full_Results.txt $bam_stats
@@ -130,12 +170,19 @@ if [$result eq '']
 	then echo "matched"
 	else echo "column names do not match, exiting..." && exit 1
 fi
+
+result=`diff <(head -n 1 T_kin_C_matrix_full_reduced.txt) <(head -n 1 T_coverage.txt )`
+if [$result eq '']
+	then echo "matched"
+	else echo "column names do not match, exiting..." && exit 1
+fi
 cat T_coverage.txt |sed '1d' >tmp
 cat T_kin_C_matrix_full.txt tmp > all && mv all T_kin_C_matrix_full.txt
+cat T_kin_C_matrix_full_reduced.txt tmp > all && mv all T_kin_C_matrix_full_reduced.txt
 # copy files to final folder
 cd ${results_dir}
 mkdir final_results
-cp ${results_dir}/kinship/T_Full_Results_Activity.txt ${results_dir}/kinship/T_kin_frac_matrix_full.txt ${results_dir}/kinship/T_kin_C_matrix_full.txt ${results_dir}/kinship/kin_matrix_full.txt final_results
+cp ${results_dir}/kinship/T_Full_Results_Activity.txt ${results_dir}/kinship/T_kin_frac_matrix_full.txt ${results_dir}/kinship/T_kin_C_matrix_full.txt ${results_dir}/kinship/kin_matrix_full.txt ${results_dir}/kinship/T_kin_C_matrix_full_reduced.txt final_results
 mv CtCp_all_nonredundant.txt CtCp_redundant.txt # rename this file to avoid confustion
 #generate CtCp file with assigned TE classes
 cd final_results
@@ -161,8 +208,11 @@ mkdir data_for_figures
 #genes of interest
 cd gene_interrupt
 mkdir models
-python ${scripts_dir}/${interest} vit-1 cdr-2  #gon-2 prg-1 unc-130 ceh-34 egl-34 pkd-2
+python ${scripts_dir}/${interest} vit-1 cdr-2  #gon-2 prg-1 unc-130 ceh-34 egl-34 pkd-2 --don't need this step anymore
 cat essentiality_nonredundant_cds.txt |awk '$9 !="NA" {print $0}' > essentiality_nonredundant_cds_lethal.txt
+
+#assign id numbers to traits
+python ${scripts_dir}/${id}
 
 cd ${results_dir}/final_results/data_for_figures
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/coverage_and_te_counts.txt .
@@ -172,6 +222,10 @@ cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/contradictory_calls
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/T_kin_C_matrix_full.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/CtCp_all_nonredundant.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/cer_comparison.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/key_T_kin_C_matrix_full_id.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/key_kin_matrix_full_id.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/key_T_Full_Results_Activity_id.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/outliers_fam_tot.txt .
 
 
 

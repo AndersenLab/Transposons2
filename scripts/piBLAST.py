@@ -23,8 +23,8 @@ with open(infile, 'r') as IN:
 		line=line.rstrip('\n')
 		items=re.split('\t', line)
 		
-		trait=items[15]
-		transcript=items[22]
+		trait=items[14]
+		transcript=items[21]
 		pairs[transcript]=trait
 
 # dictionary of information for piRNA transcript chrom, start, and end
