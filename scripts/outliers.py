@@ -11,6 +11,7 @@ OUT_FAMILY_PRUNED = open ("/lscr2/andersenlab/kml436/git_repos2/Transposons2/res
 
 OUT_TOTAL.write("trait\tstrain\tcount\taverage\tSD\tdifference\n")
 OUT_FAMILY.write("trait\tstrain\tcount\taverage\tSD\tdifference\n")
+OUT_FAMILY_PRUNED.write("trait\tstrain\tcount\taverage\tSD\tdifference\n")
 
 OUT_HEADS=open("/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/heads.txt", 'w')
 OUT_HEADS.write("Trait\tStrain\tStrain_Count\tStrain_SD\tMEAN\tSD\n".format(**locals()))
@@ -73,9 +74,8 @@ for i,values in totals.items():
 		TE=match.group(2)
 		TE_type=classifications[TE]
 
-	print i
 	max_value=max(values)
-	print max_value
+
 
 
 
@@ -90,15 +90,14 @@ for i,values in totals.items():
 				else:
 					OUT_FAMILY.write("{i}\t{strainN}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
 					if max_value !=1:
-						print max_value
-						if method == "ZERO_new":
-							if float(count)<float(av):
+						if method == "ONE_new":
+							if float(count)>float(av):
 								OUT_FAMILY_PRUNED.write("{i}\t{strainN}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
 						elif method == "reference":
 							if float(count)<float(av):
 								if TE_type == "retrotransposon" or TE_type == "unknown":
 									OUT_FAMILY_PRUNED.write("{i}\t{strainN}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
-						elif method == "absence":
+						elif method == "absent":
 							if float(count)>float(av):
 								if TE_type == "dnatransposon" or TE_type =="unknown":
 									OUT_FAMILY_PRUNED.write("{i}\t{strainN}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))

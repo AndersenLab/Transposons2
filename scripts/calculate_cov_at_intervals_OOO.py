@@ -45,6 +45,6 @@ for key in sorted(cov_dict.keys()):
 	value=cov_dict[key]
 	tempo=info[key]
 	#OUT.write("\t{key}:{tempo}:{value}".format(**locals()))
-	OUT.write("\t{value}".format(**locals()))
+	OUT.write("\t{key}:{tempo}:{value}".format(**locals()))
 OUT.write("\n")
 OUT.close()

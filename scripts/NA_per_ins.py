@@ -9,10 +9,10 @@ with open(infile, 'r') as IN:
 		line=line.rstrip('\n')
 		items=re.split('\t',line)
 		trait=items[0]
-		len_it=len(items)+1
-		strain_no=len_it-2
+		len_it=len(items)
+		strain_no=len_it-1
 
-		for i in items[1:len_it]:
+		for i in items[1:]:
 			if i=="NA":
 				NA_count +=1
 		NA_fraction=float(NA_count)/strain_no

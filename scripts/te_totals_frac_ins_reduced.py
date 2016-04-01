@@ -82,7 +82,9 @@ with open(infile, 'r') as IN:
 				ONE="NA"
 				ZERO="NA"
 
-				NA_frac=100
+				NA_frac=1
+				totAl=NA_total[i]
+				NA=NA_total[i]
 			else:
 				ONE=ONE_total[i]
 				ZERO=ZERO_total[i]
@@ -106,11 +108,10 @@ with open(infile, 'r') as IN:
 			OUT.write("\t{ZERO_frac}".format(**locals()))
 			OUTC.write("\t{ONE}".format(**locals()))
 			OUTC.write("\t{ZERO}".format(**locals()))
-			if NA_frac==100:
-				OUTN.write("\t{NA_frac}".format(**locals()))
-			else:
-				OUTN.write("\t{NA_frac}({NA}/{totAl})".format(**locals()))
-				OUTN.write("\t{NA_frac}({NA}/{totAl})".format(**locals()))
+
+			
+			OUTN.write("\t{NA_frac}({NA}/{totAl})".format(**locals()))
+			OUTN.write("\t{NA_frac}({NA}/{totAl})".format(**locals()))
 		OUTC.write("\t{ONE_C}".format(**locals()))
 		OUT.write('\n')
 		OUTC.write('\n')

@@ -52,8 +52,13 @@ with open(peak_table, 'r') as IN:
 OUT.close()
 
 
-#check for overlap
+#check for overlap 
 
+#check for overlap lit genes
 cmd="bedtools intersect -wo -a /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/lit_TE_control_positions.bed -b /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/peak_table_pos.bed > /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/QLT_lit_overlap.txt"
+from subprocess import Popen, PIPE
+result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+#check for overlap piRNA
+cmd="bedtools intersect -wo -a /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_piRNA_positions.gff -b /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/peak_table_pos.bed > /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/QLT_piRNA_overlap.txt"
 from subprocess import Popen, PIPE
 result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()

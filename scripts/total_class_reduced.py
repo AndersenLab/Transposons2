@@ -5,8 +5,8 @@ import re
 from collections import defaultdict
 from collections import Counter
 totals=defaultdict(list)
-infile="/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/CtCp_all_nonredundant.txt"
-strain_matrix="/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/T_kin_C_matrix_full.txt"
+infile="/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/CtCp_all_nonredundant_reduced.txt"
+strain_matrix="/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/T_kin_C_matrix_full_reduced.txt"
 strain_list=list()
 
 with open(infile) as IN:
@@ -31,7 +31,7 @@ with open(strain_matrix) as IN:
 
 
 
-OUT=open("total_classes.txt","w")
+OUT=open("total_classes_reduced.txt","w")
 
 length_list=len(strain_list)
 last_strain=strain_list[length_list-1]

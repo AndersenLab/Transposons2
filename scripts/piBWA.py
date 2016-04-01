@@ -21,7 +21,7 @@ found_CIs=defaultdict(list)
 pi_transcripts=list()
 
 infile="/lscr2/andersenlab/kml436/git_repos2/Transposons2/piRNA/vc_PI.txt"
-piqtl="/lscr2/andersenlab/kml436/git_repos2/Transposons2/piRNA/piRNA_table.txt"
+piqtl="/lscr2/andersenlab/kml436/git_repos2/Transposons2/piRNA/TT.txt"
 pirs="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_piRNA_positions.gff"
 reference="/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.fa"
 TE_consensus="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta"
@@ -243,7 +243,7 @@ for i in set(pairs_CI.keys()):
 	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 	# run bwa aln
-	cmd= "bwa aln -o 0 -n 3 -t 2 {i}_TE_seqs.fasta {i}_full_piRNAs.fasta > full_{i}.sai".format(**locals())
+	cmd= "bwa aln -o 0 -n 5 -t 2 {i}_TE_seqs.fasta {i}_full_piRNAs.fasta > full_{i}.sai".format(**locals())
 	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 	cmd= "bwa samse {i}_TE_seqs.fasta full_{i}.sai {i}_full_piRNAs.fasta > full_{i}.sam".format(**locals())
