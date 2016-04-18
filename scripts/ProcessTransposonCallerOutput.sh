@@ -3,7 +3,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
-#SBATCH --nodelist=node7
+#SBATCH --nodelist=node6
 #SBATCH --mem=2000
 
 family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt

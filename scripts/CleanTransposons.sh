@@ -263,6 +263,7 @@ cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/T_kin_C_mat
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/NA_counts_at_positions.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/T_kin_C_matrix_NAs_reduced.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/gene_interrupt/essentiality_nonredundant_GO.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/gene_interrupt/essentiality_nonredundant_cds.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/kin_matrix_full.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/contradictory_calls.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/T_kin_C_matrix_full.txt .
