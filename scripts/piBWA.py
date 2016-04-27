@@ -12,6 +12,8 @@ from Bio import SeqIO
 import os
 import fnmatch
 import sys
+import pickle
+import pysam
 
 pairs=defaultdict(list)
 found=defaultdict(list)
@@ -93,28 +95,48 @@ with open(piqtl, 'r') as IN:
 		pairs_CI[trait]=0
 		OUT.write("{chromosome}\t{CI_L}\t{CI_R}\t{trait}\t.\t.\n".format(**locals()))
 OUT.close()
-
+print "STEP 2"
 # find interesection of CIs and piRNAs
-cmd = "bedtools intersect -wo -a CIs.bed -b {pirs} > CIs_pirs_intersect.txt".format(**locals())
-result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+if not os.path.isfile("CIs_pirs_intersect.txt"):
+	# find interesection of CIs and piRNAs
+	cmd = "bedtools intersect -wo -a CIs.bed -b {pirs} > CIs_pirs_intersect.txt".format(**locals())
+	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
 
-pi_position_info=defaultdict(list)
-pi_trait_info=defaultdict(list)
+	pi_position_info=defaultdict(list)
+	pi_trait_info=defaultdict(list)
+	#iterate over intersection file and write search region file for the CIs to prep for bedtools
+	#iterate over intersection file and write search region file for the CIs to prep for bedtools
+	
+	with open("CIs_pirs_intersect.txt", 'r') as IN:
+		for line in IN:
+			line=line.rstrip('\n')
+			items=re.split('\t', line)
+			trait_hit=items[3]
+			chromosome, start, end, orient = items[6],items[9],items[10],items[12]
+			info=items[14]
+			match = re.search("(?:Pseudogene|Transcript|sequence_name|^Name)(?:=|:)([\w|\d]+.\d+)", info) #just pull gene name, remove splice info
+			transcript_name=match.group(1)	
+			pi_position_info[transcript_name]=[chromosome,start,end,orient]
+			pi_trait_info[transcript_name].append(trait_hit)
 
-#iterate over intersection file and write search region file for the CIs to prep for bedtools
-#iterate over intersection file and write search region file for the CIs to prep for bedtools
-with open("CIs_pirs_intersect.txt", 'r') as IN:
-	for line in IN:
-		line=line.rstrip('\n')
-		items=re.split('\t', line)
-		trait_hit=items[3]
-		chromosome, start, end, orient = items[6],items[9],items[10],items[12]
-		info=items[14]
-		match = re.search("(?:Pseudogene|Transcript|sequence_name|^Name)(?:=|:)([\w|\d]+.\d+)", info) #just pull gene name, remove splice info
-		transcript_name=match.group(1)	
-		pi_position_info[transcript_name]=[chromosome,start,end,orient]
-		pi_trait_info[transcript_name].append(trait_hit)
+
+	with open("pi_position_info.txt", "wb") as fp: # Pickle
+		pickle.dump(pi_position_info, fp) 
+
+	with open("pi_trait_info.txt", "wb") as fp: # Pickle
+		pickle.dump(pi_trait_info, fp) 
+
+
+
+else:
+	print "CIs_pirs_intersect.txt exists, continuing..."
+	with open("pi_position_info.txt", "rb") as fp: 
+		pi_position_info = pickle.load(fp)  # Unpickle
+	with open("pi_trait_info.txt", "rb") as fp: 
+		pi_trait_info = pickle.load(fp)  # Unpickle
+
+
 
 print "STEP 3"
 OUT=open("search_regions_fullPI.txt",'w')
@@ -129,6 +151,7 @@ for i,z in pi_position_info.items():
 	OUT.write('\n')
 OUT.close()
 
+print "STEP 4"
 # dictionary of information for piRNA transcript chrom, start, and end
 with open(pirs, 'r') as IN:
 	for line in IN:
@@ -144,7 +167,7 @@ with open(pirs, 'r') as IN:
 		if transcript_name in pi_transcripts:
 			found[transcript_name].extend([chromosome,start,end,orient])
 
-
+print "STEP 5"
 # check
 for i in pi_transcripts:
 	if i not in found.keys():
@@ -163,7 +186,7 @@ for i in pairs.keys():
 		OUT.write(values + '\t' + transcript + ':' + trait + '\t.\t' + orient + '\n')
 OUT.close()
 
-
+print "STEP 6"
 # run bedtools getfasta
 cmd="bedtools getfasta -name -s -fi {reference} -bed search_regions.txt -fo found_piRNAs.txt".format(**locals())
 result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
@@ -183,59 +206,217 @@ with open(family_renames, 'r') as IN:
 		element,family = items[0:2]
 		renames[family].append(element)
 
+OUT_SUMMARY=open("summary_mismatches_BWA_vi.txt", 'w')
+OUT_SUMMARY.write("Number of Mismatches\tNumber Unique piRNAs Aligned\tNumber Unique Transposons\n")
+
+OUT_SUMMARY_STRICT=open("summary_mismatches_BWA_strict_vi.txt", 'w')
+OUT_SUMMARY_STRICT.write("Number of Mismatches\tNumber Unique piRNAs Aligned\tNumber Unique Transposons\n")
+
+print "STEP 7"
+def align(mismatches,pi,strict=False,full=False):
+	TE_consensus="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta"
+	pi_fasta="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/piRNAs.fasta"
+	family_renames="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt"
+	print pi
+	if full==True:
+		full="_full"
+	else:
+		full=""
+
+	# run bwa aln
+	cmd= "bwa aln -o 0 -n {mismatches} -t 2 {pi}_TE_seqs.fasta {pi}{full}_piRNAs.fasta > {pi}{full}.sai".format(**locals())
+	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+	cmd= "bwa samse {pi}{full}_TE_seqs.fasta {pi}{full}.sai {pi}{full}_piRNAs.fasta > {pi}{full}.sam".format(**locals())
+	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+
+	# rename headers and read info
+	OUT=open("{pi}{full}_renamed.sam".format(**locals()), 'w')
+	with open("{pi}{full}.sam".format(**locals()) ,'r') as IN:
+		for line in IN:
+			line=line.rstrip()
+			items=re.split('\t',line)
+			TE=items[2]
+			if TE in renames.keys():
+				TE=renames[TE]
+				items[2]=TE
+
+			if re.search('^@SQ',line):
+				sn=items[1]
+				match=re.search("SN:(.*)",sn)
+				element=match.group(1)
+				if element in renames.keys():
+					trans=renames[element]
+					items[1]="SN:"+ trans
+			new_line='\t'.join(items[0:])
+			OUT.write(new_line + '\n')
+	OUT.close()
+
+
+	cmd = "samtools view -bS -F4 {pi}{full}_renamed.sam > {pi}{full}_renamed.bam".format(**locals()) # filter out unmapped reads
+	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+	cmd = "samtools sort -o -@ 8 {pi}{full}_renamed.bam out > {pi}{full}_renamed.sorted.bam".format(**locals())
+	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+	cmd = "samtools index {pi}{full}_renamed.sorted.bam".format(**locals())
+	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate() 
+
+	cmd = "samtools flagstat {pi}{full}_renamed.sorted.bam > {pi}{full}_stats.txt".format(**locals())
+	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+	cmd = "samtools view {pi}{full}_renamed.sorted.bam |cut -f1|sort|uniq |wc -l".format(**locals())
+	unique_pis, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+	cmd = "samtools view {pi}{full}_renamed.sorted.bam |cut -f3|sort|uniq |wc -l".format(**locals())
+	unique_TEs, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+	unique_pis=re.sub('\n','',unique_pis)
+	unique_TEs=re.sub('\n','',unique_TEs)
+
+	OUT_SUMMARY.write("{pi}\t{unique_pis}\t{unique_TEs}\n".format(**locals()))
+
+
+
+
+
+
+	Bfile = pysam.AlignmentFile("{pi}{full}_renamed.sorted.bam".format(**locals()), "rb")
+
+	seen_pis={}
+	seen_TEs={}
+	seen_pis_strict={}
+	seen_TEs_strict={}
+
+
+	Binfo = Bfile.fetch()
+	for x in Binfo:
+		query = x.query_name
+		TE = Bfile.getrname(x.reference_id)
+		flag = x.flag
+		MD = x.get_tag('MD')
+		TEST.write(query + '\n')
+
+		if query=="*":
+			print "TTTTT"
+
+		MD_nums=re.findall('\d+', MD)
+		first_digit=int(MD_nums[0])
+		last_digit=int(MD_nums[-1])
+
+		seen_pis[query]=0
+		seen_TEs[TE]=0
+
+
+	# enforce no mismatches in first 8 bps of the piRNA
+		if strict:
+			if flag==0 and first_digit>=8:
+				seen_pis_strict[query]=0
+				seen_TEs_strict[TE]=0
+
+			elif flag==16 and last_digit>=8:
+				seen_pis_strict[query]=0
+				seen_TEs_strict[TE]=0
+
+			elif flag !=0 and flag !=16:
+				sys.exit("ERROR: Flag  %s not accounted for, exiting..." %flag)
+
+	if strict:
+		no_pis_strict = len(seen_pis_strict.keys())
+		no_TEs_strict = len(seen_TEs_strict.keys())
+		OUT_SUMMARY_STRICT.write("{mismatches}\t{pi}\t{no_pis_strict}\t{no_TEs_strict}\n".format(**locals()))
+
+	no_pis = len(seen_pis.keys())
+	no_TEs = len(seen_TEs.keys())
+
+
+	# make sure methods of counting uniqueness are the same
+	if int(no_pis) != int(unique_pis):
+		sys.exit("ERROR: Inconsistency in unique counts,exiting...")
+	if int(no_TEs) != int(unique_TEs):
+		sys.exit("ERROR: Inconsistency in unique counts,exiting...")
+
+
+
+
 
 # put piRNA seqs in separate files based on trait
 for i in set(pairs.keys()):
+	if not re.search('total', i):
+		match = re.search(".*_TRANS_(.*)", i)
+		transposon=match.group(1)
 
-	match = re.search(".*_TRANS_(.*)", i)
-	transposon=match.group(1)
+		OUT=open("{i}_piRNAs.fasta".format(**locals()), 'w')
+		fasta_sequences = SeqIO.parse(open("found_piRNAs.txt"),'fasta')
+		for fasta in fasta_sequences:
+			name, sequence = fasta.id, str(fasta.seq) 
+			match = re.search(":(.*_TRANS_(.*))", name) #just pull gene name, remove splice info
+			trait=match.group(1)
+			TE=match.group(2)
+			if trait == i:
+				OUT.write(">" + name + '\n' + sequence + '\n')
+		OUT.close()
 
-	OUT=open("{i}_piRNAs.fasta".format(**locals()), 'w')
-	fasta_sequences = SeqIO.parse(open("found_piRNAs.txt"),'fasta')
-	for fasta in fasta_sequences:
-		name, sequence = fasta.id, str(fasta.seq) 
-		match = re.search(":(.*_TRANS_(.*))", name) #just pull gene name, remove splice info
-		trait=match.group(1)
-		TE=match.group(2)
-		if trait == i:
-			OUT.write(">" + name + '\n' + sequence + '\n')
-	OUT.close()
-
-	# pull TE seqs of that trait
-	OUT=open("{i}_TE_seqs.fasta".format(**locals()), 'w')
-	fasta_sequences = SeqIO.parse(open(TE_consensus),'fasta')
-	for fasta in fasta_sequences:
-		name, sequence = fasta.id, str(fasta.seq) 
-		if transposon in renames.keys():
-			elements=renames[transposon]
-		else:
-			 elements="NA"
-		if name == transposon or name in elements:
-			OUT.write(">" + name + '\n' + sequence + '\n')
-	OUT.close()
+		# pull TE seqs of that trait
+		OUT=open("{i}_TE_seqs.fasta".format(**locals()), 'w')
+		fasta_sequences = SeqIO.parse(open(TE_consensus),'fasta')
+		for fasta in fasta_sequences:
+			name, sequence = fasta.id, str(fasta.seq) 
+			if transposon in renames.keys():
+				elements=renames[transposon]
+			else:
+				 elements="NA"
+			if name == transposon or name in elements:
+				OUT.write(">" + name + '\n' + sequence + '\n')
+		OUT.close()
 
 
-	# create bwa index for TE seqs of that family
-	cmd="bwa index {i}_TE_seqs.fasta".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-	# run bwa aln
-	cmd= "bwa aln -o 0 -n 8 -t 2 {i}_TE_seqs.fasta {i}_piRNAs.fasta > {i}.sai".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+		# create bwa index for TE seqs of that family
+		cmd="bwa index {i}_TE_seqs.fasta".format(**locals())
+		result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-	cmd= "bwa samse {i}_TE_seqs.fasta {i}.sai {i}_piRNAs.fasta > {i}.sam".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-	cmd= "samtools view -bS {i}.sam > {i}.bam".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-	cmd= "samtools flagstat {i}.bam > {i}_stats.txt".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+		align(8,i,strict=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+OUT_SUMMARY.close()
+OUT_SUMMARY_STRICT.close()
+
+
+
+
+
+
+
+
+
+
+
 
 ########################
 ########################
 # CI VERSION
+OUT_SUMMARY=open("summary_mismatches_BWA_ci.txt", 'w')
+OUT_SUMMARY.write("Number of Mismatches\tNumber Unique piRNAs Aligned\tNumber Unique Transposons\n")
+
+OUT_SUMMARY_STRICT=open("summary_mismatches_BWA_strict_ci.txt", 'w')
+OUT_SUMMARY_STRICT.write("Number of Mismatches\tNumber Unique piRNAs Aligned\tNumber Unique Transposons\n")
 for i in set(pairs_CI.keys()):
+	print i
 
 	match = re.search(".*_TRANS_(.*)", i)
 	transposon=match.group(1)
@@ -280,19 +461,26 @@ for i in set(pairs_CI.keys()):
 	cmd="bwa index {i}_TE_seqs.fasta".format(**locals())
 	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
+	align(8,i,strict=True,full=True)
+
 	# run bwa aln
-	cmd= "bwa aln -o 0 -n 3 -t 2 {i}_TE_seqs.fasta {i}_full_piRNAs.fasta > full_{i}.sai".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+	#cmd= "bwa aln -o 0 -n 3 -t 2 {i}_TE_seqs.fasta {i}_full_piRNAs.fasta > full_{i}.sai".format(**locals())
+	#result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-	cmd= "bwa samse {i}_TE_seqs.fasta full_{i}.sai {i}_full_piRNAs.fasta > full_{i}.sam".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+	#cmd= "bwa samse {i}_TE_seqs.fasta full_{i}.sai {i}_full_piRNAs.fasta > full_{i}.sam".format(**locals())
+	#result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-	cmd= "samtools view -bS full_{i}.sam > full_{i}.bam".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+	#cmd= "samtools view -bS full_{i}.sam > full_{i}.bam".format(**locals())
+	#result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 
-	cmd= "samtools flagstat full_{i}.bam > full_{i}_stats.txt".format(**locals())
-	result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+	#cmd= "samtools flagstat full_{i}.bam > full_{i}_stats.txt".format(**locals())
+	#result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+OUT_SUMMARY.close()
+OUT_SUMMARY_STRICT.close()
 
+
+
+sys.exit()
 
 ########################
 # Check if Tc3 QTL file exists

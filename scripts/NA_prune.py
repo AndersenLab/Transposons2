@@ -41,26 +41,21 @@ with open(results_file, 'r') as IN:
 				percentage=float(match.group(1))
 				total_sites=int(match.group(2))
 
+				#check that all totals are the same per line
 				if previous_sites==True:
 					if total_sites != previous_sites:
 						sys.exit("Total potential sites do not match between strains...exiting...")
 					previous_sites=total_sites
 				else:
 					previous_sites=total_sites
-				#check that all toals are the same per line
+				
 
-				if total_sites >10:
-					if percentage<.10:
-						strain_value=strain_value
-					else:
-						strain_value="NA"
+				# remove all strains with NA counts greater than or equal to 10% rounded up. 
+				if percentage<.10:
+					strain_value=strain_value
+				else:
+					strain_value="NA" #strains with low coverage across trait sites and all strain values that were already NAs will be "NA"
 
-				else: # when total_strain is <=10
-					if percentage==0.0:
-						strain_value=strain_value
-					else:
-						strain_value="NA" #strains with low coverage across trait sites and all strain values that were already NAs will be "NA"
-					print strain_value
 				OUT.write('\t' + strain_value)
 			OUT.write('\n')
 		elif re.search("total", trait_name) or \
@@ -74,15 +69,6 @@ with open(results_file, 'r') as IN:
 
 
 OUT.close()
-
-
-# Rules:
-#Traits with a count  <= 10 should remove all strains with any NAs.
-#Traits with a count >10 should remove all strains with NA counts greater than or equal to 10% rounded up. 
-
-				
-
-
 
 
 

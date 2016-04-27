@@ -3,7 +3,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=40000
-#SBATCH --exclude=node[2,3,4,5,6,7,9]
+#SBATCH --exclude=node[2,4,5,6,7,8,9]
 
 ##create error log file for everything?
 
@@ -40,8 +40,11 @@ mkdir ${bam_name}
 cd ${bam_name}
 dir=`pwd`
 
-cp -s $bam ${bam_name}.sorted.bam 
-cp -s $bam.bai ${bam_name}.sorted.bam.bai
+echo "Removing optical duplicates..."
+samtools view -b -F 0x0400 $bam >temp.bam
+samtools sort -o -@ 8 temp.bam out > ${bam_name}.sorted.bam
+samtools index ${bam_name}.sorted.bam
+rm temp.bam
 
 #######################
 # RUN TEMP

@@ -278,6 +278,12 @@ cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/key_k
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/key_T_Full_Results_Activity_id.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/outliers_fam_tot.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/outliers_families_pruned.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/homologs.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/paragraphs.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/grantham_scores.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/FINAL_RESULTS_LF.txt_IGNORE .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/OD/OD_FINAL_RESULTS_LF.txt .
+
 
 
 

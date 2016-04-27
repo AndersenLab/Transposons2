@@ -6,6 +6,8 @@ import re
 import sys
 import pysam
 from subprocess import Popen, PIPE 
+from collections import defaultdict
+import pickle
 
 pi_IN="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/WB_piRNA_positions.gff"
 reference="/lscr2/andersenlab/kml436/sv_sim2/c_elegans.PRJNA13758.WS245.genomic.fa"
@@ -47,6 +49,10 @@ OUT_SUMMARY.write("Number of Mismatches\tNumber Unique piRNAs Aligned\tNumber Un
 
 OUT_SUMMARY_STRICT=open("summary_mismatches_BWA_strict.txt", 'w')
 OUT_SUMMARY_STRICT.write("Number of Mismatches\tNumber Unique piRNAs Aligned\tNumber Unique Transposons\n")
+
+BWA_PAIRS=open("BWA_pairs.txt", 'w')
+
+seen={}
 
 def align(mismatches,strict=False):
 	TE_consensus="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta"
@@ -107,6 +113,8 @@ def align(mismatches,strict=False):
 
 	OUT_SUMMARY.write("{mismatches}\t{unique_pis}\t{unique_TEs}\n".format(**locals()))
 
+	OUT_ALL_STRICT=open("{mismatches}_strict.txt".format(**locals()), 'w')
+	alignments=defaultdict(list)
 
 	Bfile = pysam.AlignmentFile("{mismatches}_renamed.sorted.bam".format(**locals()), "rb")
 
@@ -115,14 +123,15 @@ def align(mismatches,strict=False):
 	seen_pis_strict={}
 	seen_TEs_strict={}
 
-	TEST=open("test.txt",'w')
+
 	Binfo = Bfile.fetch()
 	for x in Binfo:
 		query = x.query_name
 		TE = Bfile.getrname(x.reference_id)
 		flag = x.flag
 		MD = x.get_tag('MD')
-		TEST.write(query + '\n')
+		match = re.search("(?:Pseudogene|Transcript|sequence_name|^Name)(?:=|:)([\w|\d]+.\d+)", query) #jsut pull gene name, remove splice info
+		pi_transcript =match.group(1)
 
 		if query=="*":
 			print "TTTTT"
@@ -134,24 +143,45 @@ def align(mismatches,strict=False):
 		seen_pis[query]=0
 		seen_TEs[TE]=0
 
+		family_short=re.sub("_CE$","",TE)
+		family_short=re.sub("WBTransposon","WBT",family_short)
+		pair=family_short + "_" + pi_transcript
+
 
 	# enforce no mismatches in first 8 bps of the piRNA
 		if strict:
 			if flag==0 and first_digit>=8:
-				seen_pis_strict[query]=0
-				seen_TEs_strict[TE]=0
+				if pair not in seen.keys():
+					seen_pis_strict[query]=0
+					seen_TEs_strict[TE]=0
+					OUT_ALL_STRICT.write(str(x)+'\n')
+					alignments[family_short].append(pi_transcript)
+					BWA_PAIRS.write("{pi_transcript}\t{family_short}\t{mismatches}\n".format(**locals()))
+					seen[pair]=0
+
 
 			elif flag==16 and last_digit>=8:
-				seen_pis_strict[query]=0
-				seen_TEs_strict[TE]=0
+				if pair not in seen.keys():
+					seen_pis_strict[query]=0
+					seen_TEs_strict[TE]=0
+					OUT_ALL_STRICT.write(str(x)+'\n')
+					alignments[family_short].append(pi_transcript)
+					BWA_PAIRS.write("{pi_transcript}\t{family_short}\t{mismatches}\n".format(**locals()))
+					seen[pair]=0
 
 			elif flag !=0 and flag !=16:
 				sys.exit("ERROR: Flag  %s not accounted for, exiting..." %flag)
+
+
 
 	if strict:
 		no_pis_strict = len(seen_pis_strict.keys())
 		no_TEs_strict = len(seen_TEs_strict.keys())
 		OUT_SUMMARY_STRICT.write("{mismatches}\t{no_pis_strict}\t{no_TEs_strict}\n".format(**locals()))
+
+
+		with open("strict_alignments_{mismatches}.txt".format(**locals()), "wb") as fp: # Pickle
+			pickle.dump(alignments, fp) 
 
 	no_pis = len(seen_pis.keys())
 	no_TEs = len(seen_TEs.keys())
@@ -163,6 +193,8 @@ def align(mismatches,strict=False):
 	if int(no_TEs) != int(unique_TEs):
 		sys.exit("ERROR: Inconsistency in unique counts,exiting...")
 
+	OUT_ALL_STRICT.close()
+
 
 align(0,strict=True)
 align(1,strict=True)
@@ -171,5 +203,6 @@ align(3,strict=True)
 
 OUT_SUMMARY.close()
 OUT_SUMMARY_STRICT.close()
+BWA_PAIRS.close()
 
 
