@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=18
+#SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --nodes=1
+#SBATCH --mem=40000
 
 # this script filters TE caller output for varying amounts of read support (1-50 reads) and outputs the resulting TPR and FDR information files for RSVSIM
 # can change read support, so double check what it is set to

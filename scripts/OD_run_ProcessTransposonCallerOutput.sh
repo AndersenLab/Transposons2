@@ -4,6 +4,7 @@
 input_file=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/OD_sample_list.txt
 ProcessTransposonCallerOutput=/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts/ProcessTransposonCallerOutput.sh
 results_file=/lscr2/andersenlab/kml436/git_repos2/Transposons2/OD/FINAL_RESULTS.txt
+#results_file=/lscr2/andersenlab/kml436/git_repos2/Transposons2/OD/original/FINAL_RESULTS.txt
 
 
 

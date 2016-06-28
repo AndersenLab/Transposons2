@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# this script output coerage per strain in a file that can be merged with T_kin_C_matrix_full.txt
+# this script outputs coverage per strain in a file that can be merged with T_kin_C_matrix_full.txt
 # USE: cov_fix.py
 
 import re

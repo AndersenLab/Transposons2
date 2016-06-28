@@ -1,7 +1,6 @@
 #!/usr/bin/env python
-# this script checks if the piRNA within the CI of the QTL for a given trait aligned to the TE elements/family for that trait
-# also checks if knwon Tc3 seqs from literature align to the Tc3 sequences and  to the genome
-#USE: pi_align_check.py
+# this script checks if the piRNA within the CI of the QTL for a given trait blasted to the TE elements/family for that trait
+#USE: pi_blast_check.py
 
 import re
 import pickle
@@ -39,9 +38,6 @@ def search_blasted(mismatch):
 					blasted_in_interval[TE].append(transcript)
 			else:
 				check=False
-				print family
-
-
 			in_interval[TE].append(transcript)
 
 	for i in in_interval.keys():
@@ -64,5 +60,35 @@ search_blasted('three')
 
 
 ########################
+# TC3 control
+# make blast database of TC3 sequences 
+cmd="/lscr2/andersenlab/kml436/ncbi-blast-2.2.30+/bin/makeblastdb -in TC3_TE_seqs.fasta  -dbtype nucl -out TC3_database".format(**locals())
+result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+cmd="/lscr2/andersenlab/kml436/ncbi-blast-2.2.30+/bin/blastn -db TC3_database -query /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/known_Tc3_piRNAs.fasta -evalue .5 -word_size 5 -outfmt '6 qseqid sseqid pident qlen length mismatch gapopen evalue bitscore qstart qend btop' -max_target_seqs 100 -out TC3_blast.txt -num_threads 10".format(**locals())
+result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+cmd="cat intervalPIs_* > intervalPIs_all.txt"
+result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+########################
+# check traits of interest
+trait_list=[]
+with open("/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/TOI.txt", 'r') as IN:
+	for line in IN:
+		line=line.rstrip('\n')
+		trait_list.append(line)
+
+OUT=open("TOIs_matching_intervalPIs.txt",'w')  # file for TOIs with piRNAs found in the CI of the QTL blasting to their repective TEs  
+with open("intervalPIs_all.txt", 'r') as IN:
+	for line in IN:
+		line=line.rstrip('\n')
+		items=re.split('\t',line)
+		trait,mismatch,found,possible=items[0:]
+		found=int(found)
+		if trait in trait_list:
+			if found !=0:
+				OUT.write(line +'\n')
+OUT.close()
 
 

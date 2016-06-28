@@ -38,6 +38,7 @@ find_outliers=outliers.py
 interest=pull_strains_ins_info.py
 id=give_id.py
 id_reduced=give_id_reduced.py
+fasta_supp=fasta_supp_table.py
 
 #files
 samples=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/master_sample_list.txt
@@ -46,6 +47,8 @@ results_file=/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/FINAL_RES
 consensus_renamed=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/AB-PR/consensus_wTC8.fasta 
 repbase_fasta=/lscr2/andersenlab/kml436/repbase.fasta
 bam_stats=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/eav.global.tsv
+TE_consensus=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/SET2/round2_consensus_set2.fasta
+family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt
 
 # Rename results files so that they will not be overwritten in a later step
 bash ${scripts_dir}/${rename_final_results} $samples
@@ -257,6 +260,9 @@ python ${scripts_dir}/check_nums.py $repbase_fasta $consensus_renamed CtCp_all_n
 python ${scripts_dir}/${id}
 python ${scripts_dir}/${id_reduced}
 
+#get supplementary fasta table
+python ${scripts_dir}/${fasta_supp} $TE_consensus $family_renames
+
 cd ${results_dir}/final_results/data_for_figures
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/coverage_and_te_counts.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/kinship/T_kin_C_matrix_ins_reduced.txt .
@@ -278,6 +284,7 @@ cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/key_k
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/key_T_Full_Results_Activity_id.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/outliers_fam_tot.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/outliers_families_pruned.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/TE_seqs.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/homologs.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/paragraphs.txt .
 cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/files/grantham_scores.txt .

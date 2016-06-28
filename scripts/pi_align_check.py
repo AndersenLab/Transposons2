@@ -53,7 +53,8 @@ search_aligned(1)
 search_aligned(2)
 search_aligned(3)
 
-
+cmd="cat intervalPIs_* > intervalPIs_all.txt"
+result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 ########################
 # TC3 control
 known_Tc3_pi="/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/known_Tc3_piRNAs.fasta"
@@ -88,7 +89,7 @@ OUT.close()
 cmd="bwa index TC3_TE_seqs.fasta".format(**locals())
 result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
 # Test aligning the known Tc3 piRNAs to the Tc3 TE sequences
-cmd="""bwa aln -o 0 -n 3 -t 1 TC3_TE_seqs.fasta {known_Tc3_pi} > known_Tc3.sai;
+cmd="""bwa aln -o 0 -n 0 -t 1 TC3_TE_seqs.fasta {known_Tc3_pi} > known_Tc3.sai;
 bwa samse TC3_TE_seqs.fasta known_Tc3.sai {known_Tc3_pi} > known_Tc3.sam;
 samtools view -bS known_Tc3.sam > known_Tc3.bam;
 samtools flagstat known_Tc3.bam > known_Tc3_stats.txt""".format(**locals())
@@ -101,4 +102,25 @@ bwa samse {reference} known_Tc3_genome.sai {known_Tc3_pi} > known_Tc3_genome.sam
 samtools view -bS known_Tc3_genome.sam > known_Tc3_genome.bam;
 samtools flagstat known_Tc3_genome.bam > known_Tc3_genome_stats.txt""".format(**locals())
 result, err = Popen([cmd],stdout=PIPE, stderr=PIPE, shell=True).communicate()
+
+
+########################
+# check traits of interest
+trait_list=[]
+with open("/lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/TOI.txt", 'r') as IN:
+	for line in IN:
+		line=line.rstrip('\n')
+		trait_list.append(line)
+
+OUT=open("TOIs_matching_intervalPIs.txt",'w')  # file for TOIs with piRNAs found in the CI of the QTL aligning to their repective TEs  
+with open("intervalPIs_all.txt", 'r') as IN:
+	for line in IN:
+		line=line.rstrip('\n')
+		items=re.split('\t',line)
+		trait,mismatch,found,possible=items[0:]
+		found=int(found)
+		if trait in trait_list:
+			if found !=0:
+				OUT.write(line +'\n')
+OUT.close()
 
