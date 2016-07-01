@@ -93,6 +93,9 @@ python ${scripts_dir}/${kin} $samples ${results_dir}/CtCp_all_nonredundant.txt
 mv TE_matrix/kin_matrix_ins.txt .
 #generate kinship matrix for reference/absence calls
 python ${scripts_dir}/${kin_AF} $samples
+#remove monomorphic reference calls (all strains have that transposon(or an NA))
+cp kin_matrix_AF.txt with_monomorphic_calls_kin_matrix_AF.txt
+cat kin_matrix_AF.txt | awk '$0~/\t0\t/||$0~/trait/ {print $0}' >tmp && mv tmp kin_matrix_AF.txt
 # make sure column names between the matrices match
 result=`diff <(head -n 1 kin_matrix_ins.txt) <(head -n 1 kin_matrix_AF.txt)`
 if [$result eq '']
@@ -117,7 +120,6 @@ if [$result eq '']
 fi
 # merge kinship matrices:
 cat kin_matrix_ins_reduced.txt > tmp && cat kin_matrix_AF.txt |sed 1d >>tmp && mv tmp kin_matrix_full_reduced.txt
-
 
 
 
@@ -254,6 +256,20 @@ cp pruned_data.txt T_kin_C_matrix_full_reduced.txt
 # check which TE families predominate the total insertion count
 python ${scripts_dir}/count_predominate_insTE.py > predominate_insertions.txt
 python ${scripts_dir}/check_nums.py $repbase_fasta $consensus_renamed CtCp_all_nonredundant.txt
+
+
+#simplify names (WBTransposon->WBT, remove trailing _CE)
+#cat kin_matrix_full.txt | awk  '{if($1~/non-reference/){gsub("non-reference.*","NR",$1);gsub("_CE_NR$","_NR",$1)}else{$1=$1"_R";gsub("_CE_R$","_R",$1)}; print $0;}' |sed 's/WBTransposon/WBT/' > tmp && mv tmp kin_matrix_full.txt 
+cat kin_matrix_full.txt  | awk  '{if($1~/non-reference/){gsub("non-reference.*","NR",$1);gsub("_CE_NR$","_NR",$1)}else{if($1!~/trait/){$1=$1"_R";gsub("_CE_R$","_R",$1)}}; print $0;}' |sed 's/WBTransposon/WBT/' > tmp && mv tmp kin_matrix_full.txt 
+cat T_kin_C_matrix_full.txt |sed 's/WBTransposon/WBT/'|sed 's/_CE_C/_C/' >tmp && mv tmp T_kin_C_matrix_full.txt
+cat T_kin_C_matrix_full_reduced.txt |sed 's/WBTransposon/WBT/'|sed 's/_CE_C/_C/'|awk -v OFS="\t" '{if($1~/_CE$/) {gsub("_CE$","",$1)};print $0}' > tmp && mv tmp T_kin_C_matrix_full_reduced.txt
+
+#cat T_kin_C_matrix_full_reduced.txt |sed 's/WBTransposon/WBT/'|sed 's/_CE_C/_C/'|awk -v OFS="\t" '{if($1~/_CE$/) {gsub("_CE$","",$1)};print $0}'>test.txt
+
+
+
+cat CtCp_all_nonredundant.txt |sed 's/WBTransposon/WBT/'|sed 's/_CE_/_/' > tmp && mv tmp CtCp_all_nonredundant.txt
+cat CtCp_all_nonredundant_reduced.txt |sed 's/WBTransposon/WBT/'|sed 's/_CE_/_/' > tmp && mv tmp CtCp_all_nonredundant_reduced.txt
 
 
 #assign id numbers to traits

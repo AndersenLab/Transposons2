@@ -3,7 +3,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
-#SBATCH --nodelist=node5
+#SBATCH --nodelist=node7
 #SBATCH --mem=2000
 
 family_renames=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/round2_WB_familes_set2.txt
@@ -132,7 +132,7 @@ cat processed_calls.txt| sort -k1,1 -k2,2n > ${bam_name}_telocate_nonredundant.b
 
 
 cat ${bam_name}_telocate_nonredundant.bed | sed s'/chrX/X/g'| sed '/^track/d' | awk '$4 ~/_reference/ && $4 !~ /TC8/ && $1 !~ /MtDNA/ {print $0}'> ${bam_name}_temp && mv ${bam_name}_temp ${bam_name}_telocate_nonredundant.bed 
-cp ${bam_name}_telocate_nonredundant.bed ../final_results/${bam_name}_telocate_nonredundant.bed ###HERE ERROR
+cp ${bam_name}_telocate_nonredundant.bed ../final_results/${bam_name}_telocate_nonredundant.bed 
 
 
 # COUNT TRANSPOSONS

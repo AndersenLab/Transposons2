@@ -93,10 +93,10 @@ for i,values in totals.items():
 						if method == "ONE_new":
 							if float(count)>float(av):
 								OUT_FAMILY_PRUNED.write("{i}\t{strainN}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
-						elif method == "reference":
-							if float(count)<float(av):
-								if TE_type == "retrotransposon" or TE_type == "unknown":
-									OUT_FAMILY_PRUNED.write("{i}\t{strainN}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
+						#elif method == "reference":
+							#if float(count)<float(av):
+								#if TE_type == "retrotransposon" or TE_type == "unknown":
+									#OUT_FAMILY_PRUNED.write("{i}\t{strainN}\t{count}\t{av}\t{sd}\t{strain_difference}\n".format(**locals()))
 						elif method == "absent":
 							if float(count)>float(av):
 								if TE_type == "dnatransposon" or TE_type =="unknown":

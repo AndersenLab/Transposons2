@@ -4,6 +4,8 @@
 # NOTE: must first transfer "Peak_Table.txt" and "TOI.txt" to final_results directory
 
 scripts_dir=/lscr2/andersenlab/kml436/git_repos2/Transposons2/scripts
+data_dir=/lscr2/andersenlab/kml436/git_repos2/Transposons2/data
+master_list=/lscr2/andersenlab/kml436/git_repos2/Transposons2/files/master_sample_list.txt
 
 # check if QTL overlap regions of interest
 echo "Investigating QTL overlaps..."
@@ -52,6 +54,29 @@ mkdir tables/
 mv table_piRNAs.txt tables/
 cp bwa/summary_mismatches_BWA_strict.txt tables/
 cp blast/summary_mismatches_BLAST_strict.txt tables/
+
+
+# move all tables
+cd /lscr2/andersenlab/kml436/git_repos2/Transposons2/
+mkdir tables
+cd tables
+
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/piRNA/tables/summary_mismatches_BLAST_strict.txt . 
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/piRNA/tables/table_piRNAs.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/piRNA/tables/summary_mismatches_BWA_strict.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/TE_seqs.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/gene_interrupt/essentiality_nonredundant_strain_info.txt .
+cp /lscr2/andersenlab/kml436/git_repos2/Transposons2/results/final_results/data_for_figures/kin_matrix_full.txt .
+
+mkdir raw_strain_calls
+cd raw_strain_calls
+while read line; do 
+  echo $line
+  echo "copying raw output for $line"
+  mkdir $line
+  cp ${data_dir}/${line}/final_results/* $line
+done <$master_list
+
 
 
 
